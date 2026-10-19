@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>How to Change Date and Time without using CLICK Programming Software</title><title xmlns="">Change Date and Time</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">How to Change Date and Time without using CLICK Programming Software</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL194</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">This help topic explains how to change the <b>Date</b> and <b>Time</b> in the <b>CLICK CPU</b> module without using <b>CLICK Programming Software</b>. The <b>Date</b> and <b>Time</b> can be changed when the <b>CLICK PLC</b> is in either <b>RUN</b> and <b>STOP</b> modes.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;" rowspan="2">
+                            <p style="text-align: center;">
+                                <img src="notepad.gif" />
+                            </p>
+                            <p style="text-align: center;" xmlns="">&#160;</p>
+                        </td>
+                        <td colspan="2" style="padding-right: 10px;padding-left: 10px;background-color: #ffff80;">
+                            <p class="Notes"><b>Note:</b> This feature is supported from <b>CLICK CPU</b> firmware <b>V2.00</b>.</p>
+                            <p style="font-size: 3pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
+                            <p class="NotesNoBottomBorder"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> The most <b xmlns="http://www.w3.org/1999/xhtml">CLICK CPU</b> modules support the real time clock feature. However, the following four<b xmlns="http://www.w3.org/1999/xhtml"> CLICK CPU</b> modules don’t support it.</p>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td colspan="2" style="background-color: #ffff80;border-bottom-style: none;border-bottom-width: 0px;padding-left: 10px;padding-right: 10px;">
+                            <table style="border-collapse: collapse;margin-left: auto;margin-right: auto;width: 60%;" xmlns="http://www.w3.org/1999/xhtml">
+                                <col />
+                                <col />
+                                <col />
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;color: #ffffff;background-color: #afeeee;vertical-align: middle;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                                            <h2 xmlns="http://www.w3.org/1999/xhtml">CPU&#160;Type</h2>
+                                        </td>
+                                        <td style="text-align: center;color: #ffffff;background-color: #afeeee;vertical-align: middle;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                                            <h2 xmlns="http://www.w3.org/1999/xhtml">Part Number</h2>
+                                        </td>
+                                        <td style="text-align: center;color: #ffffff;background-color: #afeeee;vertical-align: middle;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                                            <h2 xmlns="http://www.w3.org/1999/xhtml">Specification</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4" style="border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #afeeee;">
+                                            <h2 xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Basic CPU</h2>
+                                        </td>
+                                        <td style="border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #ffffff;">
+                                            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">C0-00DD1-D</p>
+                                        </td>
+                                        <td rowspan="4" style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #ffffff;">
+                                            <p xmlns="http://www.w3.org/1999/xhtml">Don't support Real Time Clock</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #ffffff;">
+                                            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">C0-00DD2-D</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #ffffff;">
+                                            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">C0-00DR-D</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;background-color: #ffffff;">
+                                            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">C0-00AR-D</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="NotesNoBottomBorder" style="font-size: 3pt;">&#160;</p>
+                            <p class="Notes"><b>Note:</b> If the <b>CLICK PLC</b> is protected by a password, the ‘<b>Change Date and Time in PLC</b>’ option must be unchecked in the <b>Password Setup</b> (Pull down menu: Setup &gt; Password Setup…) as shown below in advance to change the <b>Date</b> and <b>Time</b> via a com port.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Password_Setup.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">How to Change Date</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <b>CLICK CPU</b> module stores the <b>Date</b> information in the following system <b>Data Registers</b>:</p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD19</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Year</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">2000-2099</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361459</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F012h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD21</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Month</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">1-12</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361461</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F014h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD22</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Day</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">1-31</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361462</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F015h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;"><b>Note:</b> These system <b>Data Registers</b> are <b>Read Only</b>.</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Step 1:</span>
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml">To change the <b>Date</b> in the <b xmlns="http://www.w3.org/1999/xhtml">CLICK CPU</b> module, use the following system <b>Data Registers</b> to set new <b>Date</b>.</p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD29</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Year</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">2000-2099</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461469</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F01Ch</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD31</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Month</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">1-12</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461471</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F01Eh</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD32</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Day</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">1-31</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461472</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F01Fh</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Note:</b> You must set all the valid <b>Year</b>, <b>Month</b> and <b>Day</b> to change the <b>Date</b> in the <b>CLICK CPU</b> module. You can’t change only one or two of them.</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Step 2:</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">After setting the new <b>Year</b>, <b>Month</b> and <b>Day</b> in the above system data registers, turn the system control bit <b>SC53</b><b>ON</b> to update the <b>Date</b> in the <b>CLICK CPU</b> module. If the <b>CLICK CPU</b> module updates the <b>Date</b> successfully, the system control bit <b>SC54</b> turns <b>OFF</b>. However, if the new <b>Year</b>, <b>Month</b> and <b>Day</b> are not valid, <b>SC54</b> turns <b>ON</b>.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="topic 194 graphic 1.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SC53</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Date Change</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="">ON or OFF</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">61493</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">01, 05, 15</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F034h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">01, 05, 15</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SC54</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Date Change Error</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">ON or OFF</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">161494</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">02</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F035h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">02</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Note: SC53 does not turn OFF automatically. Turn SC53 OFF before the next attempt.<br /><br />Note:</b><b>SC54</b> is <b>Read Only</b>.</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">If you use an <b>HMI</b> panel to change the <b>Date</b> in the <b>CLICK CPU</b> module, the parts on the screen would be configured like this.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="topic 194 graphic 2.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2 xmlns="">How to Change Time</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <b>CLICK CPU</b> module stores the <b>Time</b> information in the following system <b>Data Registers</b>:</p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD24</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Hour</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">0-23</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361464</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F017h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD25</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Minute</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">0-59</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361465</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F018h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD26</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Second</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">0-59</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">361466</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F019h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">04</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Note:</b> These system <b>Data Registers</b> are <b>Read Only</b>:</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Step 1:</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">To change the <b>Time</b> in the <b>CLICK CPU</b> module, use the following system <b>Data Registers</b> to set new <b>Time:</b></p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD34</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Hour</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="">0-23</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461474</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F021h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD35</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Minute</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">0-59</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461475</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F022h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD36</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Second</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">0-59</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">461476</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F023h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">03, 06, 16</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Note:</b> You must set all of the valid<b> Hour, Minute </b>and<b> Second </b>to change the<b> Time </b>in the<b> CLICK CPU </b>module. You can’t change only one or two of them.</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Step 2:</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">After setting the new <b>Hour</b>, <b>Minute</b> and <b>Second</b> in the above system data registers, turn the system control bit <b>SC55 </b><b>ON</b> to update the <b>Time</b> in the <b>CLICK CPU</b> module. If the <b>CLICK CPU</b> module updates the <b>Time</b> successfully, the system control bit <b>SC56</b> turns <b>OFF</b>. However, the new <b>Hour</b>, <b>Minute</b> and <b>Second</b> are not valid, <b>SC56</b> turns <b>ON</b>.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="topic 194 graphic 3.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <table style="width: 100%; border-collapse: collapse; margin-left: auto; margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS 984 Addressing</h2>
+                        </td>
+                        <td colspan="2" style="text-align: center;background-color: #87cefa;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;">
+                            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">MODBUS HEX Addressing</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">System Data Register</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Data Type</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Valid Data Range</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">MODBUS&#160;Address</p>
+                        </td>
+                        <td style="text-align: center;background-color: #fafad2;font-weight: normal;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Function Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SC55</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Time Change</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="">ON or OFF</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">61495</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">01, 05, 15</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F036h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">01, 05, 15</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SC56</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Time Change Error</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">ON or OFF</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">161496</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">02</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">F037h</p>
+                        </td>
+                        <td style="text-align: center;border-left-style: solid;border-left-width: 1pt;border-left-color: #000000;border-right-style: solid;border-right-width: 1pt;border-right-color: #000000;border-top-style: solid;border-top-width: 1pt;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #000000;">
+                            <p xmlns="http://www.w3.org/1999/xhtml">02</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="97px" />
+                <col />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;background-color: #ffff80;"><span style="font-size: 9pt; color: #000000; font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Note: SC55 does not turn OFF automatically. Turn SC55 OFF before the next attempt.<br /><br />Note: SC56</b> is <b>Read Only</b>.</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                    <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    </tr>
+                </tbody>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">If you use an <b>HMI</b> panel to change the <b>Time</b> in the <b>CLICK CPU</b> module, the parts on the screen would be configured like this:</p>
+            <p style="text-align: center;">
+                <img src="topic 194 graphic 4.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+        </div>
+    </body>
+</html>

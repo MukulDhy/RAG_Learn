@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu" data-mc-file-tags="Topic Status.Final Review - Delivered">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>User Account Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">User Account Setup</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL279</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">With Version 3.0 and later, the CLICK PLUS PLC ( and Click Ethernet PLCs) ship from the factory with a default username and password. (The default password is "click".) When you connect to the CLICK for the first time from the software the default password will be required. </p>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">A single 'admin' user account exists on the CLICK platform. Either the project must have a password configured  for any CLICK CPU with Ethernet capabilities or the password requirement must be disabled (only  CLICK Ethernet and C2-01CPU and C2-01CPU-2 PLCs) before the project can be downloaded to the PLC.  Keeping the password requirement enabled helps greatly reduce the chances of malicious software taking control of the PLC with easy-to-guess or publicly disclosed default login credentials. The <b xmlns="http://www.w3.org/1999/xhtml">User Account Setup</b> dialog guides you through setting up a strong password and monitoring password activity. This dialog opens when creating a new project, if a CPU with network capabilities is selected, and can also be accessed at any time from the <b xmlns="http://www.w3.org/1999/xhtml">User Account Setup</b> menu option. </p>
+            <table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <tbody xmlns="">
+                    <tr style="vertical-align: top;height: 26px;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="margin-top: 5px;text-align: center;">
+                                <img src="Resources/Images/caution exclamation.png" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                            <p class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Warning:</b>  Make sure you remember your Password.  If you forget your Password you will not be able to access the CPU. You can use <a href="099.htm" xmlns="http://www.w3.org/1999/xhtml">Reset to Factory Default</a> to erase the Password. However, this erases the Entire Project file. Therefore, you will have to download a project file again.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Select which option below that applies to your PLC to see the User Account Setup Requirements</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="#Non-RED" xmlns="http://www.w3.org/1999/xhtml">ALL CLICK Ethernet PLCs and CLICK PLUS PLCs without WLAN / Bluetooth Ports (C2-01CPU and C2-01CPU-2)</a>
+            </p>
+            <p><a href="#RED" xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS with WLAN / Bluetooth Ports  (C2-02CPU, C2-02CPU-2, C2-03CPU, and C2-03CPU-2)</a>
+            </p>
+            <h2 style="margin-top: 5px;text-align: left;" xmlns="http://www.w3.org/1999/xhtml"><a name="Non-RED" xmlns="http://www.w3.org/1999/xhtml"></a>Setup for CLICK Ethernet PLCs and CLICK PLUS PLCs without WLAN / Bluetooth (C2-01CPU and C2-01CPU-2)</h2>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/User_Acct_setup_01.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml" style="font-weight: normal;"><b xmlns="http://www.w3.org/1999/xhtml">Disable Password Requirement:</b> Selecting this checkbox allows access to the PLC without entering a password. This feature is good during development when connecting to the PLC often. But it is not recommended that the password requirement feature is disabled when the system is deployed. Doing so increases the chances of malicious software taking control of the PLC.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Password Setting:</span> Opens the <a href="280.htm" xmlns="http://www.w3.org/1999/xhtml">Password Setup</a> dialog. The password must be set for any CPU with the possibility of network connection, whether or not the connection is used.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Record all failed password attempts: </span>Enable this checkbox to maintain a record of unsuccessful password entry attempts.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Check the Record: </span>Display the log of the most recent 16 password attempts, if connected to a CPU that has been set to record.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">System Addresses: </span>Read-only system registers hold password failure status values.</p>
+            <h2 style="margin-top: 5px;text-align: left;" xmlns="http://www.w3.org/1999/xhtml"><a name="RED" xmlns="http://www.w3.org/1999/xhtml"></a>Setup for  CLICK PLUS with WLAN / Bluetooth Ports (C2-02CPU, C2-02CPU-2, C2-03CPU, and C2-03CPU-2)</h2>
+            <p style="margin-top: 5px; text-align: left;" xmlns="http://www.w3.org/1999/xhtml">The  C2-02CPU, C2-02CPU-2, C2-03CPU, and C2-03CPU-2 PLCs <b xmlns="http://www.w3.org/1999/xhtml">REQUIRE</b> a password to be setup before a project can be transferred. Please see <a href="345.htm" xmlns="http://www.w3.org/1999/xhtml">Cybersecurity Requirements</a><b style="color: #ff0000;" xmlns="http://www.w3.org/1999/xhtml"> <span style="color: #000000; font-weight: normal;">for more information.</span></b></p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/User_Acct_setup.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml" style="font-weight: normal;"><b xmlns="http://www.w3.org/1999/xhtml">Disable Password Requirement:</b> Disabling the password for PLCs with WLAN / Bluetooth Ports is not allowed in accordance with current cybersecurity standards.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Password Setting:</span> Opens the <a href="280.htm" xmlns="http://www.w3.org/1999/xhtml">Password Setup</a> dialog. The password must be set for any CPU with the WLAN / Bluetooth before the project can be transferred. </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Record all failed password attempts: </span>This setting is enabled by default and cannot be changed</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Check the Record: </span>Display the log of the most recent 100 password attempts, only available when connected to a CPU.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">System Addresses: </span>Read-only system registers hold password failure status values.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Password Lockout</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">With each wrong password attempt you will see GUI 132 Error "Login failed. The User Name or Password are incorrect."</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">After 3 wrong password attempts you will see GUI 133 Error "Password Lockout: You can not enter a password again for %s seconds." This delay increases with each failed attempt.</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="280.htm" xmlns="http://www.w3.org/1999/xhtml">Password Setup</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="281.htm" xmlns="http://www.w3.org/1999/xhtml">Failed Password Attempt Record</a><a href="345.htm" xmlns="http://www.w3.org/1999/xhtml"><br xmlns="http://www.w3.org/1999/xhtml" />Cybersecurity Requirements</a>
+            </p>
+        </div>
+    </body>
+</html>

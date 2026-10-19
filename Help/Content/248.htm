@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Error Codes">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>PID Error Codes</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 144px;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">CLICK PID Errors</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL248</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <p>The CLICK PID Errors are indicated in two places; 1) the PID Monitor Window and 2) register DSn+00. </p>
+        <h4>PID Monitor Window</h4>
+        <p>You may see an error indication on the PID Loop in the PID Loop Monitor selection in the Project tab.</p>
+        <p>
+            <img src="Resources/Images/PID Monitor Error icon.png" />
+        </p>
+        <p>Opening the PID Monitor you will see an Error indicator at the top of the PID Monitor Window.</p>
+        <p>
+            <img src="Resources/Images/PID Monitor Error Indicator.png" />
+        </p>
+        <p>Clicking on this indicator opens the PIS Monitor Error List.</p>
+        <p>
+            <img src="Resources/Images/PID Monitor Error List.png" />
+        </p>
+        <h4>Error Register</h4>
+        <p>If there is more than one error, the DS register will contain the lowest active error number. When it is cleared, the next lowest error is indicated.</p>
+        <p>The most likely cause of errors on a new PID Loop is the PID Loop was configured in the PID Configuration, the program was downloaded to the PLC, but the PID Configuration data was not written to the PLC registers. Open the PID Loop Configuration and select <b>Write Register Values to PLC</b> as a first step to clear errors.</p>
+        <p>&#160;</p>
+        <table style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;margin-left: auto;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 54px;" class="Column-Column1" />
+            <col style="width: 324px;" class="Column-Column1" />
+            <col style="width: 94px;" class="Column-Column1" />
+            <col style="width: 150px;" class="Column-Column1" />
+            <col style="width: 261px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td colspan="5" class="HeadD-Column1-Header1" style="text-align: center;color: #000080;background-color: #0066cc;">
+                        <p style="font-weight: bold;background-color: #0088cc;"><span style="color: #ffffff;">CLICK&#160;PID&#160;Errors</span>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;background-color: #86ceeb;" class="BodyE-Column1-Body1">No.</td>
+                    <td style="font-size: 9pt;text-align: center;background-color: #86ceeb;" class="BodyE-Column1-Body1">Error contents</td>
+                    <td style="font-size: 9pt;text-align: center;background-color: #86ceeb;" class="BodyE-Column1-Body1">Function</td>
+                    <td style="font-size: 9pt;text-align: center;background-color: #86ceeb;" class="BodyE-Column1-Body1">Associated Register</td>
+                    <td style="font-size: 9pt;text-align: center;background-color: #86ceeb;" class="BodyD-Column1-Body1">Conditions</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">0</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>No error
+ （normal）</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>--</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>--</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>--</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">10</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Sample Rate out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DSn+05</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;100 or &gt;30000</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">11</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Derivative Gain out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DSn+06</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&gt;100</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">12</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PWM period out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Output</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DSn+07</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;1 or &gt;600</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">13</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Input Filter out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>PV</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DSn+08</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;1 or &gt;100</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">20</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Set point Value out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>SP</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+00</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Setpoint is out of range when value is not a number</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">21</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>SP Lower Limit out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>SP</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+01</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Out of range, when the value is not a number</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">22</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>SP Upper Limit out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>SP</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+02</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Out of range, when the value is not a number</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">23</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>SP Limit configuration error</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>SP</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+02</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Lower Limit &gt; Upper Limit</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">24</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Error Dead band out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Err Term</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+03</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">25</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Bias (Integrator) out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+04</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">26</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Proportional Gain (P) out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+05</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0.01 or
+ &gt;10000.0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">27</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Reset (I) Time out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+06</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0.01 or
+ &gt;6000.0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">28</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Derivative Gain (D) out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Calc.</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+07</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0 or &gt;6000.0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">30</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Control Output Lower Limit out
+ of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Output</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+09</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0 or &gt;100</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">31</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Control Output Upper Limit out
+ of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Output</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+10</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0 or &gt;100</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">32</td>
+                    <td rowspan="2" style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Control Output Limit configuration error</p>
+                    </td>
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Output</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+10</p>
+                    </td>
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Lower Limit &gt; Upper Limit</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+11</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">33</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Raw Process Variable (PV) out of
+ range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>PV</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+11</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">34</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Lower Limit out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>PV</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+22</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Out of range, when the value is not a number</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">35</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Upper Limit out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>PV</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+23</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Out of range, when the value is not a number</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">36</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Limit Configuration error</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>PV</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;padding: 0px;" class="BodyE-Column1-Body1">
+                        <table style="width: 100%;">
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>DFn+22</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>DFn+23</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>Lower Limit &gt; Upper Limit</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">40</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV-LL Alarm out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+13</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">41</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV-LAlarm out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+14</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">42</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV-HAlarm out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+15</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">43</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV-HH Alarm out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+16</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>NA</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td rowspan="4" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">44</td>
+                    <td rowspan="4" style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Alarm configuration error</p>
+                    </td>
+                    <td rowspan="4" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+13</p>
+                    </td>
+                    <td rowspan="4" style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>(LL&gt;L)or(L&gt;H)or(H&gt;HH)</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+14</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+15</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+16</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">45</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Deviation Alarm (H) out of
+ range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+17</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">46</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Deviation Alarm (HH) out of
+ range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+18</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">47</td>
+                    <td rowspan="2" style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Deviation Alarm configuration error</p>
+                    </td>
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+17</p>
+                    </td>
+                    <td rowspan="2" style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>H&gt;HH</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+18</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">48</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Rate of Change out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+19</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">49</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>PV Alarm Hysteresis out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Alarm</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+20</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyD-Column1-Body1">
+                        <p>&lt;0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">200</td>
+                    <td style="font-size: 9pt;" class="BodyE-Column1-Body1">
+                        <p>Auto tuning Output Hysteresis 
+out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>Autotune</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyE-Column1-Body1">
+                        <p>DFn+21</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: left;" class="BodyD-Column1-Body1">
+                        <p style="text-align: center;">&lt;0.1 or &gt;10</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-size: 9pt;text-align: center;" class="BodyB-Column1-Body1">202</td>
+                    <td style="font-size: 9pt;" class="BodyB-Column1-Body1">
+                        <p>Autotune Control Output out of range</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyB-Column1-Body1">
+                        <p>Autotune</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: center;" class="BodyB-Column1-Body1">
+                        <p>--</p>
+                    </td>
+                    <td style="font-size: 9pt;text-align: left;" class="BodyA-Column1-Body1">
+                        <p>When control output exceeds a
+ limit during autotuning.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 74px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="notepad1.gif" />
+                    </td>
+                    <td>
+                        <p class="Notes"><b>Note:</b> Any other Error number is not a invalid error.  Check that some other process is not writing data into the assigned error register.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">&#160;</h3>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="246.htm" xmlns="">PID&#160;Control in CLICK</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Find Available&#160;Addresses</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Configuration Mode</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Monitor Mode</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;List View</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="250.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Filter Examples</a>
+        </p>
+    </body>
+</html>

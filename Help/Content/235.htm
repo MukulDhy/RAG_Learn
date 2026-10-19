@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|Com Port 1 (Ethernet) Setup|EtherNet/IP" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>CLICK Example for AB CompactLogix</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><a name="kanchor14"></a>CLICK Example for <a name="kanchor15"></a>AB&#160;CompactLogix</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL235</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p>CLICK PLCs now have two ways to connect to AB CompactLogix PLCs as EtherNet/IP Adapter. Select the link below depending on your application and Studio5000 Software version:</p>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml"><a href="#Studio_5000_Setup_(ONLY_Version_36_with_a_5x80_Controller)" xmlns="http://www.w3.org/1999/xhtml">Studio 5000 Setup (ONLY Version 36 with a 5x80 Controller)</a> </p>
+                </li>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml"><a href="#Studio5000_Setup_(NOT_Version_36_or_NOT_5x80_Controller)" xmlns="http://www.w3.org/1999/xhtml">Studio 5000 Setup (All versions before or after Version 36 or NOT a 5x80 Controller)</a> </p>
+                </li>
+            </ul>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">This table can help you determine the best option:</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">
+                <img src="Resources/Images/Version_Usage.png" xmlns="http://www.w3.org/1999/xhtml" style="min-width: 300px;min-height: auto;height: auto;width: 75%;max-width: 611px;max-height: auto;" />
+            </p>
+            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml"><a name="Studio_5000_Setup_(ONLY_Version_36_with_a_5x80_Controller)" xmlns="http://www.w3.org/1999/xhtml"></a>Studio 5000 Setup (ONLY Version 36 with a 5x80 Controller)</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">In this example, we are utilizing the EDS file that can be exported from the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">EtherNet/IP Adapter setup</a>. </p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">1</span>We will map multiple data blocks of different data types into the CLICK EtherNet/IP Adapter setup.</p>
+            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml">CLICK Setup:
+</h2>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td class="td_p">
+                            <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> If the Imported data types have Nicknames the imported tags with use the Nickname as the tag name, otherwise they will import as the fixed address.</p>
+                        </td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Input Blocks</h3>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_Input.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Output Blocks</h3>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_Output.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2</span> Click the <b xmlns="http://www.w3.org/1999/xhtml">Export EDS File</b> button after configuring the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> and save the file to a location it can be accessed by the Studio5000 software.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span> Use the EDS import tool in the Studio5000 software to add the CLICK EDS file.  Consult the help file documentation in Studio5000 for more information on how this is accomplished.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Controller Organizer</b> on the left-hand side, right click on the <b xmlns="http://www.w3.org/1999/xhtml">Ethernet</b> option and choose <b xmlns="http://www.w3.org/1999/xhtml">New Module</b>.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK Example 1 Controller Organizer.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">5</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Select Module Type</b> window shown below, start typing the name <b xmlns="http://www.w3.org/1999/xhtml">CLICK</b> or the name of the EDS file to search for existing files.  By default, the name of the EDS file will be the part number of the CLICK PLC you are using, and the Description will start with “CLICK” so you can search for either.  Select this module as shown below and click <b xmlns="http://www.w3.org/1999/xhtml">Create</b>.</p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td class="td_p">
+                            <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> If you change the name of the file from the part number, you will get a "key" compatibility error when trying to connect to the CLICK&#160;PLC. to remove this error, leave the EDS filename as is when exporting or disable the key compatibility checking for the device.</p>
+                        </td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example3-BT.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">6</span> In the <b xmlns="http://www.w3.org/1999/xhtml">New Module</b> window, type in a unique name and the IP address of the CLICK PLC.  Click <b xmlns="http://www.w3.org/1999/xhtml">OK</b> to create this device and download the project to the PLC.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example4.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Two arrays, one Input Array and one Output Array are created from the New Module configuration.  In this example:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>CLICK_Machine1:I.Data</li>
+                <li>CLICK_Machine1:O.Data</li>
+            </ul>
+            <p>&#160;</p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td class="td_p">
+                            <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> If the Imported data types have Nicknames the imported tags with use the Nickname as the tag name, otherwise they will import as the fixed address. See example below: myDS1 is a nickname and DS2 is the fixed address since no nickname was assigned.</p>
+                        </td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Input Tags</h3>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_EDS_v36_1_792x708.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 792;height: 708;" />
+            </p>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Output Tags</h3>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_EDS_v36_2_791x703.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 791;height: 703;" />
+            </p>
+            <p>You should now be able to read data from the Allen-Bradley 5x80 Controller in the CLICK and write data from the CLICK to the Allen-Bradley 5x80 Controller.</p>
+            <h2 colspan="2" xmlns="http://www.w3.org/1999/xhtml"><a name="Studio5000_Setup_(NOT_Version_36_or_NOT_5x80_Controller)" xmlns="http://www.w3.org/1999/xhtml"></a>Studio 5000 Setup (All versions before or after Version 36 or NOT a 5x80 Controller)</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">In all the I/O Messaging examples below, we are utilizing the EDS file that can be exported from the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">EtherNet/IP Adapter setup</a>, but this is not required.  In the Studio5000 software, you can create a Generic Device and use the parameters outlined in the <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Overview</a> topic of the CLICK help file.  Using this information in conjunction with the examples below should provide the required information for successful connection.</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li><a href="#I/OMessaging:_Single_Data_Block_Example" xmlns="http://www.w3.org/1999/xhtml">I/O Messaging: Single Data Block Example</a>
+                </li>
+                <li><a href="#I/OMessaging:_Multiple_Data_Block_Example" xmlns="http://www.w3.org/1999/xhtml">I/O Messaging: Multiple Data Block Example</a>
+                </li>
+                <li><a href="#Explicit_Messaging_Example" xmlns="http://www.w3.org/1999/xhtml">Explicit Messaging Example</a>
+                </li>
+            </ul>
+            <h2 xmlns="">&#160;</h2>
+            <h2 xmlns=""><a name="I/OMessaging:_Single_Data_Block_Example" xmlns="http://www.w3.org/1999/xhtml"></a>I/O&#160;Messaging: Single Data Block Example</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">In this example, we will create only 1 user block of memory for Inputs and 1 user block of memory for Outputs in the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> to read from and write to in the AB CompactLogix PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">CLICK Setup:</p>
+            <h3 style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">Input Block</h3>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example1_PLCSetup_BlockExample.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 100%;max-height: auto;mc-float: center;" />
+            </p>
+            <h3 style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">Output Block</h3>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example1_PLCSetup_BlockExample2.PNG" xmlns="http://www.w3.org/1999/xhtml" style="mc-float: center;max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">1</span> Click the <b xmlns="http://www.w3.org/1999/xhtml">Export EDS File</b> button after configuring the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> and save the file to a location it can be accessed by the Studio5000 software.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2</span> Use the EDS import tool in the Studio5000 software to add the CLICK EDS file.  Consult the help file documentation in Studio5000 for more information on how this is accomplished.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Controller Organizer</b> on the left-hand side, right click on the <b xmlns="http://www.w3.org/1999/xhtml">Ethernet</b> option and choose <b xmlns="http://www.w3.org/1999/xhtml">New Module</b>.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK Example 1 Controller Organizer.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Select Module Type</b> window shown below, start typing the name <b xmlns="http://www.w3.org/1999/xhtml">CLICK</b> or the name of the EDS file to search for existing files.  By default, the name of the EDS file will be the part number of the CLICK PLC you are using, and the Description will start with “CLICK” so you can search for either.  Select this module as shown below and click <b xmlns="http://www.w3.org/1999/xhtml">Create</b>.</p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td class="td_p">
+                            <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> If you change the name of the file from the part number, you will get a "key" compatibility error when trying to connect to the CLICK&#160;PLC. to remove this error, leave the EDS filename as is when exporting or disable the key compatibility checking for the device.</p>
+                        </td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                        <td class="td_p">&#160;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example3-BT.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">5</span> In the <b xmlns="http://www.w3.org/1999/xhtml">New Module</b> window, type in a unique name and the IP address of the CLICK PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">6</span> Click the <b xmlns="http://www.w3.org/1999/xhtml">Change…</b> button at the bottom of this window.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample1.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">7</span> Click on the data type option on the right-hand side and pick the data type that matches the CLICK PLC Adapter configuration.  In this example, we will choose INT since we configured the CLICK PLC with the DS data type (Integer 16).</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample2-BT.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">Notice that the Size changes based upon the data type selected.  The Size value indicates the number of elements not bytes (unless you have configured a byte data type).</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample3-BT.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">Click <b>OK</b> and then <b>Yes</b> in the subsequent warning dialog box.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample4.PNG" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">8</span> In the <b xmlns="http://www.w3.org/1999/xhtml">New Module</b> dialog box, click <b xmlns="http://www.w3.org/1999/xhtml">OK</b> and then <b xmlns="http://www.w3.org/1999/xhtml">Close</b> in the <b xmlns="http://www.w3.org/1999/xhtml">Select Module Type</b> dialog box. Send the project to the PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">9</span> Open the <b xmlns="http://www.w3.org/1999/xhtml">Controller&#160;Tags</b> window and expand the arrays that were created by the New Module dialog setup. You should now see the values in the PLC&#160;for the input tags and should be able to write values from the CompactLogix to the Output tags of the CLICK&#160;PLC.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample51.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample_DataView1.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_BlockExample61.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_BlockExample_DataView2.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <h2 xmlns=""><a name="I/OMessaging:_Multiple_Data_Block_Example" xmlns="http://www.w3.org/1999/xhtml"></a>I/O&#160;Messaging: Multiple Data Block Example</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">In this example, we will map multiple data blocks of different data types into the CLICK EtherNet/IP Adapter setup.  To simplify the code in the CompactLogix, we will create two User-Defined Data types that match the formats of the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> to read from and write to in the AB CompactLogix PLC
+</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">CLICK Setup:
+</p>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Input Blocks</h3>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_Example1_PLCSetup_Complex.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <h3 colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">Output Blocks</h3>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_Example1_PLCSetup_Complex2.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">1</span> Create two User-Defined data types in the CompactLogix that match the CLICK setup shown above.</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>CLICK_Input</li>
+                <li>CLICK_Output</li>
+            </ul>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example13.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example21.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2</span> In the CLICK software, click the <b xmlns="http://www.w3.org/1999/xhtml">Export EDS File</b> button after configuring the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> and save the file to a location it can be accessed by the Studio5000 software.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span> Use the EDS import tool in the Studio5000 software to add the CLICK EDS file.  Consult the help file documentation in Studio5000 for more information on how this is accomplished.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Controller Organizer</b> on the left-hand side, right click on the <b xmlns="http://www.w3.org/1999/xhtml">Ethernet</b> option and choose <b xmlns="http://www.w3.org/1999/xhtml">New Module</b>.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK Example 1 Controller Organizer.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">5</span> In the <b xmlns="http://www.w3.org/1999/xhtml">Select Module Type</b> window shown below, start typing the name <b xmlns="http://www.w3.org/1999/xhtml">CLICK</b> or the name of the EDS file to search for existing files.  By default, the name of the EDS file will be the part number of the CLICK PLC you are using, and the Description will start with “CLICK” so you can search for either.  Select this module as shown below and click <b xmlns="http://www.w3.org/1999/xhtml">Create</b>.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If you change the name of the file from the part number, you will get a “key” compatibility error when trying to connect to the CLICK PLC.  To remove this error, leave the EDS filename as is when exporting or disable the key compatibility checking for the device.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example3-BT.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">6</span> In the <b xmlns="http://www.w3.org/1999/xhtml">New Module</b> window, type in a unique name and the IP address of the CLICK PLC.  Click <b xmlns="http://www.w3.org/1999/xhtml">OK</b> to create this device and download the project to the PLC.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_Example4.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Two arrays, one Input Array and one Output Array are created from the New Module configuration.  In this example:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>CLICK_Machine1:I.Data</li>
+                <li>CLICK_Machine1:O.Data</li>
+            </ul>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example61.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">7</span> Use the <b xmlns="http://www.w3.org/1999/xhtml">CLICK_Input</b> and <b xmlns="http://www.w3.org/1999/xhtml">CLICK_Output</b> User-Defined data types created earlier to create structure tags <b xmlns="http://www.w3.org/1999/xhtml">CLICK_InData</b> and <b xmlns="http://www.w3.org/1999/xhtml">CLICK_OutData</b>.  In the two Copy instructions below, copy the Input Array into a CLICK_InData and copy CLICK_OutData to the Output Array going to the CLICK PLC.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example81.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">You should now see the data from the PLC addresses of the CLICK <b>EtherNet/IP Adapter</b> Input setup in the <b>CLICK_InData</b> structure tag.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example91.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example101.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICKDataViewInputData.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">You should now be able to write data from the <b>CLICK_OutData</b> structure to the PLC addresses in the CLICK EtherNet/IP Adapter Output tab.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example111.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_Example121.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICKDataViewOutputData.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p><a name="Explicit_Messaging_Example" xmlns="http://www.w3.org/1999/xhtml"></a>Explicit Messaging Example</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">For communicating to the CLICK PLC with EtherNet/IP Explicit Messaging no EDS file import is required, nor do you need to add a module to the I/O Configuration in the Controller Organizer in Studio5000.  Once the CLICK <a href="233.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">EtherNet/IP Adapter setup</a> is completed and Data Blocks are created, you simple  use MSG instructions in the CompactLogix configured for the CIP Generic Message Type. </p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">
+Refer back to the <a href="#I/OMessaging:_Single_Data_Block_Example" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">I/O Messaging Single Data Block</a> and <a href="#I/OMessaging:_Multiple_Data_Block_Example" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">I/O Messaging Multiple Data Block</a> examples above.
+</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">A separate MSG instruction is needed for each Data Block and for Input Data and Output Data.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">An example of reading and writing using Connection 1 is explained below:</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CLICK_EMSG_Example11.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p>Read Instruction</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">For reading the Connection 1 Input data, fill in the parameters as shown below.  The destination array can be created within the instruction by clicking the <b>New Tag</b> button.  The array size should be large enough to receive all blocks in the connection. Note also that it should match the data type of the CLICK PLC.  In this case, the CLICK EtherNet/IP Adapter setup has been configured for the DS data type, so an INT array should be used.</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_EMSG_Example2.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Under the <b xmlns="http://www.w3.org/1999/xhtml">Communications</b> tab configure the <b xmlns="http://www.w3.org/1999/xhtml">Path</b>.  The Path will differ slightly for different CompactLogix and ControLogix PLCs.  Consult the documentation for details on the exact PLC you are using.  The target IP address, in all cases, is the IP address of the CLICK PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Use this same Path setup for all the MSG instructions you are using in this project.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CLICK_EMSG_Example3.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Write Instruction</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml">Configure the Write MSG instruction for Connection 1 Output data as shown below.  Again, the destination array can be created within the instruction by selecting the New Tag button.  We are using DS data type in the CLICK setup here as well, so an INT array should be used to send data in this instruction.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Set the <b>Path</b> under the <b>Communication</b> tab just as you did with the previous MSG instruction.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK_EMSG_Example4.PNG" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:
+</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="233.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP Adapter Setup</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="234.htm" xmlns="http://www.w3.org/1999/xhtml">Communications Ethernet</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="236.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for Productivity Series PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="237.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for the Do-more PLC</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="241.htm" xmlns="http://www.w3.org/1999/xhtml">General &amp;&#160;Extended Status EtherNet IP&#160;Error Codes</a>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-searchable="False" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Managing Retentive Memory</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 144px;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">Managing Retentive Memory<a name="kanchor79"></a></td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL251</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">The <b xmlns="http://www.w3.org/1999/xhtml">Software Setup</b><b xmlns="http://www.w3.org/1999/xhtml">&gt;</b><b xmlns="http://www.w3.org/1999/xhtml">System</b> menu offers the options to <b xmlns="http://www.w3.org/1999/xhtml">Display the Duplicated Coil Warning Message</b> and <b xmlns="http://www.w3.org/1999/xhtml">Maintain Retentive values in the Project File</b>. </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL251 Software Setup System.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 74px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="notepad1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </td>
+                        <td>
+                            <p xmlns="" class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b>&#160;These options are  software settings, not project settings.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Display the Duplicated Coil Warning Message</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">Whenever an OUT instruction is placed in the ladder and the <b xmlns="http://www.w3.org/1999/xhtml">OK</b> button is clicked, a validation is performed to warn the user if a memory address is used in another OUT instruction. Having two OUT instructions to the same address is typically a poor practice, since only the last OUT&#160;scanned will actually control the output. This option allows  the user to suppress this warning.</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CL251 WarningMessage.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Selecting the <b xmlns="http://www.w3.org/1999/xhtml">Don't display this dialog next time</b> checkbox is the same as disabling the feature in Software Setup: System.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Even with the <b xmlns="http://www.w3.org/1999/xhtml">Display the Duplicated Coil Warning Message</b>  option disabled, the Compiler will always report this warning.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CL251 CompileWarning.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Maintain Retentive Values in the Project File</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">Normally, a project file only includes Initial Values for registers. With this option enabled. the software will automatically prompt the user during Project transfers to either Retrieve or Write values of Retentive registers. By using this option and <b xmlns="http://www.w3.org/1999/xhtml">Read Project from PLC</b>, the project file will contain an exact copy of the PLC:&#160;User Program, Parameter, Project File, and Retentive Registers. In this way it is easy to duplicate an operating PLC without needing to manually initialize memory values.</p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 74px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="notepad1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </td>
+                        <td>
+                            <p xmlns="" class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b>&#160;&#160;If the project file was excluded during the previous "Write Project into PLC", the <b xmlns="http://www.w3.org/1999/xhtml">Read Project from PLC</b> cannot be performed, and this Retentive feature is also unavailable. The other feature, <b xmlns="http://www.w3.org/1999/xhtml">Read Data from PLC</b>, can still be used to retrieve the current register values.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p xmlns="">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If you don't want to see the Upload and Download confirmations, click the checkbox on this dialog. These confirmations will be restored each time the programming software is started.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL251 Upload Current Retentive.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">&#160;</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL251 Download retentive values.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Defaults</h3>
+            <p xmlns="">In a default project, these Address Types are set as Retentive:&#160;C, CT, DS, DD, DH, DF, CTD, TXT. </p>
+            <p xmlns="">The default behavior when <b xmlns="http://www.w3.org/1999/xhtml">Write Project into PLC</b> is that no memory values are sent. </p>
+            <p xmlns="">The default behavior when <b xmlns="http://www.w3.org/1999/xhtml">Read Project from PLC</b> is that no memory values are retrieved. </p>
+            <p xmlns="">Any Stop to Run transition will cause addresses configured for Initial Values to be updated.</p>
+            <table style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 74px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="notepad1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </td>
+                        <td>
+                            <p xmlns="" class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Notes:</b>&#160;These options are  software settings, not project settings. The Retentive and Initial Value settings for each Address can be edited in the Address Picker.&#160;This feature is not available in combination with the Project Loader.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">&#160;</h3>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:
+</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="072.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">Address Picker: Edit Mode</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="087.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">Read Data From PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="088.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">Write Data into PLC</a>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

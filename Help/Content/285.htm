@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="" data-mc-file-tags="Topic Status.Final Review - Delivered">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Provisioning the PLC</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Provisioning the PLC</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL285</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Provisioning a New CLICK&#160;PLUS PLC</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">Users can download the latest CLICK PLUS Provisioning App from the Apple or Google play store and then use Bluetooth to connect and provision the PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">A new CLICK PLUS  C2-02CPU, C2-02CPU-2, C2-03CPU, or C2-03CPU-2 has Bluetooth disabled by default. This allows the user with the CLICK PLUS Provisioning App to change the needed Wi-Fi or network settings after they have been enabled in the project. Once the Wi-Fi is configured to connect to the local network access point, the user can then connect the CLICK Programming software via Wi-Fi to load and edit the project. The Temporary settings used for provisioning are stored in temporary memory and will be overwritten by the project settings when written to the PLC.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The Ethernet RJ45 hardwired port can also be configured during the PLC provisioning if needed.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Provisioning123_812x298.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 812;height: 298;" />&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup &amp; Provisioning via Bluetooth</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The  C2-02CPU,  orC2-02CPU-2, C2-03CPU, and C2-03CPU-2 can be configured over a Bluetooth, Ethernet or microUSB connection. You will need a Windows® PC or a mobile device (iOS or Android) and an appropriate antenna or cable for the method you choose. Bluetooth and/or WLAN must be enable in CLICK&#160;Programming Software first</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">PREPARE A MOBILE DEVICE FOR CONNECTION</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml">Install the CLICK PLUS Provisioning App from the Apple App Store or Google Play Store (CLICK PLUS Provisioning, published by AutomationDirect).</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Finding the New PLC</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">Note: For iOS and Android users, ensure that Bluetooth is enabled on your phone or mobile device. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Connect to the CPU as follows:</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml">
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="1">Connect to CPU through USB&#160;or Ethernet and set up project password and transfer to CPU</li>
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="2">Enable Bluetooth through Home -&gt; CPU -&gt; <a href="283.htm" xmlns="http://www.w3.org/1999/xhtml">Bluetooth Port Setup</a></li>
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="3">Open the CLICK PLUS Provisioning App.</li>
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="4">Tap <i>Start</i> in the App.</li>
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="5">Press the pairing button on the CLICK&#160;PLUS&#160;CPU for 1 second. The BT (Bluetooth) LED will start flashing.</li>
+                <li style="margin-left: -20px;" class="p-Bullets1" xmlns="http://www.w3.org/1999/xhtml" value="6">If the App detects that the PLC&#160;is factory new and the network settings have not been configured, it will prompt you to Tap Next to begin the provisioning process.</li>
+            </ol>
+            <p xmlns="">&#160;</p>
+            <p style="margin-left: -20px;">
+                <img src="Resources/Images/STARTSCREEN1_400x353.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 400;height: 353;" />&#160;<img src="Resources/Images/CLICKPLUS_Found_165x353.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 165;height: 353;" /><img src="Resources/Images/New_CLICKPLUS_detected_165x353.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 165;height: 353;" /></p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">NAME THE CPU<br xmlns="http://www.w3.org/1999/xhtml" /></h2>
+            <p xmlns="">&#160;</p>
+            <ol start="6" xmlns="http://www.w3.org/1999/xhtml">
+                <li style="margin-left: -20px;" value="6">You will be requested to assign a name to the PLC. This name will be used to identify it on the network when using the programming software connection Ethernet browse tool. It is good practice to choose a unique name if there are other CLICK&#160;PLCs on the network. Enter a name for the PLC and tap next.</li>
+            </ol>
+            <p style="margin-left: -20px;" xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="">
+                <img src="Resources/Images/Name_your_PLC_165x353.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 165;height: 353;" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Select the Initial Communication Settings</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml" data-mc-continue="true">
+                <li xmlns="http://www.w3.org/1999/xhtml" value="7">You have the option of choosing which network port to provision. This will configure the CLICK&#160;PLUS&#160;network address settings for the purpose of connecting the programming software. If you choose the Wireless Access option, you will need to ensure that your access point is on and that the CLICK&#160;PLUS is within range of the wireless access point. </li>
+            </ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Choose_connect_type_161x348.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 161;height: 348;" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Choosing the Wireless Access Point Option</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">For this option you will need an active Network Access point available within range of the CLICK&#160;PLUS&#160;PLC, and know the password to allow the PLC&#160;to connect to the Network and you must first enable WLAN in <a href="271.htm" xmlns="http://www.w3.org/1999/xhtml">WLAN&#160;Port Settings</a></p>
+            <ol xmlns="http://www.w3.org/1999/xhtml" data-mc-continue="true">
+                <li xmlns="http://www.w3.org/1999/xhtml" value="8">The CLICK&#160;PLC&#160;will scan for any access point within range and then display all access points that are available and then display them for you to choose (you may need to scroll the list to find the desired Access Point). Select an Access Point and type in the correct password that the PLC will need to connect. If the incorrect password is entered, you will be prompted to correct it after the CLICK&#160;PLUS&#160;fails to connect. </li>
+            </ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Scanning_154x333.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 154;height: 333;" />
+                <img src="Resources/Images/Choose-Accesspoint_149x321.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 149;height: 321;" />&#160;</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml" data-mc-continue="true">
+                <li value="9">Once the PLC has successfully  connected to the Network access point, you will have the option of choosing which IP address configuration  to use. You will need to make sure that the PLC is within range of the wireless access point.<ol xmlns="http://www.w3.org/1999/xhtml" data-mc-continue="true"><li value="1">Use DHCP:&#160;Choose this option if you know that the Network Access Point is configured to automatically assign a proper network IP&#160;address to the CLICK&#160;PLUS PLC. This is often the simplest way to connect when a valid IP&#160;address is not known. Tap Next to continue.</li><li value="2">Use Default Fixed Address:&#160;The CLICK&#160;PLUS&#160;wireless LAN default IP&#160;address is 192.168.0.11. This can be selected if it is a valid IP&#160;address for your wireless network. Tap Next to continue.</li><li value="3">Use the following IP&#160;address:&#160;Choose this option if you need to input a valid IP&#160;address for your network. Tap Next to continue.</li></ol></li>
+            </ol>
+            <p xmlns="">
+                <img src="Resources/Images/Select_IP_Config_149x321.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 149;height: 321;" />
+                <img src="Resources/Images/Use_Default_IP_148x319.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 148;height: 319;" />
+                <img src="Resources/Images/Use_Following_IP_148x319.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 148;height: 319;" />
+            </p>
+            <ol xmlns="http://www.w3.org/1999/xhtml" data-mc-continue="true">
+                <li xmlns="http://www.w3.org/1999/xhtml" value="10">The CLICK&#160;PLUS will connect to the access point and exchange configuration information. If the settings are correct, The App will show the Completion screen and the network settings of the CLICK&#160;PLUS&#160;can be viewed. The CLICK&#160;PLUS&#160;WLAN LED will also be ON.  The PLC&#160;is now connected to the network and accessible to PC's running the CLICK&#160;Programming software and connected to the same network. </li>
+            </ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/PLC_is_Connected_151x326.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 151;height: 326;" />
+                <img src="Resources/Images/Complete_150x324.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 150;height: 324;" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Choosing the Wired Port1 Option</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">Choose this option when connecting to Port1 RJ45 Ethernet port. Tap Next to continue. </p>
+            <ol xmlns="http://www.w3.org/1999/xhtml" start="1">
+                <li xmlns="http://www.w3.org/1999/xhtml" value="1">Use DHCP:&#160;Choose this option when connecting though a Network router and you know  the router is configured to automatically assign a proper network IP&#160;address to the CLICK&#160;PLC. This is often the simplest way to connect when a valid IP&#160;address is not known. Tap Next to continue. </li>
+                <li xmlns="http://www.w3.org/1999/xhtml" value="2">Use Default Fixed Address:&#160;The CLICK&#160;PLUS&#160;Port1 default IP&#160;address is 192.168.0.10. This can be selected if it is a valid IP&#160;address for your network. Tap Next to continue. </li>
+                <li xmlns="http://www.w3.org/1999/xhtml" value="3">Use the following IP&#160;address:&#160;Choose this option if you need to input a valid IP&#160;address for your network. Tap Next to continue. </li>
+            </ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Port1_Select_IP_146x315.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 146;height: 315;" />
+                <img src="Resources/Images/Port1_Complete_146x313.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 146;height: 313;" />
+            </p>
+        </div>
+    </body>
+</html>

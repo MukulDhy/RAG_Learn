@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>C0-4AD2DA-2 Settings</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">C0-4AD2DA-2 Settings</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor85"></a>Topic: CL100</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The 
+						C0-4AD2DA-2 Setting dialog supports the customer to set up the scaling for the analog input and output values and assign DF memory addresses to store the scaled analog input values and analog output values before scaling.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="c04ad2da2 window.png" alt="" style="border: none;" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="graphic warning.gif" alt="" style="border: none;" width="395" height="22" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">1</span><span style="font-weight: bold;"> Input Range:</span> 
+						Enter the maximum and minimum Input Range to scale.</p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Scale Range:</span> 
+						Enter the maximum and minimum scale values.<br xmlns="http://www.w3.org/1999/xhtml" /><br xmlns="http://www.w3.org/1999/xhtml" />In the following example, the <b>Input Range</b> is set to 4.0 - 8.0V and the <b>Scale Range</b> is set to 0.0 - 100.0. This means input voltage 4.0V will be converted to 0.0 and input voltage 8.0V will be converted to 100.0.  When input voltage is 6.0V, 50.0 will be put in DF1.</p>
+            <p style="margin-left: 16px;text-indent: -16px;text-align: center;margin-top: 9px;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="scale range 100 2_510x288.png" style="width: 510;height: 288;" />
+            </p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">3</span><span style="font-weight: bold;"> Enable Range Limiter:</span> 
+						By checking this option, the analog values that are outside of the <b>Input Range</b> will be adjusted to the minimum or maximum value of the <b>Scale Range</b>.<br /><br />1. Enable Range Limiter is ON.</p>
+            <p style="margin-left: 16px;text-indent: -16px;margin-top: 9px;text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="enable range 100 3 1_510x319.png" style="width: 510;height: 319;" />
+            </p>
+            <p style="margin-left: 16px;" xmlns="http://www.w3.org/1999/xhtml">2. Enable Range Limiter is OFF.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="enable range 100 3 2_510x313.png" style="width: 510;height: 313;" />
+            </p>
+            <p style="text-indent: -16px;margin-left: 16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">4</span><span style="font-weight: bold;">Continuous Address:</span> If you want to assign Continuous DF&#160;Memory Addresses to store the scaled analog input values and the analog output values before scaling, please check this option. In this case, you just need to assign a DF memory address to Input CH1. The DF memory address will be the starting address of those continuous DF memory addresses.</p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">5</span><span style="font-weight: bold;"> Data Register	:</span> Enter a DF memory address to store the scaled analog value. In the CLICK&#160;PLC, all analog data are handled as floating point numbers. So you can select only DF memory addresses.</p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">6 </span><span style="font-weight: bold;">Resolution:</span> The CLICK Software automatically calculates the resolution of the scaled data according to the bit resolution of the analog input and the scaling setup, and displays the value here.</p>
+            <p style="margin-left: 16px; text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">7</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Data Register:</span> 
+						Enter a DF memory address that stores the analog output value before scaling. In the CLICK&#160;PLC, all analog data are handled as floating point numbers. Therefore, you can only select DF&#160;memory addresses.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">8</span><span style="font-weight: bold;">Resolution:</span> The CLICK software automatically calculates the resolution of the analog data before scaling according to the bit resolution of the analog output and the scaling setup, and displays the value here.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">9</span><span style="font-weight: bold;">Scale Range:</span> Enter 
+						the maximum and minimum scaled values.</p>
+            <p style="margin-left: 18px;" xmlns="http://www.w3.org/1999/xhtml">In the following example, the <b>Scale Range</b> is set to 0.0 - 100.0 and the <b>Output Range</b> is set to 4.0 - 8.0V. This means analog value 0.0 in DF1 memory address will be converted to output voltage 4.0V and analog value 100.0 will be converted to output voltage 8.0V. When the DF1 memory address has analog value 50.0, it will be converted to output voltage 6.0V.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="scale range 100 9_510x278.png" style="width: 510;height: 278;" />
+            </p>
+            <p class="NumberedHang" style="text-indent: -0.26in;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">10</span><span style="font-weight: bold;">Enable Range Limiter:</span> 
+							By checking. this option, the analog values that are out side 
+							of the <b>Scale Range</b> 
+						will be adjusted to the minimum or maximum value of the <span style="font-weight: bold;">Scale Range</span>.</p>
+            <p style="margin-left: 26px;" xmlns="http://www.w3.org/1999/xhtml">1. <span style="font-weight: bold;">Enable Range Limiter</span> 
+						is <span style="font-weight: bold;">ON</span>.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="enable range 100 10 1_510x313.png" style="width: 510;height: 313;" />
+            </p>
+            <p style="margin-left: 26px;" xmlns="http://www.w3.org/1999/xhtml">2. <b>Enable Range Limiter is OFF.</b></p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="enable range 100 10 2_510x310.png" style="width: 510;height: 310;" />
+            </p>
+            <p style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">11</span><span style="font-weight: bold;"> Output Range:</span> Enter the maximum and minimum Output Range after scaling.</p>
+            <p style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">12</span><span style="font-weight: bold;"> X bit Addresses:</span> 
+						You can use these X bit addresses to monitor the status of this analog combo I/O module.</p>
+        </div>
+    </body>
+</html>

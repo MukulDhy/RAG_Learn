@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="" data-mc-file-tags="Topic Status.Final Review - Delivered">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Securing Your CLICK PLC and Project</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Securing Your CLICK PLC and Project</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL288</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">Admin User Account</h2>
+        <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">A single <a href="279.htm" xmlns="http://www.w3.org/1999/xhtml">Admin User Account</a> is available on all CLICK PLUS PLCs (and CLICK Ethernet PLCs)  with firmware version 3.0 or later.For The  C2-02CPU, C2-02CPU-2, C2-03CPU, and C2-03CPU-2 PLCs disabling the password is not allowed . See <a href="345.htm" xmlns="http://www.w3.org/1999/xhtml">Cybersecurity Requirements</a> for more info. </p>
+        <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml"> If not disabled, each time the CLICK programming software is connected to a PLC, the Admin User Account password will be required to read or write project data to the PLC. The password is stored with the software project and can be edited using the programming software.</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/PW_Setup.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">This prevents against unauthorized access to the PLC operation and project.</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">If configured, whenever the Click Programming software is connected to the CLICK PLC, the Admin Password is required.  A factory new PLC that does not contain a project will have a default Admin Password (“click”).</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/Login.png" />
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">To return the CLICK PLC back to the original settings, see help topic <a href="099.htm">Reset Factory Defaults</a>.</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">Once the password has been entered, the user has unrestricted access to the PLC.</p>
+        <h2 xmlns="http://www.w3.org/1999/xhtml">Protecting Intellectual Property</h2>
+        <p xmlns="http://www.w3.org/1999/xhtml">If the original developer (OEM) does not want anyone else (the end customer) to have access to their intellectual property (PLC project), they can choose to not write the project file into the PLC. Simply uncheck the <a href="090.htm">Write Project File into PLC</a> during the download process.</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/Write Project File into PLC-1.png" />
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">Whenever someone connects to the PLC and enters the correct password, they will get this message:</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/No Project.png" />
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">The user will not be able to use <b>Status Monitor</b> with the PLC or <b>Read Project from PLC</b>, but they will have access to perform all other online functions.</p>
+        <h2 xmlns="http://www.w3.org/1999/xhtml">Securing Open Ports</h2>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">Modbus TCP Port 502</h3>
+        <p xmlns="http://www.w3.org/1999/xhtml">If not being used, Modbus TCP ports on Port 1 and WLAN can be disabled.</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><a href="268.htm">Modbus TCP Setu</a>p</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/Enable Modbus Server.png" />
+        </p>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">IP Address and PING Response</h3>
+        <p xmlns="http://www.w3.org/1999/xhtml">The IP Address for Port 1 and WLAN can be changed from the <a href="200.htm">Connect to PLC window</a>.  To disable this feature, deselect the <b>Enable IP Address to be changed from Software</b> setting in the <a href="211.htm">Com Port Setup Details window for Port 1 Ethernet</a> or <a href="271.htm">WLAN Port</a>.</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">Ping response can also be disabled by deselecting <b>Enable Response to Ping from other devices</b> setting in the <a href="211.htm">Com Port Setup Details window for Port 1 Ethernet</a> or <a href="271.htm">WLAN Port</a>.</p>
+        <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Resources/Images/Enable IP Address edits and Ping Response.png" />
+        </p>
+    </body>
+</html>

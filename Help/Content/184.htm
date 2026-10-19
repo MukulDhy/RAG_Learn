@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Copy/Search" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Copy Instruction: Block Copy</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Copy Instruction: Block Copy</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL184</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Block Copy Definition</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">Block</span><span style="font-weight: bold;">Copy</span> instruction is used to copy data or text from its <span style="font-weight: bold;">Source</span> registers to specified sequential <span style="font-weight: bold;">Destination</span> registers. The <span style="font-weight: bold;">Source</span> location of the data or text is identified by its beginning and ending <span style="font-weight: bold;">Memory</span><span style="font-weight: bold;">Addresses</span>, and the <span style="font-weight: bold;">Destination</span> registers are identified by the <span style="font-weight: bold;">Memory Address</span> of the first register in the sequence.</p>
+            <table style="margin-left: auto;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td colspan="11" class="BodyD-Column1-Body1">Destination</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td colspan="2" style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Bits</p>
+                        </td>
+                        <td colspan="9" style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Registers</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td class="BodyE-Column1-Body1">&#160;</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Y</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">C</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DS</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DH</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DF</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">YD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">TD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">CTD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">TXT</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td rowspan="11" class="BodyE-Column1-Body1">Source</td>
+                        <td rowspan="2" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Bits</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">X, Y, T, CT, SC</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">C</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td rowspan="7" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Registers</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DS</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DH</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">DF</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">XD, YD, TD, CTD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">SD</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">TXT</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">●</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td rowspan="2" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Constant</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">Decimal, Hex</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">String, ASCII Code</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                        <td style="text-align: center;" class="BodyA-Column1-Body1">
+                            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/Copy Block Number_542x349.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 542;height: 349;" />
+            </p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="checks rg.gif" style="border: none;" alt="" width="354" height="27" border="0" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">1</span><span style="font-weight: bold;"> Copy Type:</span> Select <span style="font-weight: bold;">Block Copy</span> to copy multiple registers from their <span style="font-weight: bold;">Source</span> locations to <span style="font-weight: bold;">Destination</span> locations.</p>
+            <p class="NumberedHang" style="text-indent: -0.26in;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2a</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Source:</span> Identify the beginning <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Source Memory Address</span>.</p>
+            <p class="NumberedHang" style="text-indent: -0.26in;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2b</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Source:</span> Identify the ending <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Source Memory Address</span>. The ending <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Source Memory Address</span> must be the same type as the beginning <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Source Memory Address</span>.</p>
+            <p class="NumberedHang" style="text-indent: -0.26in;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3a </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Destination:</span> Identify the beginning <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Destination Memory Address</span>. The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Destination</span> address must accommodate the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Data Type</span> of the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Source</span> entry.</p>
+            <p class="NumberedHang" style="text-indent: -0.26in;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span><span style="font-weight: bold;font-size: 14pt;color: #f20000;" xmlns="http://www.w3.org/1999/xhtml">b</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Destination:</span> The identity of the ending <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Destination Memory Address</span> will be calculated by the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK</span> programming software and will be visible in this box.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> One:</span> This <b>Option</b> field is used with certain combinations of <b>Source</b> and <b>Destination Data Types</b>. There is only a single Option available in <b>Block&#160;Copy</b> mode.</p>
+            <p style="font-weight: normal;text-align: left;" xmlns="http://www.w3.org/1999/xhtml">When the Source is Text and the Destination is Numeric:</p>
+            <p style="font-weight: normal;text-align: left;" xmlns="http://www.w3.org/1999/xhtml">
+                <br xmlns="http://www.w3.org/1999/xhtml" />
+                <img src="Resources/Images/CL173 Copy Single Option 3-BT1.png" xmlns="http://www.w3.org/1999/xhtml" />
+                <br xmlns="http://www.w3.org/1999/xhtml" />
+                <br xmlns="http://www.w3.org/1999/xhtml" /><b xmlns="http://www.w3.org/1999/xhtml">Source</b>: TXT1-TXT3 (The values are ‘1’, ‘2’, ‘3’)<br xmlns="http://www.w3.org/1999/xhtml" /><b xmlns="http://www.w3.org/1999/xhtml">Destination</b>: DS1-DS3<br xmlns="http://www.w3.org/1999/xhtml" />The option ‘<b xmlns="http://www.w3.org/1999/xhtml">Copy Character Value</b>’ is selected: DS1=1, DS2=2, DS3=3<br xmlns="http://www.w3.org/1999/xhtml" />The option ‘<b xmlns="http://www.w3.org/1999/xhtml">Copy ASCII Code Value</b>’ is selected: DS1=49 (31h), DS2=50 (32h), DS3=51 (33h)</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">5</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> One Shot:</span> Choose One Shot to execute the Block Copy instruction one time when the enabling rung makes an OFF-to-ON transition. If One Shot is selected, the One Shot symbol will appear adjacent to the Coil in the Ladder Editor.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">6</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Termination Code:</span>  This option is supported by <b xmlns="http://www.w3.org/1999/xhtml">C0-1x</b> and <b xmlns="http://www.w3.org/1999/xhtml">C2-x</b> CPUs. When the Destination is Text Registers the Termination Code option becomes available. A single termination character can be added to the length of the Destination. Click on the checkbox to select and enter the ASCII Code in the field. Click on the ASCII Table button to open the ASCII Table shown below. Use this table to quickly select the desired ASCII Code.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">7</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">About Error Flag: SC43 </span>and<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> SC44 are Error Flags </span>are available for use in your program.  <b>SC43 Out of Range</b> is valid for Single, Block, and Pack Copy modes.  <b>SC44 Address Error</b> is not used in Block Copy mode.<br xmlns="http://www.w3.org/1999/xhtml" /></p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example Program</h2>
+            <p style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program: Block Copy Data Registers</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example, when <span style="font-weight: bold;">X001</span> transitions from <span style="font-weight: bold;">OFF-to-ON</span> (<span style="font-weight: bold;">One Shot</span> is selected), the values in <span style="font-weight: bold;">Memory Addresses DS1</span> through <span style="font-weight: bold;">DS10</span> are copied to <span style="font-weight: bold;">Memory Addresses DS501</span> through <span style="font-weight: bold;">DS510</span>.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="block copy ex.gif" style="border: none;" alt="" width="388" height="113" border="0" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="173.htm" xmlns="http://www.w3.org/1999/xhtml">Single Copy</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="185.htm" xmlns="http://www.w3.org/1999/xhtml">Fill</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="059.htm" xmlns="http://www.w3.org/1999/xhtml">Pack Copy</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="063.htm" xmlns="http://www.w3.org/1999/xhtml">Unpack Copy</a>
+            </p>
+        </div>
+    </body>
+</html>

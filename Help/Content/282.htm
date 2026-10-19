@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu" data-mc-file-tags="Topic Status.Final Review - Delivered,Topic Status.Topic Redo - Waiting for Source">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Data Logging Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Data Logging Setup</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL282</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <div id="topic" style="float: none;" xmlns="http://www.w3.org/1999/xhtml">
+                <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+                <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">CLICK PLCs with a microSD Card slot are capable of logging data from the PLC addresses. The <b xmlns="http://www.w3.org/1999/xhtml">Data Logging Setup </b> provides the configuration tools for setting up the frequency of logging, data to be logged and file management.. The PLC can log data from any address except TXT data types. It  can log up to 16 data points, at an interval set by the Trigger tag, to the inserted microSD Card. </p>
+                <p xmlns="http://www.w3.org/1999/xhtml">There are also 14 System addresses listed in the dialog to aid in the control and monitoring of the data logging process.</p>
+                <blockquote xmlns="http://www.w3.org/1999/xhtml">
+                    <p xmlns="http://www.w3.org/1999/xhtml"><a href="#Data">Data Log Trigger Setting</a>
+                    </p>
+                    <p><a href="#File">File Configuration</a>
+                    </p>
+                    <p><a href="#Data2">Data to Log</a>
+                    </p>
+                </blockquote>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    <img src="Resources/Images/Data Log Setup - 3.png" xmlns="http://www.w3.org/1999/xhtml" />
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><b>Enable Data Logging:</b> Check the box to enable Data Logging for this project.</p>
+                <h3 xmlns="http://www.w3.org/1999/xhtml"><a name="Data"></a><b>Data Log Trigger Setting</b>
+                </h3>
+                <blockquote xmlns="http://www.w3.org/1999/xhtml">
+                    <p><b>Log Trigger Bit :</b> The Log Trigger Bit can be any Discrete Address in CLICK (X, Y, C, T, CT or SC). When this address transitions according to the "<b>Log Data when..." </b>setting, the PLC will write the values of the Data Log addresses to the SD Card. The fastest rate that data can be logged is 1 trigger/second. </p>
+                    <p><b>Log Data when... :</b> Select <b>Rising Edge</b> to log data when the <b>Log Trigger Bit</b> goes from low to high. Select <b>Falling Edge</b> to log data when the <b>Log Trigger Bit</b> changes from high to low.</p>
+                    <p><b>System Address:</b> The System Address shown in the dialog allow control and monitoring of the logging process.</p>
+                    <table style="vertical-align: top;width: 100%;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                        <col style="width: 25%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 15%;" />
+                        <col style="width: 50%;" />
+                        <tbody>
+                            <tr style="vertical-align: top;">
+                                <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="4" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Data Logging System Addresses</span>
+                                </td>
+                            </tr>
+                            <tr style="vertical-align: top;">
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;" xmlns=""><span style="font-size: 9pt;" xmlns="http://www.w3.org/1999/xhtml">Name</span>
+                                </td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;background-color: #fafad2;text-align: center;">Address</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;background-color: #fafad2;text-align: center;">Read Only / <br xmlns="http://www.w3.org/1999/xhtml" />Read/Write</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;">Description</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Eject</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC65</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read/Write</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Set this bit <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> to ask the system prepare to safely remove the SD card. The bit will turn <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">OFF</span> when the SD card is ready to be removed.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Delete_All</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC66</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read/Write</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Set this bit <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> to ask the system to delete all log files on the SD card. The bit will turn <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">OFF</span> when the action is completed.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Copy_System</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC67</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read/Write</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Set this bit <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span>to ask the system to move the System Records from the PLC to the SD card. The bit will turn<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">OFF</span>when the action is completed. Error History, Failed Password Attempts Record, Email Log, Allow List Denied Record.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Ready_To_Use</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC68</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> when the SD card is "Ready to Use".</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Write_Status</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC69</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> when writing data to the SD card.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Error</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SC70</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> when there is a SD card error. <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="110.htm" xmlns="http://www.w3.org/1999/xhtml">SD69</a></span> will contain the error information.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Total_Memory_L</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD63</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Total Memory Available Low Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Total_Memory_H</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD64</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Total Memory Available High Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Free_Memory_L</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD65</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Free Memory Available Low Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Free_Memory_H</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD66</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Free Memory Available High Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Used_Memory_L</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD67</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Used Memory Available Low Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Used_Memory_H</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD68</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD card Used Memory Available High Word (megabyte)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Error_Information</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD69</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the SD error number (see <a href="278.htm" xmlns="http://www.w3.org/1999/xhtml">SD Card Error Codes</a>)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">_SD_Log_File_Number</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">SD70</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">Read Only</td>
+                                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Stores the current number of Log Files on the SD.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </blockquote>
+                <h3 xmlns="http://www.w3.org/1999/xhtml"><a name="File"></a><b>File Configuration</b>
+                </h3>
+                <p xmlns="http://www.w3.org/1999/xhtml">The File Configuration relates to file creation interval, file deletion Interval and the file location path.</p>
+                <blockquote xmlns="http://www.w3.org/1999/xhtml">
+                    <blockquote>
+                        <p><b>File Creation:</b>
+                        </p>
+                        <blockquote>
+                            <p><b xmlns="http://www.w3.org/1999/xhtml">Use One File:</b> All logged data will be written to  one file. Keep in mind, this file can become very large and difficult to retrieve.</p>
+                            <p><b xmlns="http://www.w3.org/1999/xhtml">Trigger Bit:</b> The Trigger bit allows you to use  logic with a discrete address or  a System Bit to create a new log file. This allows management of files so they do not get too large and difficult to retrieve. The Trigger Bit can be any Discrete Address in CLICK (X, Y, C, T, CT or SC). When this address transitions according to the "<b xmlns="http://www.w3.org/1999/xhtml">Create File when..." </b>setting the PLC will create a new data logging file on the SD Card. The fastest rate at which files can be created is 1 file/minute. The log file will be created even if the PLC is in Stop mode. </p>
+                            <p><b>Create File when... :</b> Select <b>Rising Edge</b> to create a new file when the <b>Trigger Bit</b> goes from low to high. Select <b>Falling Edge</b> to create a new file when the <b>Trigger Bit</b> changes from high to low. </p>
+                        </blockquote>
+                        <p><b xmlns="http://www.w3.org/1999/xhtml">File Deletion:</b> Currently the only way log files are deleted is when the number of data logging files has exceeded the selected maximum number of files. The limit can be set at any quantity between 2 and 999 files.  Once this limit is reached the oldest file will be deleted at the next File Creation trigger.</p>
+                        <p>Save To: Currently the only selection is the SD Card slot in the CPU. The file will always be created in the \CLICK_PLUS\LOG\ folder on the SD Card. This folder will be created automatically if it does not exist. The Data will be saved to the file LOG_YYYYMMDD_HHMM_ddd.CSV, where YYYY, MM, DD, HH, MM and ddd are the Date and Time the file was created.</p>
+                        <blockquote>
+                            <p>YYYY - Year</p>
+                            <p>MM - Month</p>
+                            <p>DD - Day</p>
+                            <p>HH - Hour</p>
+                            <p>MM - Minute</p>
+                            <p>ddd- Day of the week (SUN, MON, TUE, WED, THU, FRI, SAT)</p>
+                        </blockquote>
+                    </blockquote>
+                    <p><b>Data Logging Tips:</b> These tips can prevent damage to the SD Card and lost data.</p>
+                    <blockquote>
+                        <ul>
+                            <li>
+                                <p>Monitor the <b>_SD_Free_Memory</b> addresses to make sure the SD Card does not fill up and cause data logging to stop.</p>
+                            </li>
+                            <li>
+                                <p>Monitor the <b xmlns="http://www.w3.org/1999/xhtml">_SD_Log_File_Number</b> address to make sure you know when it has reached 999 and old files are being deleted when each new file is created.</p>
+                            </li>
+                            <li>
+                                <p>Always use the <b>_SD_Eject</b> to properly dismount the SD Card before physically ejecting it.</p>
+                            </li>
+                            <li>
+                                <p>Make sure to monitor the <b>_SD_Ready_To_Use</b> and <b>_SD_Write_Status</b> and ensure they are off before physically ejecting the SD Card.</p>
+                            </li>
+                            <li style="font-weight: normal;">
+                                <p>Always monitor the <b>_SD_Error </b>bit to make sure the SD Card and logging are working properly and to alert you of a problem.</p>
+                            </li>
+                        </ul>
+                    </blockquote>
+                    <p><b>microSD Card Selection</b>
+                    </p>
+                    <blockquote>
+                        <ul>
+                            <li>
+                                <p>SD memory card selection is very important to preserve logged data with no errors.</p>
+                            </li>
+                            <li>
+                                <p>It is recommended that an Industrial microSD Card is used that is rated for higher operating temperatures and heavier write loads.</p>
+                            </li>
+                            <li>
+                                <p>microSD cards that utilize SLC technology are preferred. SLC Flash memory has the advantage of being the most accurate flash memory type when reading and writing data. SLC Flash has the longest lifespan of flash types and can operate in a broader temperature range than other types.</p>
+                            </li>
+                        </ul>
+                    </blockquote>
+                </blockquote>
+                <h3 xmlns="http://www.w3.org/1999/xhtml"><a name="Data2"></a><b>Data to Log</b>
+                </h3>
+                <blockquote xmlns="http://www.w3.org/1999/xhtml">
+                    <p><b xmlns="http://www.w3.org/1999/xhtml">Items:</b> The items that can be logged are the Date, Time and up to 16 Data Points.</p>
+                    <p><b xmlns="http://www.w3.org/1999/xhtml">Header Text:</b> The purpose of the header text is to identify the data in each column. Each data point will have a column of data with the Header Text at the top. By default, the first two columns of data are the Date and the Time. These Data Points cannot be changed, but the header information can be changed.</p>
+                    <blockquote>
+                        <p><b xmlns="http://www.w3.org/1999/xhtml">Date:</b> This text may be edited  as desired. But this column will represent the Date the data point is logged. There are three different formats for the date that may be selected.</p>
+                        <p><b xmlns="http://www.w3.org/1999/xhtml">Time</b>: Same as the Date header, this text can be edited, But this column represents the time the data point is logged. There is only one format : HH:MM:SS.</p>
+                    </blockquote>
+                    <table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                        <col width="100" />
+                        <col />
+                        <tbody>
+                            <tr style="vertical-align: top;height: 26px;" xmlns="http://www.w3.org/1999/xhtml">
+                                <td style="padding-right: 10px;padding-left: 10px;">
+                                    <h2 style="margin-top: 5px;text-align: center;">
+                                        <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                                    </h2>
+                                </td>
+                                <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                                    <p class="Notes"><span style="font-weight: bold;">Note:</span> Using <span style="font-weight: bold;">DST (Daylight Saving Time)</span> adjustments along with <span style="font-weight: bold;">Data Logging</span> may cause anomalies in the records.  When the system time is adjusted backwards records may be lost or appended to existing files.  When the system time is adjusted forward a time gap will appear in the records.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><b>Header:</b> This is where you enter the header text for each data point representing PLC data. It can be up to 24 characters long. If you do not enter a header, one will be automatically created as "Log Data #".</p>
+                    <p><b xmlns="http://www.w3.org/1999/xhtml">Address:</b> This is the PLC address you wish to log. This can be any address in the PLC with the exception of TXT data types.</p>
+                    <p><b xmlns="http://www.w3.org/1999/xhtml">Format Options:</b> Formatting is different for Discrete, Integer and Floating Point Data. See the <a href="276.htm" xmlns="http://www.w3.org/1999/xhtml">Embed Discrete Address</a> and <a href="151.htm" xmlns="http://www.w3.org/1999/xhtml">Embed Memory Address</a> topics for more information on formatting.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;"><b xmlns="http://www.w3.org/1999/xhtml">Data Log File Opened in Spreadsheet for Illustration</b>
+                        <img src="Resources/Images/Data Log CSV File Data.png" xmlns="http://www.w3.org/1999/xhtml" />
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </body>
+</html>

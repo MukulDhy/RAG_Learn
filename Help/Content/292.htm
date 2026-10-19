@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-ignored-words="txt" data-mc-file-tags="Topic Status.Completed">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title xmlns="http://www.w3.org/1999/xhtml">Pulse Train Output</title>
+        <style type="text/css" media="print" xmlns="http://www.w3.org/1999/xhtml">/*<![CDATA[*/
+
+.NoPrint
+{
+	visibility: hidden;
+	display: none;
+}
+
+/*]]>*/
+
+</style>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <div id="topic2" class="scrollfixed NoPrint"><a name="kanchor56"></a>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 528px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 548px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL292</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1><a name="kanchor57"></a>Pulse Train Output</h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" class="scrollarea" xmlns="http://www.w3.org/1999/xhtml">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Purpose</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">Pulse Train Output (Pulse and Direction) is used by stepper or servo motor drives for motion control.  The High Speed I/O Configuration for CLICK PLUS CPUs automatically assigns Inputs and Outputs. This provides the maximum amount of flexibility to the available High-Speed capable Inputs and Outputs. Certain combinations of features are not possible.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Step 1 of the High Speed Configuration the option of PTO can be selected.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Step 2 the number of needed PTO Axis is selected.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Step 3 the Axis settings are configured.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Picture11.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="91px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <h2 align="center">
+                            <img src="notepad.gif" style="border: none;" alt="" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="padding-right: 10px;padding-left: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note: </span>CLICK PLUS digital Inputs and Outputs can only be configured as High Speed when the Option Slot I/O Module is installed in Slot 0 of the CPU (the leftmost slot when facing the CPU).<br xmlns="http://www.w3.org/1999/xhtml" /></p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">PTO can only be used with these DC Output modules in Slot0.</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;caption-side: top;width: 328px;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="2" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Pulse Train Outputs</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns="" colspan="1"><span style="font-size: 9pt; color: #000000;" xmlns="http://www.w3.org/1999/xhtml">Module</span>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">Number of supported PT Outputs</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">C2-14x</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">up to 3</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">C2-08x</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">up to 2</td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">The pin assignment for each High Speed Pulse Output is fixed and cannot be changed.  The Direction Output can be assigned to any Output pin (Slot or Expansion Modules.)  The PTO output mode is always Pulse and Direction, other modes of operation are not supported.</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="2" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Pulse Output Pin Assignments</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns="" colspan="1"><span style="font-size: 9pt; color: #000000;" xmlns="http://www.w3.org/1999/xhtml">Pulse Output</span>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">Assignment</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Y001</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Axis1_Pulse</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Y003</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Axis2_Pulse</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Y005</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Axis3_Pulse</td>
+                </tr>
+            </table>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL292_ScreenCapture.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-size: 14pt;">1</span>	Name</b>: This text is used to Prefix Nicknames of addresses used by this configuration.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">2</span>	Assign Nicknames automatically</b>: Nicknames can be assigned to each address automatically. If you want to manage the Nicknames manually then disable this feature.</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>
+                    <p>	Axis1_Pulse (the Highspeed Output Bit: Y001, Y003, Y005)</p>
+                </li>
+                <li>
+                    <p>	Axis1_Direction (any Output Bit: Y001-Y816)</p>
+                </li>
+                <li>
+                    <p>	Axis1_CurrentPosition (any DDx register)</p>
+                </li>
+                <li>
+                    <p>	Axis1_CurrentVelocity (any DDx register)</p>
+                </li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">3</span>	Pulse</b>: The system will automatically assign the Axis to a High Speed Output.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">4</span>	Direction</b>: The Direction Output is ON while the Axis is moving in the Positive Direction, and OFF when moving in the Negative Direction.  The selected address can be assigned to any Output pin (Slot or Expansion Modules.)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-size: 14pt;">5</span>	Maximum Velocity</b>: This setting limits the highest allowable commanded velocity of the Axis.  If a velocity is commanded above this value, the Axis will adjust the velocity down to this setting (Pulses Per Second).</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-size: 14pt;">6</span>	Minimum Velocity</b>: This setting defines the lowest allowable velocity.  If a velocity is commanded below this value, the Axis will adjust the velocity up to this setting. This setting can be used to avoid low frequency harmonics, or to increase Acceleration/Deceleration times since the region between Zero and Minimum Velocity will be skipped  (Pulses Per Second).</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">7</span>	Direction Change Time</b>: This setting allows a time delay when the Axis needs to change direction.  During this dwell time there will be no Pulse Output.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">8</span>	Current Position</b>: This register must be of type DD and contains the value of the Axis Position (-2,147,483,648 to +2,147,483,647).  This position value can rollover and rollunder.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">9</span>	Current Velocity</b>: This register must be of type DD and contains the value of the Axis Velocity (-100,000 to +100,000).</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-size: 14pt;">10</span>	Limit Switches</b>: The Axis can be assigned hardware Limit Switches to stop motion in each direction of travel. When one of these is activated, the current instruction will fault, and an Error Code 103 will occur. While activated the Axis can still be commanded in the opposite direction of travel.  Limit Switch Inputs can be shared with the Home Instruction for Mode 1(Switch 2) and Mode 2 (Switch 1).</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">11</span>	Positive</b>: The Positive Limit Switch Input can be assigned to any Input pin (Slot or Expansion Modules.)  Limit Switch Input assignments cannot be shared between Axes.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b><span style="color: #f20000; font-size: 14pt;">12</span>	Negative</b>: The Negative Limit Switch Input can be assigned to any Input pin (Slot or Expansion Modules.)  Limit Switch Input assignments cannot be shared between Axes.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Three ladder instructions are available to control the Axis:</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 175px;" />
+                <col style="width: 590px;" />
+                <tr style="vertical-align: top;">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="2" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">High Speed Axis Instructions</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns=""><span style="font-size: 9pt; color: #000000;" xmlns="http://www.w3.org/1999/xhtml">Instructions</span>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">Descriptions</td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Home</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Six modes of
+ operation and is used for origin search, set current position, and registration
+ types of moves.
+					</td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Velocity Move</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Used to continuously control the Axis by the Target
+ Velocity.
+					</td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Position Move</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Used to move the Axis from the Current Position to a
+ new Target Position.
+					</td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <table cellspacing="0" width="100%" style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p align="center">
+                            <img src="caution exclamation.gif" alt="" style="border: none;" width="35" height="35" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: top;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Caution:</span> During the time of a Project Transfer using Runtime Edit the motion instructions will immediately stop.  When the transfer is completed, the motion can return to operation automatically.</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If the output address of the PTO Configuration is duplicated by a ladder Output instruction, a Syntax Check Warning will be generated.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="91px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <h2 align="center">
+                            <img src="notepad.gif" style="border: none;" alt="" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="padding-right: 10px;padding-left: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note: </span>The System Bits SC150-SC152 “_PTO_AxisX_Ready_Flag” provide status information.<br xmlns="http://www.w3.org/1999/xhtml" /></p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">The High Speed Input and High Speed Output features consume the same shared internal resources of the CPU.  As features are added into the High Speed Configuration these resources are calculated and the number of available assignments is updated.  The following table displays the maximum available Input features as a function of assigned Output features.  Not all combinations of features or pin usage are possible.</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="8" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Maximum Available High Speed Input Features</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns="" colspan="1">&#160;</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;" colspan="4">C2-14x (8-In/6-Out Module)</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;" colspan="3">C2-8x  (4-In/4-Out Module)</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns="" colspan="1"><span style="font-size: 9pt; color: #000000;" xmlns="http://www.w3.org/1999/xhtml">PTO or PWM Outputs</span>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">0 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">1 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">2 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">3 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">0 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">1 Axis</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;">2 Axis</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;color: #fffacd;background-color: #fafad2;" xmlns="">&#160;</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;color: #000000;" colspan="7">Up To # of High Speed Input Features</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Up</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Down</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Up/Down</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">0</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Pulse/Direction</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Quad (AB)</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">High Speed Count Quad (ABZ)</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Interval Measurement Single</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Interval Measurement Dual</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">0</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Duration Measurement</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Frequency Measurement Single</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">6</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Frequency Measurement Quadrature</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">3</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">1</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">2</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">External Interrupt</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Pulse Catch</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_h2">Filter</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">8</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="td_p">4</td>
+                </tr>
+            </table>
+            <p xmlns="">&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics</h3>
+            <p style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><a href="297.htm" xmlns="http://www.w3.org/1999/xhtml">PTO Error Codes</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="294.htm" xmlns="http://www.w3.org/1999/xhtml">Home for PTO Axis</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="295.htm" xmlns="http://www.w3.org/1999/xhtml">Velocity Move for PTO Axis</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="296.htm" xmlns="http://www.w3.org/1999/xhtml">Position Move for PTO Axis</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="293.htm" xmlns="http://www.w3.org/1999/xhtml">Pulse Width Modulation</a>
+            </p>
+        </div>
+    </body>
+</html>

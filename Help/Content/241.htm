@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Error Codes" data-mc-ignored-words="txt" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>EtherNet/IP Error Codes: General and Extended Status</title>
+        <style type="text/css" media="print">/*<![CDATA[*/
+
+.NoPrint
+{
+	visibility: hidden;
+	display: none;
+}
+
+/*]]>*/
+
+</style>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <map id="map1" xmlns="">
+        <area shape="rectangle" coords="-3,18,84,42" href="090.htm" />
+    </map>
+    <map id="map2" xmlns="">
+        <area shape="rectangle" coords="-5,16,267,34" href="259.htm" />
+        <area shape="rectangle" coords="-6,34,316,52" href="254.htm" />
+        <area shape="rectangle" coords="-4,53,298,71" href="257.htm" />
+        <area shape="rectangle" coords="-5,71,267,89" href="258.htm" />
+    </map>
+    <body>
+        <div id="topic2" class="scrollfixed NoPrint"><a name="kanchor1"></a>
+            <table style="vertical-align: top;" cellspacing="0" width="100%">
+                <col width="100" />
+                <col style="width: 528px;" />
+                <col style="width: 548px;" />
+                <tr style="vertical-align: top;height: 5px;">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL241</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1><a name="kanchor2"></a>CLICK EtherNet/IP <a name="kanchor3"></a>Error Codes</h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" class="scrollarea" xmlns="http://www.w3.org/1999/xhtml">
+            <p xmlns="" style="text-align: center;">&#160;</p>
+            <table style="vertical-align: top;width: 100%;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 181px;" />
+                <col style="width: 207px;" />
+                <col style="width: 301px;" />
+                <col style="width: 663px;" />
+                <tr style="vertical-align: top;">
+                    <td style="border: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;background-color: #0000cd;text-align: center;" bgcolor="#008000">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">General Status Error (SD104, SD110)
+					</p>
+                    </td>
+                    <td style="border: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;background-color: #0000cd;text-align: center;" bgcolor="#008000">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Extended Status Error (SD105, SD111)</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;background-color: #0000cd;text-align: center;" bgcolor="#008000">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Name</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;background-color: #0000cd;text-align: center;" bgcolor="#008000">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Description</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x00</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Success</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>Success</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0100</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Connection In Use/Duplicate Forward Open</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>A connection is already established from the target device sending a Forward Open request or the target device has sent multiple forward open request. This could be caused by poor network traffic. Check the cabling, switches and connections.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0103</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Transport Class/Trigger Combination not supported</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The Transport class and trigger combination is not supported. The CLICK CPU only supports Class 1 and Class 3 transports and triggers: Change of State and Cyclic.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0106</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Owner Conflict</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>An existing exclusive owner has already configured a connection to this Connection Point. Check to see if other Scanner devices are connected to this adapter or verify that Multicast is supported by adapter device if Multicast is selected for Forward Open. This could be caused by poor network traffic. Check the cabling, switches and connections.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0107</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Target Connection Not Found</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This occurs if a device sends a Forward Close on a connection and the device can't find this connection. This could occur if one of these devices has powered down or if the connection timed out on a bad connection. This could be caused by poor network traffic. Check the cabling, switches and connections.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0111</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>RPI Not Supported</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error occurs if the Originator is specifying an RPI that is not supported. The CLICK CPU will accept a minimum value of 10ms on a CIP Forward Open request. However, the CPU will produce at the specified rate up to the scan time of the installed project. The CPU cannot product any faster than the scan time of the running project.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0114</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Vendor ID or Product Code Mismatch</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The compatibility bit was set in the Forward Open message but the Vendor ID or Product Code did not match.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0115</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Device Type Mismatch</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The compatibility bit was set in the Forward Open message but the Device Type did not match.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0116</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Revision Mismatch</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The compatibility bit was set in the Forward Open message but the major and minor revision numbers were not a valid revision.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x011A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Target Object Out of Connections</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The maximum number of connections supported by this instance of the object has been exceeded.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0123</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Originator to Target Network Connection Type</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The Originator to Target Network Connection Type specified in the Forward Open is not supported. Only Unicast is supported for O -&gt; T (Output) data in the CLICK CPU.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0124</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Target to Originator Network Connection Type</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The Target to Originator Network Connection Type specified in the Forward Open is not supported. Multicast and Unicast is supported in the CLICK CPU. Some devices may not support one or the other so if this error is encountered try the other method.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0127</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Originator to Target Size</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error is returned when the Originator to Target (Output data) size specified in the Forward Open does not match what is in the Target. Consult the documentation of the Adapter device to verify the required size. Note that if the Run/Idle header is requested, it will add 4 additional bytes and must be accounted for in the Forward Open calculation. The CLICK CPU always requires the Run/Idle header so if the option doesn't exist in the Scanner device, you must add an additional 4 bytes to the O -&gt; T (Output) setup. Some devices may publish the size that they are looking for as an additional attribute (Unsigned Integer 16 value) of the Extended Error Code. An array can be defined for this field in order to view the extended error code attributes.</p>
+                        <p> </p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td colspan="4" class="td_p">
+                        <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b>This error may also be generated when a Connection Point value that is invalid for IO Messaging (but valid for other cases such as Explicit Messaging) is specified, such as 0. Please verify if the Connection Point value is valid for IO Messaging in the target device.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0128</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Target to Originator Size</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error is returned when the Target to Originator (Input data) size specified in the Forward Open does not match what is in Target. Consult the documentation of the Adapter device to verify the required size. Note that if the Run/Idle header is requested, it will add 4 additional bytes and must be accounted for in the Forward Open calculation. The CLICK CPU does not support a Run/Idle header for the T -&gt; O (Input) data. Some devices may publish the size that they are looking for as an additional attribute (Unsigned Integer 16 value) of the Extended Error Code. An array can be defined for this field in order to view the extended error code attributes.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;" colspan="4">
+                        <p class="Notes" xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> This error may also be generated when a Connection Point value that is invalid for IO Messaging (but valid for other cases such as Explicit Messaging) is specified, such as 0. Please verify if the Connection Point value is valid for IO Messaging in the target device.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x012A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Consuming Application Path</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error will be returned by the CLICK CPU if the Consuming (O -&gt; T) Application Path is not present in the Forward Open message coming from the Scanner device or if the specified Connection Point is incorrect.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x012B</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Producing Application Path</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error will be returned by the CLICK CPU if the Producing (T -&gt; O) Application Path is not present in the Forward Open message coming from the Scanner device or if the specified Connection Point is incorrect.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x012F</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Inconsistent Application Path Combination</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The combination of Configuration, Consuming and Producing application paths specified are inconsistent.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0132</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Null Forward Open function not supported</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The target device does not support the function requested in the NULL Forward Open request. The request could be such items as "Ping device", "Configure device application", etc.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0315</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid Segment in Connection Path</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error occurs when the target device cannot understand the segment type or segment value in the Connection Path. Consult the documentation of the device to verify the correct segment type and value. If a Connection Point greater than 255 is specified this error could occur.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0x01</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0x0813</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Not Configurable for Off-subnet Multicast</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">The producer has been requested to support a Multicast connection for a consumer on a different subnet and does not support this functionality.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x04</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Path Segment Error</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The path segment identifier or the segment syntax was not understood by the target device.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x05</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Path Destination Error</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The Object Class, Object Instance or Object Attribute value specified in the Unconnected Explicit Message request is incorrect or not supported in the Target device. Check the manufacturer's documentation for the correct codes to use.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x08</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Service not supported</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The requested service was not implemented or was not defined for this Object.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x09</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Index to Error</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Error in Data Segment</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>This error code is returned when an error is encountered in the Data segment portion of a Forward Open message. The Extended Status value is the offset in the Data segment where the error was encountered.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0E</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Attribute not settable</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>A request to modify a non-modifiable attribute was received.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x0F</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Privilege violation</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>A permission/privilege check failed</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x13</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Not Enough Data</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>Not enough data was supplied in the service request specified.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x14</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Attribute not supported</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The attribute specified in the request is not supported</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x15</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Too Much Data</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>Too much data was supplied in the service request specified.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x16</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Object does not exist</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The object specified does not exist in the device.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x20</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Invalid parameter</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>A parameter associated with the request was invalid. This code is used when a parameter does not meet the requirements of this specification and/or the requirements defined in an Application Object Specification.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>0x26</p>
+                    </td>
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">N/A</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;padding-right: 10px;padding-left: 10px;vertical-align: middle;text-align: center;">
+                        <p>Path Size Invalid</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;">
+                        <p>The size of the path which was sent with the Service Request is either not large enough to allow the Request to be routed to an object or too much routing data was included.</p>
+                    </td>
+                </tr>
+            </table>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="233.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP Adapter Setup</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="232.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP&#160;Overview</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="234.htm" xmlns="http://www.w3.org/1999/xhtml">Communications Ethernet</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="235.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for AB&#160;CompactLogix</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="236.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for Productivity Series PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="237.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for the Do-more PLC</a>
+            </p>
+        </div>
+    </body>
+</html>

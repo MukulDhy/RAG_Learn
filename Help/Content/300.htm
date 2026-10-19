@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-ignored-words="txt" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS Email Setup</title>
+        <style type="text/css" media="print" xmlns="http://www.w3.org/1999/xhtml">/*<![CDATA[*/
+
+.NoPrint
+{
+	visibility: hidden;
+	display: none;
+}
+
+/*]]>*/
+
+</style>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div id="topic2" class="scrollfixed NoPrint" xmlns="http://www.w3.org/1999/xhtml">
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 528px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 548px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL300</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1><a name="kanchor162"></a>CLICK PLUS Email Setup</h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" class="scrollarea" xmlns="http://www.w3.org/1999/xhtml">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The Email Client feature is available for all CLICK PLUS CPUs.  It allows the PLC to be setup to send email messages including a subject, text body, Register values, Boolean states, and Date and Time stamps. This feature requires that a SMTP (Simple Mail Transfer Protocol) email server is available to the network.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">You may need to consult your Network Administrator for assistance in setting up this feature.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">For the Email Client settings to be complete other settings must also be configured:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>
+                    <p>The PLC Ethernet Port must be configured (Port1 or WLAN).</p>
+                </li>
+                <li>
+                    <p>The Address Book must contain at least one Email Address.</p>
+                </li>
+                <li>
+                    <p>An Email Instruction must be configured in the Ladder.</p>
+                </li>
+                <li>
+                    <p>If using a Server Name, a DNS server must be configured or use DHCP.</p>
+                </li>
+            </ul>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Configuring the Email Client</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">To configure the Email Client, do the following:</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EmailSetup.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Complete the fields on the Email Setup screen.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Sender Name</b>: This can be any valid text. This name will be displayed as the Sender to those who receive the email. Your Network Administrator or email provider may apply restrictions.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Sender Email Address</b>: The account that is being used to send emails. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">SMTP Email Server &gt; Server Name</b>: Enter the URL for the SMTP email server or your email provider's SMTP Send Mail Server.  Consult your Network Administrator or email provider for more information.</p>
+            <blockquote xmlns="">
+                <p xmlns="http://www.w3.org/1999/xhtml">Example: smtp.gmail.com</p>
+                <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                    <col width="91px" />
+                    <col />
+                    <col />
+                    <tr style="vertical-align: top;">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 align="center">
+                                <img src="notepad.gif" style="border: none;" alt="" width="26" height="36" border="0" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="padding-right: 10px;padding-left: 10px;">
+                            <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note: </span>DNS must be enabled for the email server to recognize the URLs. See <a href="211.htm" xmlns="http://www.w3.org/1999/xhtml">Com Port 1 (Ethernet) Setup</a> for more information on DNS.<br xmlns="http://www.w3.org/1999/xhtml" /></p>
+                        </td>
+                    </tr>
+                </table>
+            </blockquote>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">SMTP Email Server &gt; IP Address</b>: Can be used when the SMTP email server is assigned to a static IP and DNS is not enabled.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">SMTP Port No</b>: The SMTP Port Number. Some typical default port numbers are:</p>
+            <blockquote xmlns="">
+                <p xmlns="http://www.w3.org/1999/xhtml">25 – SMTP No Authentication</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">587 – STARTTLS</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">465 – SMTPS</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">You should consult your Network Administrator or email provider for the correct port number for your service.</p>
+            </blockquote>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Encryption Setting &gt; Don’t Use Encryption</b>: Consult your Network Administrator or email provider about encryption requirements.  This setting is uncommon unless using a local SMTP server.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Encryption Setting &gt; Use STARTTLS</b>: (Preferred) Transport Layer Security (TLS) is a cryptographic protocol that secures communication over a network by using security certificates to encrypt a connection between computers. (TLS versions 1.2 or 1.3 supported.)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Encryption Setting &gt; Use SMTPS</b>: (Legacy) (Simple Mail Transfer Protocol Secure) Method for securing SMTP with transport layer security. It is intended to provided authentication of the communication partners, as well as data integrity and confidentiality. SMTPS is not a proprietary protocol and not an extension of SMTP. It is just a way to secure SMTP at the transport layer.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Authentication &gt; Account</b>: User Account required by the email server to access the account for sending emails.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Authentication &gt; Password</b>: Password required by the email server to access the account.  It is more and more common that Cloud based Email Clients will require separate Application Passwords for each hardware device.  So the Password required here may not be the Users web portal Password, but instead a password provided by the cloud service.  See this knowledge base article for more information:</p>
+            <blockquote xmlns="">
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="https://support.automationdirect.com/docs/kb-misc-002.pdf" xmlns="http://www.w3.org/1999/xhtml">https://support.automationdirect.com/docs/kb-misc-002.pdf</a>
+                </p>
+            </blockquote>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Enable Email Troubleshooting</b>: The recent communications between the email Client and Server can be recorded into a small buffer.  This Email Log can be displayed in the software while online by using Menu &gt; PLC &gt; Check Event Records &gt; Email Log.  With the C2-03CPU the Log can also be saved into a file on the SD Card by using Menu &gt; PLC &gt; SD Control Center.  The log is 4,096 characters in total length.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Setting Assistance</b>: The four settings available here will pre-fill the Server Name with these commonly known URLs. Other Server Names can be typed manually.</p>
+            <p xmlns="">&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics</h3>
+            <p style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><a href="211.htm" xmlns="http://www.w3.org/1999/xhtml">Com Port 1 (Ethernet) Setup</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="301.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS Address Book
+				</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="302.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS Email Log
+				</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="307.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS Email Instruction
+				</a>
+            </p>
+        </div>
+    </body>
+</html>

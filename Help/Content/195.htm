@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Memory Addresses</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Memory Addresses</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL195</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p style="margin-bottom: 0;margin-top: 0;">&#160;</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;" cellspacing="0" width="83.773%">
+                <col style="width: 6.283%;" />
+                <col style="width: 38.34%;" />
+                <col style="width: 17.434%;" />
+                <col style="width: 8.445%;" />
+                <col style="width: 14.749%;" />
+                <col style="width: 14.749%;" />
+                <tr style="vertical-align: top;">
+                    <td colspan="2" style="border: Solid 1px #000000;width: 44.623%;background-color: #0066cc;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;margin-top: 0;" align="center"><a name="kanchor114"></a>Bit Memory Addresses</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;background-color: #0066cc;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Range</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;background-color: #0066cc;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Data Type</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;background-color: #0066cc;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center"><span style="font-weight: bold;color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Data Type</span>
+                            <br xmlns="http://www.w3.org/1999/xhtml" />Icon</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;background-color: #0066cc;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Default Retentive Setup</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">X</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Inputs</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">X001 - X816</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Y</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Outputs</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Y001 - Y816</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">C</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Control Relays (Internal Bits)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">C1 - C2000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">T</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Timer Bits</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">T1 - T500</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">CT</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Counter Bits</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">CT1 - CT250</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 6.283%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">SC</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 38.34%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">System Control Relays (Internal Bits)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 17.434%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">SC1 - SC1000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 8.445%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Bit</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="bit icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 14.749%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Always No</p>
+                    </td>
+                </tr>
+            </table>
+            <p align="center">&#160;</p>
+            <table style="vertical-align: Center;margin-left: auto;margin-right: auto;" cellspacing="0" width="88.388%">
+                <col style="width: 7.734%;" />
+                <col style="width: 23.538%;" />
+                <col style="width: 90px;" />
+                <col style="width: 9.0215%;" />
+                <col style="width: 22.026%;" />
+                <col style="width: 13.62%;" />
+                <col style="width: 15.038%;" />
+                <tr style="vertical-align: top;">
+                    <td colspan="2" style="border: Solid 1px #000000;width: 31.272%;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Data Memory Addresses</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E" colspan="2">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Range</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Data Type</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center"><span style="font-weight: bold;color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Data Type</span>
+                            <br xmlns="http://www.w3.org/1999/xhtml" />Icon</p>
+                    </td>
+                    <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Default Retentive Setup</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">DS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">DS1 - DS4500</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Single Word Integer</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="single integer icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">DD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">DD1 - DD1000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Double Word Integer</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="double integer icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">DH</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">DH1 - DH500</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Hex</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="hex icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">DF</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">DF1 - DF500</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Floating Point</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="float pt icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">XD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Input Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">XD0</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Slot0</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Hex</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">
+                            <img src="hex icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Always No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">XD0u</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Slot1</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">XD1 - XD8</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Expansion 1-8</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">YD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Output Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">YD0</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Slot0</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Hex</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">
+                            <img src="hex icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" rowspan="3">
+                        <p align="center">Always No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">YD0u</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Slot1</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">YD1 - YD8</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center" xmlns="http://www.w3.org/1999/xhtml">Expansion 1-8</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">TD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Timer Current Values</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">TD1 - TD500</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Single Word Integer</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="single integer icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">CTD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Counter Current Values</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">CTD1 - CTD250</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Double Word Integer</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="double integer icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">SD</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">&#160;System Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">SD1 - SD1000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Single Word Integer</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="single integer icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Always No</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 7.734%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">TXT</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 23.538%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Text Data Register</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" colspan="2">
+                        <p align="center">TXT1 - TXT1000</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 22.026%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">ASCII (7-bit)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 13.62%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">
+                            <img src="text icon.gif" style="border: none;" alt="" width="16" height="16" border="0" />
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 15.038%;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center">Yes</p>
+                    </td>
+                </tr>
+            </table>
+            <h2>Related 
+			 Topics:</h2>
+            <p><a href="238.htm" xmlns="http://www.w3.org/1999/xhtml">Pointer Addressing</a>
+            </p>
+        </div>
+    </body>
+</html>

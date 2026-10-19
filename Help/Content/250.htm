@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference" data-mc-searchable="False" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Filter Example</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 144px;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">Filter Example<a name="kanchor177"></a></td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL250</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p> Two methods of creating an Analog Filter in Ladder Logic are shown here. These can be useful for filtering analog inputs. The following examples provide simple methods to create a filter and average. Be sure to change the addresses to unused memory addresses in your project.</p>
+            <p>Filter Example</p>
+            <p xmlns="">This method provides the flexibility to adjust the sample time and percent change. At each sample time the difference is calculated between the Input and Output, then a percentage of this difference is applied to the new Output. A higher value in DS1 allows more change, or less filtering. A lower value in DS1 allows less change, or more filtering.</p>
+            <p xmlns="" style="text-align: center;">
+                <img src="Resources/Images/CL250 Filter.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In this step response, the Input changes from 0 to 100.</p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL250 Filter Chart.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p>Average&#160;Example</p>
+            <p xmlns="">This method enables the flexibility to adjust the sample time and number of samples. At each sample time a new Raw Input is shifted into the group of 5 samples. A new Average is then calculated. In this example, it takes 5 sample times for the Input to reach the Output. </p>
+            <p xmlns="" style="text-align: center;">
+                <img src="Resources/Images/CL250 Filter Average.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In this step response, the Input changes from 0 to 100.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CL250 Filter Average Chart.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">&#160;</h3>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:
+</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="184.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">Copy Instruction: Block Copy</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="170.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto" xmlns="">Math (Decimal</a>)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="246.htm" xmlns="http://www.w3.org/1999/xhtml">PID&#160;Control in CLICK</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Find Available&#160;Addresses</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Configuration Mode</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Monitor Mode</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;List View</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Error&#160;Codes</a>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

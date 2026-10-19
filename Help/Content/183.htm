@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Communication|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Send Instruction: ASCII</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Send Instruction: ASCII</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL183</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">The 
+			 <span style="font-weight: bold;">Send</span> instruction allows 
+			 you to send <span style="font-weight: bold;">ASCII</span> 
+			 text messages to external devices such as a serial printer 
+			 or a text message display. The <span style="font-weight: bold;">CLICK 
+			 CPU</span> modules support the <span style="font-weight: bold;">MODBUS 
+			 (RTU)</span> and <span style="font-weight: bold;">ASCII</span> 
+			 protocols. This help topic covers the <span style="font-weight: bold;">ASCII</span> 
+			 protocol. To use the <span style="font-weight: bold;">MODBUS 
+			 (RTU)</span> protocol, please refer to the help topic <a href="181.htm">Send 
+			 Instruction: MODBUS</a>.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;">Note:</span> 
+			 For the <span style="font-weight: bold;">Com Port</span> wiring 
+			 info, please refer to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c0userm/c0userm.html" target="_blank" title="Open CLICK Hardware Manual" alt="Open CLICK Hardware Manual">CLICK PLC Hardware Manual</a></span><span xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"> or </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c2userm/c2userm.html" target="_blank" title="Open CLICK PLUS Hardware Manual" alt="Open CLICK PLUS Hardware Manual">CLICK PLUS PLC Hardware Manual</a></span>.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/ASCII_Send_Setup_543x586.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 543;height: 586;" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">1 </span><span style="font-weight: bold;">Com Port:</span> Click the 
+			 down arrow to select a <span style="font-weight: bold;">Port</span> 
+			 from the available list.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">2 </span><span style="font-weight: bold;">Protocol:</span> 
+			 This field displays the <span style="font-weight: bold;">Protocol</span> 
+			 currently selected. If it is not <span style="font-weight: bold;">ASCII</span>, 
+			 see <span style="font-weight: bold;">Item</span><span style="font-weight: bold;font-size: 12pt;color: #ff0000;"> 3</span> to change the <span style="font-weight: bold;">Protocol Type</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">3 </span><span style="font-weight: bold;">COM Port Setup:</span> Click 
+			 on this button to open the <span style="font-weight: bold;">Com 
+			 Port Setup</span> window shown below. From this window 
+			 click on the down arrow for the <span style="font-weight: bold;">Protocol</span> 
+			 field and select <span style="font-weight: bold;">ASCII</span> 
+			 or <span style="font-weight: bold;">MODBUS</span>.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="com port setup details protocol.gif" alt="" style="border: none;" width="330" height="217" border="0" />
+            </p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p style="border-top: Solid 2px #19519e;border-bottom: Solid 2px #19519e;background-color: #ffff80;"><span style="font-weight: bold;">Note:</span> 
+			 If the <span style="font-weight: bold;">Protocol</span> parameter 
+			 is grayed out, it means there is at least one <span style="font-weight: bold;">Receive</span> 
+			 or <span style="font-weight: bold;">Send</span> instruction 
+			 assigned to the <span style="font-weight: bold;">Com Port</span> 
+			 already.&#160;If you still want to change the <span style="font-weight: bold;">Protocol</span>, 
+			 please delete those <span style="font-weight: bold;">Receive/Send</span> 
+			 instructions first.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" style="margin-left: 16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">4 </span><span style="font-weight: bold;">Static Text Message (Max: 
+			 128 Characters):</span> From this field, you can compose the 
+			 <span style="font-weight: bold;">ASCII Text Message</span> 
+			 to be sent to the external device.&#160;You can mix <span style="font-weight: bold;">Text Messages</span>, <span style="font-weight: bold;">ASCII 
+			 Codes</span> and <span style="font-weight: bold;">Memory Addresses</span> 
+			 in the <span style="font-weight: bold;">ASCII Text Message</span>. 
+			 &#160;This field allows up to a <span style="font-weight: bold;">128</span> 
+			 character message.</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml">
+                <li class="BulletListRed" value="1"><span style="font-weight: bold;color: #008080;" xmlns="http://www.w3.org/1999/xhtml">Text Message:</span> 
+			 Please surround by double quotations. (e.g., <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">“ABC”</span>)&#160;</li>
+                <li class="BulletListRed" value="2"><span style="font-weight: bold;color: #ff0000;" xmlns="http://www.w3.org/1999/xhtml">ASCII 
+			 Code:</span> Click the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Embedded 
+			 ASCII Code</span> button under the field to pick an <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII Code</span>. <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII Codes</span> are displayed 
+			 in the format of “<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">$</span>” 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">+ 2 digit Hex Code</span> 
+			 in this field.</li>
+                <li class="BulletListRed" value="3"><span style="font-weight: bold;color: #0000ff;" xmlns="http://www.w3.org/1999/xhtml">Memory 
+			 Address:</span> You can embed the following <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Memory 
+			 Addresses</span> in the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII 
+			 Text Message</span>.&#160;What will be included in the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII Text Message</span> when 
+			 it is output from the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com 
+			 Port</span> is the data in the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Memory 
+			 Address</span>. Click the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Embedded 
+			 Memory Address</span> button under the field to enter a data 
+			 register <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Memory Address</span> 
+			 and select the format of the data.</li>
+            </ol>
+            <p class="NumberedHang" style="font-size: 5pt;margin-top: 0px;" xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <h3 style="margin-left: 24px;margin-top: 0px;" align="center" xmlns="http://www.w3.org/1999/xhtml">Supported 
+			 Memory Addresses: DS, DD, DH, DF, XD, YD, TD, CTD and SD</h3>
+            <p class="NumberedHang" style="margin-top: 5pt;margin-left: 24px;text-indent: 0px;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Example:</p>
+            <p class="NumberedHang" style="margin-top: 5pt;margin-left: 24px;text-indent: 0px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="memory addr ex.gif" alt="" style="border: none;" width="184" height="107" border="0" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">5 </span><span style="font-weight: bold;">Embedded ASCII Code:</span> 
+			 Click this button to open a dialog used to select an <span style="font-weight: bold;">ASCII Code (00h to FFh)</span>. 
+			 You can select 
+			 an <span style="font-weight: bold;">ASCII Code</span> to embed 
+			 in the <span style="font-weight: bold;">ASCII Text Message</span>. 
+			 &#160;Please refer to the help topic <span style="font-weight: bold;"><a href="206.htm">ASCII Table</a></span> for details.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">6</span><span style="font-weight: bold;"> Embedded 
+			 Memory Address:</span> Click this button to open a dialog 
+			 used to enter a <span style="font-weight: bold;">Data Register 
+			 Memory Address</span> and select the format.&#160;Please 
+			 refer to the help topic <span style="font-weight: bold;"><a href="151.htm">Embedded Address</a></span> for details.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">7</span><span style="font-weight: bold;"> Embedded 
+			 Discrete Address:</span> Click this button to open a dialog 
+			 used to enter a <span style="font-weight: bold;">Discrete 
+			 Memory Address</span> and select the format.&#160;Please 
+			 refer to the help topic <span style="font-weight: bold;"><a href="151.htm">Embedded Address</a></span> for details.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">8 </span><span style="font-weight: bold;">Simulate:</span> 
+			 Click this button to open a dialog used to enter values to 
+			 <span style="font-weight: bold;">Simulate</span> the <span style="font-weight: bold;">Data</span> in the <span style="font-weight: bold;">Memory 
+			 Addresses</span> you <span style="font-weight: bold;">Embedded</span> 
+			 in the <span style="font-weight: bold;">ASCII Text Message</span>. 
+			 &#160;Please refer to the help topic <a href="147.htm">Static 
+			 Message Simulate</a> for details.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">9</span><span style="font-weight: bold;"> Possible 
+			 Message Length:</span> The <span style="font-weight: bold;">CLICK 
+			 Software</span> automatically calculates the <span style="font-weight: bold;">Possible 
+			 Message Length</span> and displays it here.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">10 </span><span style="font-weight: bold;">Dynamic Text Message (Max: 
+			 128 Characters):</span> Select <span style="font-weight: bold;">Dynamic 
+			 Text Message</span> to <span style="font-weight: bold;">Send</span> 
+			 a <span style="font-weight: bold;">Message</span> stored in 
+			 a series of <span style="font-weight: bold;">Text Addresses</span>. 
+			 &#160;Select the <span style="font-weight: bold;">Text Address</span> 
+			 and the <span style="font-weight: bold;">Number of Bytes</span> 
+			 using the <span style="font-weight: bold;">Start Address</span> 
+			 and the <span style="font-weight: bold;">Number of Bytes Browse 
+			 Icon</span><img src="browse button.gif" alt="" style="border: none;" width="17" height="14" border="0" /> respectively. 
+			 &#160;</p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">11 </span><span style="font-weight: bold;">Termination Code:</span> 
+			 Click on the checkbox to select.&#160;The <span style="font-weight: bold;">Termination 
+			 Code</span> fields for <span style="font-weight: bold;">1 
+			 Character</span> and <span style="font-weight: bold;">2 Character</span> 
+			 become active. Select the number of <span style="font-weight: bold;">Characters</span> 
+			 to use and enter the <span style="font-weight: bold;">ASCII 
+			 Code</span> in the field(s). Click on the <span style="font-weight: bold;">ASCII 
+			 Table</span> button to open the <span style="font-weight: bold;">ASCII 
+			 Table</span> shown below.&#160;Use this table to quickly 
+			 select the desired <span style="font-weight: bold;">ASCII 
+			 Code</span>.</p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;margin-top: 5pt;text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="ascii termination code table.png" alt="" style="border: none;" width="597" height="486" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">12 </span><span style="font-weight: bold;">Byte Swap:</span> Select 
+			 the checkbox if <span style="font-weight: bold;">Byte Swap</span> 
+			 will be used.&#160;If selected, the <span style="font-weight: bold;">ALL</span> 
+			 and <span style="font-weight: bold;">All But Null</span> selections 
+			 will become active.&#160;Click one of these methods to select 
+			 it.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="byte swap.gif" alt="" style="border: none;" width="380" height="174" border="0" />
+            </p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">13 </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Sending:</span> Assign a<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> C Bit</span> as the Sending flag. 
+			 This flag turns<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> O</span>N 
+			 when the com port is<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Sending</span> 
+			 an <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> message to 
+			 the external device. Please refer to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Timing 
+			 Chart</span> below.</p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">14 </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Success:</span> Assign a<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> C Bit</span> as the Success flag. 
+			 This flag turns<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> O</span>N 
+			 after the com port <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Sent</span> 
+			 an <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> message to 
+			 the external device. The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Send</span> 
+			 instruction just<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Sends</span> 
+			 the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> message 
+			 to the external device and there is no way for the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK 
+			 PLC</span> to check if the external device <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Received</span> 
+			 the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> message 
+			 successfully. This flag always turns <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> 
+			 after <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Sending</span> and 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> message. This 
+			 flag turns <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">OFF</span> when 
+			 the<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Enable</span> input for 
+			 this instruction is <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Enabled</span> 
+			 again. Please refer to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Timing 
+			 Chart</span> below.</p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">15 </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Error Flag:</span> SC43:Out of Range is the PLC error code if any numeric value is out of the corresponding data types range.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Timing 
+			 Charts</h2>
+            <h3 align="center" xmlns="http://www.w3.org/1999/xhtml">Send an ASCII Message to the External Device 
+			 Once</h3>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CL183_Send_Once.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 align="center" xmlns="http://www.w3.org/1999/xhtml">Send an ASCII Message to the External Device 
+			 Continuously</h3>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="send ascii timing chart continous.gif" alt="" style="border: none;" width="548" height="213" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="344.htm">Send and Receive ASCII Instructions</a>
+            </p>
+        </div>
+        <script Language="JScript">/* <![CDATA[ */
+			function parser(fn) {
+			var X, Y, sl, a, ra, link;
+			ra = /:/;
+			a = location.href.search(ra);
+			if (a == 2)
+			X = 14;
+			else
+			X = 7;
+			sl = "\\";
+			Y = location.href.lastIndexOf(sl) + 1;
+			link = 'file:///' + location.href.substring(X, Y) + fn;
+			location.href = link;
+			}
+		/* ]]> */</script>
+    </body>
+</html>

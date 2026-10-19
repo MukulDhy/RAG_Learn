@@ -1,0 +1,520 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+h1
+{
+	font-weight: bold;
+	font-size: 10pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}
+
+li.h1
+{
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}
+
+li.h2
+{
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+	text-decoration: underline;
+}
+
+li.h3
+{
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+	text-decoration: underline;
+}
+
+p
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+}
+
+li.p
+{
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+}
+
+p.Notes
+{
+	border-top-style: Solid;
+	border-bottom-style: Solid;
+	background-color: #ffff80;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-color: #008000;
+	border-bottom-color: #008000;
+	vertical-align: middle;
+}
+
+li.P-Notes
+{
+	
+}
+
+ol,
+ul
+{
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p.List2
+{
+	color: #000000;
+	list-style: lower-alpha;
+}
+
+li.P-List2
+{
+	color: #000000;
+	list-style: lower-alpha;
+}
+
+p.Bullets1
+{
+	font-weight: normal;
+	font-style: normal;
+	list-style: url('../Images/smallred.gif');
+}
+
+li.P-Bullets1
+{
+	font-weight: normal;
+	font-style: normal;
+	list-style: url('../Images/smallred.gif');
+}
+
+p.List
+{
+	color: #000000;
+	margin-left: 18pt;
+	list-style: decimal;
+}
+
+li.P-List
+{
+	color: #000000;
+	list-style: decimal;
+}
+
+a.expandspot
+{
+	cursor: hand;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #ff00ff;
+	text-decoration: none;
+}
+
+span.expandtext
+{
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #ff00ff;
+}
+
+a.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a.glossterm
+{
+	cursor: hand;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	color: #800040;
+	text-decoration: none;
+}
+
+span.glosstext
+{
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #0000ff;
+}
+
+p.Bullets2
+{
+	background-color: #ffff80;
+	list-style: url('../Images/bullet w bgd.gif');
+}
+
+li.P-Bullets2
+{
+	list-style: url('../Images/bullet w bgd.gif');
+}
+
+p.BulletIndent1
+{
+	list-style: url('../Images/BulletIndent1.gif');
+}
+
+li.P-BulletIndent1
+{
+	list-style: url('../Images/BulletIndent1.gif');
+	list-style-image: url('../Images/smallgreen.jpg');
+}
+
+p.NumberedHang
+{
+	text-indent: -0.17in;
+	margin-left: 0.17in;
+}
+
+li.P-NumberedHang
+{
+	text-indent: -0.17in;
+}
+
+p.MatchHang
+{
+	margin-left: 0.17in;
+	margin-top: 4.5pt;
+}
+
+li.P-MatchHang
+{
+	
+}
+
+p.SecondBullet
+{
+	list-style: disc;
+	margin-left: 30pt;
+	margin-top: 4.5pt;
+	margin-bottom: 0pt;
+}
+
+li.P-SecondBullet
+{
+	list-style: disc;
+}
+
+p.NumberHangSub
+{
+	text-indent: -0.18in;
+	margin-left: 0.43in;
+}
+
+li.P-NumberHangSub
+{
+	text-indent: -0.18in;
+}
+
+body
+{
+	padding-top: 0px;
+	top: 0px;
+}
+
+li.p-break
+{
+	text-indent: 0in;
+}
+
+p.Checkbox
+{
+	font-weight: normal;
+	font-style: normal;
+	list-style: url('../Images/checkbox.gif');
+}
+
+li.P-Checkbox
+{
+	font-weight: normal;
+	font-style: normal;
+	list-style: url('../Images/checkbox.gif');
+}
+
+MadCap|relatedTopics.relatedTopics_1
+{
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial;
+	mc-label: ' Topics';
+}
+
+MadCap|expandingHead.expandspot
+{
+	cursor: hand;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #ff00ff;
+	text-decoration: none;
+}
+
+MadCap|dropDownHotspot.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.expandtext
+{
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #ff00ff;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	cursor: hand;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	color: #800040;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.glossterm
+{
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	color: #0000ff;
+}
+
+p.ADCFeedback
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 6pt;
+	font-weight: bold;
+}
+
+html
+{
+	background-image: none;
+}
+
+p.TableLeft
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+
+p.TableLeftBold
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #008000;
+}
+
+div.scrollarea
+{
+	mc-printer-page-size: letter;
+	mc-printer-page-margin-top: 0px;
+	mc-printer-page-header-margin: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+div.scrollfixed
+{
+	background-color: #ffffff;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	position: fixed;
+	width: 100%;
+	mc-printer-page-header-margin: 0px;
+	visibility: visible;
+}
+
+a:link
+{
+	font-size: 9pt;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	color: #008000;
+}
+
+a:visited
+{
+	font-size: 9pt;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	color: #008000;
+}
+
+a:hover
+{
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #008000;
+}
+
+a:active
+{
+	font-size: 9pt;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	text-decoration: underline;
+	background-color: #ffffff;
+	color: #008000;
+}
+
+ol.Bullet_note
+{
+	font-size: 9pt;
+	font-family: Arial, sans-serif;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	list-style-type: lower-alpha;
+	background-color: #ffff80;
+}
+
+img.img534pxMax
+{
+	max-width: 534px;
+}
+
+p.PBreakBefore
+{
+	color: #000000;
+	padding-top: 0px;
+	page-break-before: always;
+}
+
+p.PBrkAfter
+{
+	page-break-after: always;
+}
+
+h5
+{
+	font-family: Arial, ' sans-serif';
+	font-size: 9pt;
+	margin: 0px;
+}
+
+td.mid_align
+{
+	vertical-align: middle;
+}
+
+a.Popup:active
+{
+	background-color: #fefefc;
+	color: #ffffff;
+}
+
+MadCap|relatedTopics
+{
+	color: #008000;
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+li.P-BulletsSpaced
+{
+	font-weight: normal;
+	font-style: normal;
+	list-style: url('../Images/smallred.gif');
+	margin-top: 6px;
+}
+
+th
+{
+	
+}
+
+li
+{
+	font-family: Arial;
+	font: Arial, sans-serif;
+	font-size: 9pt;
+}
+
+img
+{
+	
+}
+
+@media print
+{
+	h1
+	{
+		page-break-before: avoid;
+	}
+}
+

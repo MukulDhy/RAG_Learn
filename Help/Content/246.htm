@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu|PID Setup">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>PID Control in CLICK</title>
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">PID&#160;Control in CLICK</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL246</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Purpose</h2>
+        <p>The CLICK PLC, like other controllers, has attributes that are common to any PID control system, but it also has its own features unique to CLICK. Most of the CLICK PID configuration, monitoring and tuning can be done in the <a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto"><b>PID Configuration</b></a> and <b><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">PID Monitor</a></b> window. But some users would rather have the flexibility to implement this feature in ladder logic and use another user interface such as a C-more HMI to configure, monitor and tune their PID control loops. This help topic is intended to give the user what they need to implement the CLICK PID feature in ladder logic without using those tools.</p>
+        <h2>CLICK PID Function Overview</h2>
+        <ul>
+            <li>PID maximum number of loops: 8 Loops</li>
+            <li>Required memory: 40 C coils, 15 DS registers, 25 DF registers</li>
+            <li>Control Algorithm: Position only</li>
+            <li>Control Action: Direct or Reverse</li>
+            <li>Error Term: Linear or Squared</li>
+            <li>Error Dead band: Configurable</li>
+            <li>Sampling rate: 100 to 30,000 ms</li>
+            <li>Control Algorithm: PID or PI</li>
+            <li>PV filter: Configurable</li>
+            <li>Set Point: maximum and minimum values can be set</li>
+            <li>Control Output: maximum and minimum values can be set</li>
+            <li>Derivative Gain Limit: Configurable</li>
+            <li>Anti-Windup (Bias freeze): Selectable</li>
+            <li>Bumpless transfer: two modes </li>
+            <li>PWM Output: Duty Cycle corresponding to the Control Output value</li>
+            <li>Autotuning: Limit Cycle (closed loop)</li>
+        </ul>
+        <h2>PID Loop Addressing</h2>
+        <p>Each PID Loop requires consecutive C, DS and DF memory areas. All of the PID Loop Configuration parameters are stored in these memory locations.</p>
+        <blockquote>
+            <p>C Memory Area: 40 Consecutive bits</p>
+            <p>DS Memory Area: 15 Consecutive Integers</p>
+            <p>DF Memory Area: 25 Consecutive Floats</p>
+        </blockquote>
+        <blockquote>
+            <h3>PID Address Descriptions</h3>
+            <blockquote>
+                <p>For a complete list and description of each PLC Address used in each PID Loop Configuration and their Nicknames, see the topic <b><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">PID Address Description</a>.</b></p>
+            </blockquote>
+        </blockquote>
+        <h2>PID Control Algorithm</h2>
+        <p>CLICK utilizes a position PID control algorithm only. The implementation of the PID algorithm in the PLC is shown below.</p>
+        <blockquote>
+            <p>
+                <img src="GeneratedImages/Equations/Equation1.svg" alt="" class="_MCEquation_0 mcReset" />
+            </p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <table style="margin-left: 0;margin-right: auto;">
+                    <col />
+                    <col style="width: 277px;" />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation2.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= Control Output</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation3.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= Initial Output</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation4.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p> = Proportional Gain (P)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation5.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= error (SP - PV)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation6.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p> = Sample Rate in seconds</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation7.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= Reset Time (I) in seconds</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation8.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= Derivative Gain (D) in seconds</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation9.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= present sample</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>
+                                    <img src="GeneratedImages/Equations/Equation10.svg" alt="" class="mcReset" />
+                                </h2>
+                            </td>
+                            <td class="td_p">
+                                <p>= previous sample</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+        </blockquote>
+        <h2>Setpoint (SP)</h2>
+        <p>The <b>Setpoint (DFn+00)</b> is the value to which the PID Control Loop is trying to drive the PV. </p>
+        <p><b>Setpoint Upper and Lower Limits</b>: You may select to limit the allowed upper and lower settings for the Setpoint. This is useful in preventing someone from accidentally entering a value that is outside the process limits.</p>
+        <p>When enabled, if a Setpoint value is entered outside of the limits, the PLC will automatically change the Setpoint to the limit that is closest to the value entered.</p>
+        <blockquote>
+            <p>The limits are enabled individually:</p>
+            <blockquote>
+                <p><b>Upper Limit enable</b> (Cn+01)</p>
+                <p><b>Lower Limit enable</b> (Cn+00)</p>
+            </blockquote>
+            <p>The limit values must be set if the limit is enabled:</p>
+            <blockquote>
+                <p><b>Upper Limit value</b> (DFn+02)</p>
+                <p><b>Lower Limit value</b> (DFn+01)</p>
+            </blockquote>
+        </blockquote>
+        <h3>&#160;</h3>
+        <h2>Process Variable (PV)</h2>
+        <p>The <b>Raw Process Variable</b> (DFn+11) is the measured value that  the PID loop controls. It is directly affected by the process being controlled. The <b>Process Variable</b> (DFn+12) is the filtered <b>Raw Process Variable</b> used by the PID calculation. If the PV filter is not enabled, then the PV is equal to the Raw PV.</p>
+        <blockquote>
+            <h3>PV Upper and Lower Limits</h3>
+            <blockquote>
+                <p>The PV Upper (DFn+23) and Lower (DFn+22) Limits are the expected process range values for the full range of the Control Output. They are used to calculate the Process gain which in turn is used by Autotune to calculate the Proportional Gain tuning constant.</p>
+                <p> This is not the range of the process measurement device or the PLC input configuration. For example the Input may be a RTD input with a range of -328 to 1562 Deg F. But the Process range for a CO of 0 to 100 may only be 40 to 140 Deg F. The <b style="font-weight: bold;">PV Upper and Lower Limits </b>would be 140 and 40 respectively.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <h3>PV Filter</h3>
+            <blockquote>
+                <p>A noisy Raw PV can cause a PID loop to become unstable as well as make the loop difficult to tune. The CLICK PLC provides a <b>PV Filter </b>to reduce the high frequency noise in the Raw PV value to provide a clean PV to the PID Controller.</p>
+            </blockquote>
+            <blockquote>
+                <p><b>PV Filter</b>(Cn+11): turns on the PV filter.</p>
+                <p><b>Filter Constant</b> (DSn+8): the Filter Constant is the percentage of the Raw PV that is passed each PID sample time. The smaller the filter value, the more filtering that will occur. A value of 100 will result in no filtering and 100% of the Raw PV is passed.The default value is 100. </p>
+            </blockquote>
+            <table style="width: 100%;">
+                <col style="width: 75px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="notepad1.gif" />
+                        </td>
+                        <td>
+                            <p class="Notes">Enabling the PV Filter and entering a small filter value can cause some lag in the PV. This should be taken into account while tuning.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </blockquote>
+        <h3>&#160;</h3>
+        <h2>Error Term</h2>
+        <p>The Error is the difference between the Setpoint and the Process Variable: Error = SP - PV.</p>
+        <blockquote>
+            <h3>Error Squared Option</h3>
+            <blockquote>
+                <p>When the Error Squared (Cn+02) option is selected, the error term is squared (preserving the original sign), before it is used in the PID calculation. This lessens the response to smaller error values, but increases the response to larger errors. </p>
+                <p> Two situations in which the error squared term might be useful are:</p>
+                <ul>
+                    <li>Noisy PV signal – using a squared error term can reduce the effect of electrical noise on the PV, which will make the control system jittery. A squared error maintains the response to larger errors.</li>
+                    <li>Non-linear process – some processes (such as chemical pH control) require non-linear controllers for best results. </li>
+                </ul>
+            </blockquote>
+            <h3>Error Deadband Option</h3>
+            <blockquote>
+                <p>When the <b>Error with Deadband</b> (Cn+03) option is selected, no control action is taken if the PV is within the specified <b>Error Deadband (</b>DFn+03) around the SP. The error deadband is the same above and below the SP and is in the same units as the PV and SP.</p>
+                <p>Once the PV is outside of the error deadband around the SP, the entire error is used in the loop calculation.</p>
+                <p>If Error Squared is enabled, the error will be squared before it is applied to the deadband calculation.</p>
+            </blockquote>
+        </blockquote>
+        <h2>Control Output (CO)</h2>
+        <p>The Control Output (DFn+08) is the result of the PID calculation. It is usually tied to a physical output on the PLC, which is wired to a control device such as a valve actuator.</p>
+        <p>The Control Output is Read Only when the loop is in Auto. To change the Control Outout, the loop must be in Manual Mode.</p>
+        <p>The Control Output  range is 0 to 100% by default. But it can be changed by setting the <b>Upper Limit(DFn+10)</b> and <b>Lower Limit(DFn+09)</b>. </p>
+        <p>The PID control will not exceed these limits in Auto or Autotuning Mode. The limit values have no effect in Manual mode.</p>
+        <p>If the Upper Limit is set to zero, the CO will never get above zero and the control loop will not function properly.</p>
+        <blockquote>
+            <h3>PWM Control</h3>
+            <blockquote>
+                <p>PWM (Pulse Width Modulated) control turns the Control Output signal into a series of pulses. The width of the pulse (or duty cycle) is the ratio of ON time to OFF time determined by the Control Output percentage of the <b>Time Period</b>. </p>
+                <p>PWM is useful when the Control element in the process is not an analog device such as a valve position actuator, but a discrete device such as a heating element. For example, temperature can be controlled by turning the heating element ON and OFF.</p>
+                <p>This can be accomplished by assigning the <b>Bit Address</b> of a Discrete Output, such as a relay output, to the PWM Control.</p>
+                <p><b>Since PWM Control is determined by the type of output, it is enabled in the PID configuration, but unlike most other parameters, it is not modifiable by the Ladder Logic. No Address is assigned to the PWM Enable setting.</b>
+                </p>
+                <p><b>Bit Address</b>: The is the address of the discrete output that is tied to the control element in the process. The programmer assigns this.</p>
+                <p><b>Time Period</b>: (DSn+07): The total of the ON and OFF time. This value can be 1 to 600 seconds.</p>
+                <p style="text-align: center;">
+                    <img src="Resources/Images/PWM1.png" />
+                </p>
+            </blockquote>
+        </blockquote>
+        <h2>Action</h2>
+        <p>The Action (Cn+09) of a control loop is either Direct (forward) acting or Reverse acting. </p>
+        <blockquote>
+            <p>A <b>Direct</b> acting control loop means that whenever the control output increases, the PV will also increase. For example, if the Control Output drives open a gas valve to a flame control, the temperature will increase as the Control Output increases.</p>
+            <p>A <b>Reverse</b> acting control loop is one where an increase in the control output results in a decrease in the PV. A common example of this would be a refrigeration system, where an increase in the cooling input causes a decrease in the PV (temperature).</p>
+        </blockquote>
+        <h2>Tuning Constants</h2>
+        <p>The CLICK PID Algorithm uses Proportional Gain(K<sub>P</sub>), Integral Time (T<sub>I</sub>) and Derivative(T<sub>D</sub>) constants for tuning the control loop.</p>
+        <blockquote>
+            <h3>Proportional Gain (DFn+05)</h3>
+            <p>Proportional Gain, in the equation above is the constant K<sub>P</sub> and has no units. The value can be 0.01 to 10000. Each sample time (T<sub>S</sub>), the Error is multiplied by K<sub>P</sub> and the result is added to the previous CO value.  So, the adjustment made to CO is Proportional to the error for that sample.</p>
+            <p>In some controllers, you can remove the effect of the Proportional term from the calculation by setting P to 0 or a very small number.  This is not the case in the CLICK PLC since as seen above in the equation, the K<sub>P</sub> is used in both the Integral and Derivative terms.</p>
+            <h3>Integral or Reset Time  (DFn+06)</h3>
+            <p>Reset time, in the equation is the constant T<sub>I</sub> and is expressed in seconds. The value can be 0.01 to 6000. Each sample time, the Error accumulated over the time the loop has been running is multiplied by the T<sub>S</sub> times K<sub>P</sub> divided by T<sub>I</sub> .  The result (Bias term) is added to the previous CO value.  So, the adjustment made to CO is proportional to the Integral Sum of the error.</p>
+            <p>To remove the effects of the Integral term from the calculation, make the Reset Time very large in the order of 1000 seconds or so.</p>
+            <blockquote>
+                <h3>Freeze Bias (Anti-Windup) (Cn+05)</h3>
+                <p>Freeze Bias, also known as Anti-Windup, is a feature of the CLICK PID that can make your process more stable and recover more quickly from process disturbances. To understand Freeze Bias and Anti-Windup, you must first understand Bias and Reset Windup.</p>
+                <p>The Bias term is the Integrator portion of the PID calculation. It is the accumulated Error times the Sample Rate divided by the Reset Time. Reset Windup refers to the fact that so long as there is error, this value continues to accumulate and drive CO to its limit.</p>
+                <p>Refer to the figure below. When there is a large Error caused by a SP change, process disturbance, or as in the example below a lost PV signal, the bias term keeps integrating normally during the lost PV until its upper limit is reached. When the PV signal returns, the bias value is saturated (windup) and takes a long time to return to normal. The loop output consequently has an extended recovery time. Until recovery, the output level is locked at its extreme limit and causes further problems by not allowing the loop to recover quickly.</p>
+                <p style="text-align: center;">
+                    <img src="Resources/Images/Freeze Bias_542x195.png" style="width: 542;height: 195;" />
+                </p>
+                <p>In the second PV signal loss example, the Freeze Bias feature is enabled. It causes the bias value to freeze when the control output goes to its upper limit. The reset windup is avoided and the output recovery time is much less. </p>
+                <p>The Freeze Bias will occur when the Control Output has reached the Upper or Lower limit set in the <b>Output</b> tab.</p>
+                <p>The example shows a large Setpoint change with No Freeze Bias vs Freeze Bias enabled.</p>
+                <table style="border-spacing: 0px 0px;margin-left: auto;margin-right: auto;">
+                    <col style="width: 650px;" />
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><span style="font-size: 11pt;">No Freeze Bias</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/No Bias Freeze_693x333.png" style="padding-left: 10px;padding-right: 10px;padding-top: 10px;padding-bottom: 10px;width: 693;height: 333;" />
+                            </td>
+                        </tr>
+                        <tr />
+                        <tr>
+                            <td style="text-align: center;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><span style="font-size: 11pt;">Freeze Bias</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/Bias Frozen_677x325.png" style="padding-left: 10px;padding-right: 10px;padding-top: 10px;padding-bottom: 10px;width: 677;height: 325;" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+            <h3>Derivative Gain (DFn+07)</h3>
+            <p>In the  equation, Derivative Gain is the constant T<sub>D</sub> and is expressed in seconds. For each sample time, the difference in the present error and the previous error is multiplied by T<sub>D</sub> time K<sub>P</sub> divided by the T<sub>S</sub>.  The result is added to the previous CO.  So, the adjustment made to the CO is proportional to the Derivative of the error, or the rate of change of the error since the last sample.</p>
+            <p>Derivative Gain is useful for reacting quickly to a sudden change in the error.  But as a result, it is also negatively affected by high frequency noise in the PV and may cause the CO to be erratic.</p>
+            <p>To remove the effects of the Derivative term from the calculation, make the Derivative Gain equal to 0.</p>
+            <blockquote>
+                <h3>Derivative Gain Limit</h3>
+                <p>The Derivative Term in the PID calculation is very useful in allowing the control loop to respond quickly to a sudden change in the error. The disadvantage of this is that high frequency noise in the PV signal will be amplified significantly, causing the CO to be erratic. </p>
+                <p>The <b>Derivative Gain Limit (Cn+04)</b> is a high frequency filter for the Derivative Gain. With it you can limit how much high frequency noise affects the Derivative Term of the calculation.   </p>
+                <p>The <b>Gain Limit Factor</b> (<b>DSn+06)</b> can be 1 to 100, although a value from 8 to 20 is more typical. A value of 100 will  essentially apply no filter to the Derivative. As the Limit is reduced, the effect of PV noise on the CO is reduced. A value of 0 is the same as setting the Derivative Gain to 0.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <h3>Sample Rate(T<sub>S</sub>)</h3>
+            <p>PID control is performed as part of the Main Program, but the new CO is calculated when the sampling rate time (DSn+05) has elapsed. Therefore, if the scan time is long, the new CO may not be calculated as quickly as the sample rate setting. The Sample rate can be 100 to 30000 ms.</p>
+            <p>
+                <img src="Resources/Images/Sample Rate and Scan Time.png" />
+            </p>
+        </blockquote>
+        <h2>PID Mode Operations</h2>
+        <p style="text-align: center;">
+            <img src="CLICK PID Mode Diagram.png" />
+        </p>
+        <blockquote>
+            <ol>
+                <li class="h2" value="1">PID Stop Mode</li>
+            </ol>
+            <blockquote>
+                <ul>
+                    <li>When the PLC Mode is STOP, the CLICK PID control loops stop executing.</li>
+                    <li>When the PLC Mode shifts from STOP to RUN, CLICK PID control loops begin executing in Manual Mode.</li>
+                </ul>
+            </blockquote>
+            <ol data-mc-continue="true">
+                <li class="h2" value="2">Manual Mode</li>
+            </ol>
+            <p>CLICK PID control loops shift to Manual Mode when the following conditions are met:</p>
+            <blockquote>
+                <ul>
+                    <li>When the PLC switches from STOP to RUN. <b>This affects all PID control loops.</b></li>
+                    <li>When C(n+15) Manual Mode Start Request is turned ON.</li>
+                    <li>When a PID error occurs.</li>
+                </ul>
+            </blockquote>
+            <ol data-mc-continue="true">
+                <li class="h2" value="3">Auto Mode</li>
+            </ol>
+            <p>CLICK PID control loops shift to Auto Mode when the following conditions are met:</p>
+            <blockquote>
+                <ul>
+                    <li>When C(n+16) Auto Mode Start Request is turned ON while the PID control loop is in Manual Mode.</li>
+                    <li>When Autotune is completed. </li>
+                    <li>When C(n+17) Autotune Mode Start Request is turned off.</li>
+                </ul>
+            </blockquote>
+            <ol data-mc-continue="true">
+                <li class="h2" value="4">Autotune Mode</li>
+            </ol>
+            <p>CLICK shifts to Autotune Mode when the following conditions are met: </p>
+            <blockquote>
+                <ul>
+                    <li>When C(n+17) Autotune Mode Start Request is turned on while the PID control loop is in  Auto Mode.</li>
+                    <li>See <b><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">CLICK PID Autotuning</a></b>for other conditions necessary to enter Autotune Mode.</li>
+                </ul>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <p>Below is a timing chart for all of the PID Modes.</p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/PID Mode timing chart.png" />
+            </p>
+        </blockquote>
+        <blockquote>
+            <h3>Manual and Auto Mode Transitions</h3>
+            <p>Notice in the chart above that the Manual and Auto Mode Requests are not maintained bits. These bits submit a "request" to the PLC. If there are no errors, then the PLC PID loop is switched to the respective mode and the Mode Indication bit is turned on.</p>
+        </blockquote>
+        <h3>&#160;</h3>
+        <h2>Bumpless Transfer</h2>
+        <p>A Bumpless Transfer (Cn+08) refers to the method of switching from Manual Mode to Auto Mode without causing a "bump" in the process by sudden movement of the Control Output.</p>
+        <p>Mode 1 (OFF): Accomplishes no bump because the SP and PV are made equal, requiring no immediate change in the CO.</p>
+        <ul>
+            <li>The Bias Term is made equal to the CO.</li>
+        </ul>
+        <ul>
+            <li>The SP is made equal to the PV.</li>
+        </ul>
+        <p>Mode 2 (ON): Since the SP is not made equal to the PV, a bump in the CO can occur when the control is switched from Manual to Auto. It is up to the Operator to make changes to the process settings to prevent a bump in the process.</p>
+        <ul>
+            <li>The Bias Term is made equal to the CO. </li>
+        </ul>
+        <h2>Autotuning</h2>
+        <p>The P, I and D parameters as well as the Sample Rate can be set automatically by using the Autotune features of the CLICK PID. See the <b><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">PID Autotuning</a> </b> topic for more information.</p>
+        <h2>PID Errors</h2>
+        <p>The CLICK PID Errors are indicated in register DS(n+00). If there is more than one error, the DS register will contain the lowest active error number. When it is cleared, the next lowest error is indicated.</p>
+        <p>The list of PID Errors can be found in help topic <b><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">CLICK PID Errors</a></b>.</p>
+        <h2>PID Loop Alarms</h2>
+        <p>The CLICK allows the user to specify alarm conditions that can be monitored for each loop. </p>
+        <blockquote>
+            <p><b>Use PV Alarm</b> (Cn+12): these are limit alarms. If the PV passes the limit, the corresponding C-bit is turned on.</p>
+            <p>&#160;</p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col style="width: 146px;" class="Column-Column1" />
+                    <col style="width: 137px;" class="Column-Column1" />
+                    <col style="width: 159px;" class="Column-Column1" />
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Type</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Limit </h2>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Status Bit</h2>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>High-High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+16</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+34</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+15</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+33</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Low Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+14</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+32</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1" style="text-align: center;">
+                                <h2>Low-Low Alarm</h2>
+                            </td>
+                            <td class="BodyB-Column1-Body1" style="text-align: center;">
+                                <p>DFn+13</p>
+                            </td>
+                            <td class="BodyA-Column1-Body1" style="text-align: center;">
+                                <p>Cn+31</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+            <p style="text-align: center;">
+                <img src="Resources/Images/PV Limit Alarms_588x195.png" style="padding-left: 25px;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;width: 588;height: 195;" />
+            </p>
+            <blockquote>
+                <p style="font-weight: bold;">Use PV Deviation Alarm <span style="font-weight: normal;">(Cn+13): Sometimes the PV value is not a concern, but the difference between the PV and SP. You can specify a High Deviation Alarm or High High Deviation Alarm from the SP. When the PV is further from the SP than the programmed  Deviation Limit, the corresponding C-bit is turned on. The deviation is the amount <b>above or below</b> the SP. </span></p>
+            </blockquote>
+            <blockquote style="text-align: center;">
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col style="width: 146px;" class="Column-Column1" />
+                    <col style="width: 137px;" class="Column-Column1" />
+                    <col style="width: 159px;" class="Column-Column1" />
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Type</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Limit </h2>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Status Bit</h2>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2>High-High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+18</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+36</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <h2>High Alarm</h2>
+                            </td>
+                            <td class="BodyB-Column1-Body1" style="text-align: center;">
+                                <p>DFn+17</p>
+                            </td>
+                            <td class="BodyA-Column1-Body1" style="text-align: center;">
+                                <p>Cn+35</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+            <p style="text-align: center;">
+                <img src="Resources/Images/Deviation alarm_497x179.png" style="width: 497;height: 179;" />
+            </p>
+            <blockquote>
+                <p><b>PV Alarm Hysteresis</b> (DFn+20): The <b>PV Limit Alarms</b> and <b>PV Deviation Alarms</b> are programmed using limit values. When the PV value or deviation exceeds the configured limit, the alarm status bit becomes true. Real-world PV signals  fluctuate. As the PV value crosses an alarm limit, its fluctuations will cause the alarm to be intermittent and trigger repeatedly.</p>
+                <p>The figure below shows how the hysteresis is applied when the PV value goes past a limit and descends back through it.</p>
+            </blockquote>
+            <blockquote>
+                <p style="text-align: center;">
+                    <img src="Resources/Images/PV Hysteresis Alarm1_638x189.png" style="width: 638;height: 189;" />
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>The alarm activates immediately when the Alarm limit is crossed. But the alarm delays turning off until the PV value has dropped below the limit by the hysteresis amount.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p style="font-weight: normal;"><b>Use PV Rate of Change </b><span style="font-weight: normal;">(Cn+14):</span><span style="font-weight: normal;"> When the PV changes faster than a specified rate-of-change limit (DFn+19), the Rate of Change C-bit (Cn+37) is set.</span> The rate-of-change units are PV. Units change per sample time.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>As an example, suppose the PV is the temperature for your process, and you want an alarm whenever the temperature changes faster than 15 degrees/minute. Suppose the sample rate is 2 seconds.</p>
+                <p style="font-size: 14pt;"><span style="font-size: 18pt;"> </span>
+                    <img src="GeneratedImages/Equations/Equation11.svg" alt="" class="_MCEquation_0 mcReset" />
+                </p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Find Available&#160;Addresses</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Configuration Mode</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Monitor Mode</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;List View</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="250.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Filter Examples</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="251.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Managing Retentive Memory</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Error&#160;Codes</a>
+        </p>
+    </body>
+</html>

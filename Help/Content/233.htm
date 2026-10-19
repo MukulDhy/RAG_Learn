@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|Com Port 1 (Ethernet) Setup|EtherNet/IP" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>CLICK EtherNet/IP Adapter Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><a name="kanchor54"></a>CLICK EtherNet/IP Adapter Setup</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL233</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p xmlns="http://www.w3.org/1999/xhtml">Configure the CLICK EtherNet/IP Adapter setup by going to the <b xmlns="http://www.w3.org/1999/xhtml">Function</b> tab in the Navigation pane or under the <b xmlns="http://www.w3.org/1999/xhtml">Setup</b> menu.  Expand the <b xmlns="http://www.w3.org/1999/xhtml">Com Port1 Setup</b> to access the EtherNet/IP Adapter:</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EtherNetIP Adapter Access-BT.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EtherNet_IP Adapter Setup-BT1.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">1</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Enable EtherNet/IP Adapter</b>:  The PLC will not respond to EtherNet/IP Messages unless this option is selected.  When selected, the PLC will respond to EtherNet/IP messages targeted at the TCP Port number configured in option c shown above.  The default port number is 44818.</span>
+            </p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">2</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>Number of Connections:</b>  The CLICK PLC supports 2 EtherNet/IP connections.  The default configuration is for 1 connection.  To enable 2 connections, change this option to 2 and an additional <b>Connectio</b>n tab will appear for configuration.</span>
+            </p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span><b xmlns="http://www.w3.org/1999/xhtml">TCP Port number (1 – 65535):</b>  This is the TCP Port number that CLICK will listen to for EtherNet/IP connections.  The range is from 1 – 65535 as indicated above.  44818 is the default port number for EtherNet/IP.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><b>TCP Timeout (5 – 5000):</b>  When doing Explicit Messaging to the CLICK PLC, this is the time  without activity that CLICK will wait before closing the TCP connection (FIN).  To prevent the CLICK PLC from closing the TCP connection, the master (Scanner) should be configured to send messages more frequently than the time specified in this field.</span>
+            </p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">5</span><b xmlns="http://www.w3.org/1999/xhtml">Data State of Originator =&gt; Target During Network Error:</b>  This option determines what the CLICK PLC does to the data specified in the <b xmlns="http://www.w3.org/1999/xhtml">Output (from Scanner)</b> tab in the event of loss of communications from the Scanner.  This is the data being written from the Scanner device.  The <b xmlns="http://www.w3.org/1999/xhtml">Hold</b> option will leave the data values in the last state that was written from the Scanner.  The <b xmlns="http://www.w3.org/1999/xhtml">Clear</b> option will set all the address values to 0 in the event of communications loss.  This is configured per Connection. This feature is designed for Class 1 Implicit Connections.  For use with Class 3 Explicit Connections please look at using SD108/SD114 “_EIP_Con_No_Comm_Time.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">6</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">I<b>nput Communication Parameters:</b>  These values are not editable, but this is the information necessary for configuration of the Scanner device connection.  There are different values for each Connection 1 and 2 and for each segment, Input and Output.</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">For IO (Implicit) Messaging, the Connection Points are:</p>
+            <table style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');margin-left: auto;margin-right: auto;width: 100%;" class="TableStyle-Basic" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyE-Column1-Body1">Connection</td>
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyE-Column1-Body1">Segment</td>
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyD-Column1-Body1">Connection
+ Point</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 1</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Input</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">101 (0x65)</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 1</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Output</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">102 (0x66)</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 2</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Input</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">103 (0x67)</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">Connection 2</td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">Output</td>
+                        <td style="text-align: center;" class="BodyA-Column1-Body1">104 (0x68)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">For Explicit Messaging, the Object Class, Object Instance and Object Attribute are:</p>
+            <table style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" xmlns="http://www.w3.org/1999/xhtml" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col style="width: 140px;" class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyE-Column1-Body1">Connection</td>
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyE-Column1-Body1">Segment</td>
+                        <td style="color: #ffffff;background-color: #000080;text-align: center;" class="BodyE-Column1-Body1">Object Class</td>
+                        <td style="color: #ffffff;background-color: #000080;text-align: center;" class="BodyE-Column1-Body1">Object Instance</td>
+                        <td style="text-align: center;color: #ffffff;background-color: #000080;" class="BodyD-Column1-Body1">Object Attribute</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 1</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Input</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">4</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">101 (0x65)</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">3</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 1</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Output</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">4</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">102 (0x66)</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">3</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Connection 2</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">Input</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">4</td>
+                        <td style="text-align: center;" class="BodyE-Column1-Body1">103 (0x67)</td>
+                        <td style="text-align: center;" class="BodyD-Column1-Body1">3</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">Connection 2</td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">Output</td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">4</td>
+                        <td style="text-align: center;" class="BodyB-Column1-Body1">104 (0x68)</td>
+                        <td style="text-align: center;" class="BodyA-Column1-Body1">3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">7</span><b xmlns="http://www.w3.org/1999/xhtml">Size (0 – 500):</b>  This field displays the size for each connection and segment in bytes.  This is an important value for configuring the Scanner device connection.  This value is not editable but is calculated based upon the addresses mapped in the table below it.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">8</span><b xmlns="http://www.w3.org/1999/xhtml">Address blocks:</b>  For Input Data, this is the CLICK address range where data being sent back to the Scanner will originate from.  For Output Data, this is the CLICK address range where the data being sent from the Scanner will be written.</p>
+            <p style="font-weight: normal;text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/AddressBlock_InputData.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="font-weight: normal;text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/AddressBlock_OutputData.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Up to 10 different data blocks may be specified.  Memory addresses may be typed in manually or you can click on the Address Picker box to select the available addresses.  The addresses allowed are:</p>
+            <table style="margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 122px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml"> -	DS</p>
+                        </td>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	SD</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	DD</p>
+                        </td>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	TD</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	DF</p>
+                        </td>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	TXT</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	DH</p>
+                        </td>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	XD</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	CTD</p>
+                        </td>
+                        <td>
+                            <p xmlns="http://www.w3.org/1999/xhtml">-	YD</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <table style="vertical-align: top;width: 100%;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 58px;" />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p xmlns="">
+                            <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                    <td colspan="2" class="td_p">
+                        <p class="Notes"><b>Note:</b>&#160;TXT addresses must be specified in an even amount.  Odd byte configurations are not allowed.</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">9</span><b xmlns="http://www.w3.org/1999/xhtml"> Data Block Offset:</b>  This field will display the start and end byte offsets for each data block specified.  Note that the EtherNet/IP protocol handles data in bytes therefore many EtherNet/IP Scanner devices may only support Input and Output data in this same format.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">10</span><b xmlns="http://www.w3.org/1999/xhtml">Word Swap:</b>  This field will change the word order of 32-bit data types (DD, DF, XD, YD, TD, CTD and SD) being received or sent from the Scanner device.  See the “Byte Swap” explanation for an illustration of the data for the various options.</p>
+            <p style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">11</span><b xmlns="http://www.w3.org/1999/xhtml">Byte Swap:</b>  This field will change the byte order within the words for all data types.  In the illustration below, each letter represents a Byte.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If data is shown in 32-bit register via Data View of the CLICK software as:  ABCD</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">What is sent on the wire:</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">-	No Byte or Word Swap:  DCBA</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">-	Byte Swap only:  CDAB</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">-	Word Swap only:  BADC</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">-	Byte and Word Swap:  ABCD</p>
+            <table style="vertical-align: top;width: 100%;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 58px;" />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                    </td>
+                    <td colspan="2" class="td_p">
+                        <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> Word Swap and Byte Swap are configured separately for each Connection, 1 and 2 and for each segment, Input and Output.</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">12</span><b xmlns="http://www.w3.org/1999/xhtml">View Address Mapping:</b>  The View Address Mapping button will display a more detailed breakdown of each PLC address to its corresponding Byte Offset within the EtherNet/IP data for both connections input and output data.  An example is displayed below. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/ViewAddressMappingTable.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">13</span><b xmlns="http://www.w3.org/1999/xhtml">Export EDS File:</b>  This button can be pressed upon completion of the Adapter configuration to produce an EDS file that can be imported into the EtherNet/IP Scanner’s programming software with the required settings for connection.</p>
+            <table style="vertical-align: top;width: 100%;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                <col style="width: 58px;" />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;text-align: center;">
+                        <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                    </td>
+                    <td class="td_p" colspan="2">
+                        <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> If the number of Connections is greater than 1, Data blocks must be configured in both connections in order to export the EDS file.  If there are no Data Blocks configured, a GUI-102 error will result.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:</h3>
+            <p xmlns=""><a href="232.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP&#160;Overview</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="234.htm" xmlns="http://www.w3.org/1999/xhtml">Communications Ethernet</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="235.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for AB&#160;CompactLogix</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="236.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for Productivity Series PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="237.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for the BRX&#160;PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="241.htm" xmlns="http://www.w3.org/1999/xhtml">General &amp;&#160;Extended Status EtherNet/IP Error Codes</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+        </div>
+    </body>
+</html>

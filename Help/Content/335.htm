@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>C0-04POT Settings</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">C0-04POT Settings</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor173"></a>Topic: CL335</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The 
+						C0-04POT Setting dialog allows you to set up the scaling for the analog input values and assign DF memory addresses to store the scaled analog input values.</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/C0-04POT Settings.png" alt="" style="border: none;" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="margin-left: 16px;text-indent: -16px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Input Range:</span>Input Range for the C0-04POT is fixed at 0 to 4095 (12 bit).</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Scale Range:</span> Enter 
+						the maximum and minimum scaled values.</p>
+            <p style="margin-left: 18px;" xmlns="http://www.w3.org/1999/xhtml">In the following example, the <b xmlns="http://www.w3.org/1999/xhtml">Scale Range</b> is set to 0.0 - 100.0. This means an input value of 0 (full counterclockwise) will be converted to 0.0 and input value of 4095 (full clockwise) will be converted to 100.0. When input value is 3276, 80.00 will be entered in DF1.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/C0-04POT Scale Range.png" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/C0-04POT enable range limiter ON example.png" />
+            </p>
+            <p style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Continuous Address:</span> If you want to assign continuous DF&#160;memory addresses to store the scaled analog input values, please check this option. In this case, you just need to assign a DF memory address to CH1. The DF memory address will be the starting address of those continuous DF memory addresses.</p>
+            <p style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Data Register:</span> 
+						Enter a DF memory address to store the scaled analog value. In the CLICK&#160;PLC, all analog data are handled as floating point numbers. So you can select only DF memory addresses.</p>
+            <p style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Resolution:</span> The CLICK Software automatically calculates the resolution of the scaled data according to the bit resolution of the analog input and the scaling setup, and displays the value here.</p>
+        </div>
+    </body>
+</html>

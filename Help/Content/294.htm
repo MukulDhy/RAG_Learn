@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|High Speed Output" data-mc-ignored-words="txt" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title xmlns="http://www.w3.org/1999/xhtml">Home for PTO Axis</title>
+        <style type="text/css" media="print" xmlns="http://www.w3.org/1999/xhtml">/*<![CDATA[*/
+
+.NoPrint
+{
+	visibility: hidden;
+	display: none;
+}
+
+/*]]>*/
+
+</style>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div id="topic2" class="scrollfixed NoPrint"><a name="kanchor133"></a><a name="kanchor134"></a>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 528px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 548px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL294</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1>
+                            Home for PTO Axis</h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" class="scrollarea" xmlns="http://www.w3.org/1999/xhtml">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Purpose</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a name="aanchor0"></a>
+                <MadCap:concept term="Homing" />The Home Instruction is used to move the Axis from the Current Position to a known physical Position found by an Input Switch.  The Home Instruction can only control a single Axis, but separate Home Instructions can occur simultaneously.  The Home search can be configured to travel in the Positive or Negative Direction.  Optionally the Current Position Register can be set when the instruction completes successfully. The settings (Initial Velocity, Creep Velocity, Acceleration, Deceleration) cannot be changed while the instruction is enabled.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">There are 6 Modes of operation:</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">1)	Move to Switch 1 and Creep to Switch 2 and Halt</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">2)	Move to Switch 1 and Halt</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">3)	Move to Switch 1 and Deceleration</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">4)	Move to Switch 1 and Return to Switch 1</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">5)	Move to Switch 1 and Decelerate to a Stopping distance (Registration type move)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">6)	Set Current Position To Immediate Value</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/HOME_649x574.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 649;height: 574;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Select Axis</b>: The PTO Axis must be created in the High Speed I/O Setup before placing the Home Instruction into ladder.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Axis Names</b>: These are the Axis names as defined in the High Speed I/O Setup.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Axis Settings</b>: This is a read-only view of the Axis settings from the High Speed I/O Setup.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Initial Velocity</b>: Constant or DD Register. The speed at which the Home search will begin.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Creep Velocity</b>: Constant or DD Register.  Used with Mode 1 and Mode 4. A slower velocity used to approach the second Switch.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Acceleration</b>: Constant or DD Register.  The change of rate value used only during Acceleration. (Pulses Per Second Squared)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Deceleration</b>: Constant or DD Register.  The change of rate value used only during Deceleration. (Pulses Per Second Squared)</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Direction</b>: This setting selects the Direction of Travel for the Home search.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Stop Distance</b>: Constant or DD Register. This setting is only used with Mode 5.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b>Switch 1 and 2</b>: Must be an external Input X bit. For their specific function in each Mode, see the Mode Descriptions and diagrams below.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Rising Edge or Falling Edge</b>: Select the Active Edge for the Switch Inputs. Normally Open switches will use Rising Edge, Normally Closed switches will use Falling Edge.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Immediate Stop Option</b>: The behavior of an Aborted Move can be chosen.</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Enabled: Selecting this option specifies that the PLC should immediately stop sending pulses when disabling instructions.  This will abort the Move abruptly and likely lose the Axis Home reference if traveling at high speeds.</p>
+                </li>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Disabled: If the check box is deactivated, the PLC follows the specified deceleration rate if the instruction is deactivated. The Axis will decelerate until reaching zero velocity. During the Abort deceleration the Switch Inputs are ignored.</p>
+                </li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Set Position To</b>: When enabled, the Current Position Register is set to the Constant or DD Register value when the instruction is completed.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Status Flag behavior with Immediate Stop Option Disabled</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/cl294_Picture2_447x351.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 447;height: 351;" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Status Flag behavior with Immediate Stop Option Enabled</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/cl294_Picture3.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Busy</b>: This C bit turns ON while the instruction is in operation and controlling the Axis.  Only a single instruction can be in control of each Axis during any moment of time. This bit turns OFF when the instruction is Complete by Success or by Error.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Complete</b>: This C bit turns ON when the instruction is Complete by Success or by Error. It stays ON until the instruction is re-enabled.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Success</b>: This C bit turns ON to indicate the Axis has reached the commanded Target Position.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Error</b>: This C bit turns ON to indicate a failure of the Instruction or Axis.  It stays ON until the instruction is re-enabled. The Value in the Error Code register will indicate the problem.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Error Code</b>: Assign a DS or DD register to store the Numeric Error Code.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="91px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <h2 align="center">
+                            <img src="notepad.gif" style="border: none;" alt="" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="padding-right: 10px;padding-left: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note: </span>The System Bits SC150-SC152 “_PTO_AxisX_Ready_Flag” provide status information.<br xmlns="http://www.w3.org/1999/xhtml" /></p>
+                    </td>
+                </tr>
+            </table>
+            <h2>Home Mode1 (Motion Path)</h2>
+            <ol>
+                <li value="1">
+                    <p>Accelerate to the speed of Initial Velocity.</p>
+                </li>
+                <li value="2">
+                    <p>Move at Initial Velocity until Switich1 turns ON.</p>
+                </li>
+                <li value="3">
+                    <p>Decelerate to Creep velocity.</p>
+                </li>
+                <li value="4">
+                    <p>Moves at Creep speed until Switch2 is turned ON.</p>
+                </li>
+                <li value="5">
+                    <p>Immediately stops when it reaches Switch2.</p>
+                </li>
+            </ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/cl294_Picture4.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <h2>Home Mode1 (Disable Instruction)</h2>
+            <ul>
+                <li>
+                    <p>Disabling during any segment will cause the Error Bit to turn ON, and the Error Code 101.</p>
+                </li>
+                <li>
+                    <p>The Axis will use the Deceleration Rate to bring the Axis to a Stop.</p>
+                </li>
+                <li>
+                    <p>Switch inputs are ignored after the instruction is disabled.</p>
+                </li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/cl294_Picture5.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode1 (Switch Events)</h2>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">When Switch1 is turned on during acceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If Switch2 is turned on before Switch1, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If Switch2 is turned on during deceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p>Switch1 cannot be shared with Limit Switch.</p>
+                </li>
+                <li>
+                    <p>Switch2 can be shared with Limit Switch.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture6.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture7.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture8.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode2 (Motion Path)</h2>
+            <ol>
+                <li value="1">
+                    <p>Accelerate to the speed of Initial Velocity.</p>
+                </li>
+                <li value="2">
+                    <p>Move at Initial Velocity until Switich1 turns ON.</p>
+                </li>
+                <li value="3">
+                    <p>Immediately stops when it reaches Switch1.</p>
+                </li>
+            </ol>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture9.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <h2>Home Mode2 (Disable Instruction)</h2>
+            <ul>
+                <li>
+                    <p>Disabling during any segment will cause the Error Bit to turn ON, and the Error Code 101.</p>
+                </li>
+                <li>
+                    <p>The Axis will use the Deceleration Rate to bring the Axis to a Stop.</p>
+                </li>
+                <li>
+                    <p>Switch inputs are ignored after the instruction is disabled.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture10.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode2 (Switch Events)</h2>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">When Switch1 is turned on during acceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p>Switch1 can be shared with Limit Switch.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture11.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode3 (Motion Path)</h2>
+            <ol>
+                <li value="1">
+                    <p>Accelerate to the speed of Initial Velocity.</p>
+                </li>
+                <li value="2">
+                    <p>Move at Initial Velocity until Switich1 turns ON.</p>
+                </li>
+                <li value="3">
+                    <p>Decelerate according to the Deceleration setting and stop.</p>
+                </li>
+            </ol>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture12.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <h2>Home Mode3 (Disable Instruction)</h2>
+            <ul>
+                <li>
+                    <p>Disabling during any segment will cause the Error Bit to turn ON, and the Error Code 101.</p>
+                </li>
+                <li>
+                    <p>The Axis will use the Deceleration Rate to bring the Axis to a Stop.</p>
+                </li>
+                <li>
+                    <p>Switch inputs are ignored after the instruction is disabled.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture13.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode3 (Switch Events)</h2>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">When Switch1 is turned on during acceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p>Switch1 cannot be shared with Limit Switch.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture14.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode4 (Motion Path)</h2>
+            <ol>
+                <li value="1">
+                    <p>Accelerate to the speed of Initial Velocity.</p>
+                </li>
+                <li value="2">
+                    <p>Move at Initial Velocity until Switich1 turns ON.</p>
+                </li>
+                <li value="3">
+                    <p>Decelerate to a stop.</p>
+                </li>
+                <li value="4">
+                    <p>Accelerate to Creep Velocity towards Switch1.</p>
+                </li>
+                <li value="5">
+                    <p>Immediately stops when it reaches Switch1.</p>
+                </li>
+            </ol>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture15.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <h2>Home Mode4 (Disable Instruction)</h2>
+            <ul>
+                <li>
+                    <p>Disabling during any segment will cause the Error Bit to turn ON, and the Error Code 101.</p>
+                </li>
+                <li>
+                    <p>The Axis will use the Deceleration Rate to bring the Axis to a Stop.</p>
+                </li>
+                <li>
+                    <p>Switch inputs are ignored after the instruction is disabled.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture16.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode4 (Switch Events)</h2>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">When Switch1 is turned ON during acceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The deceleration distance of section 3 must be longer than the Switch1 activation distance.  If the switch is still active at section 4 the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p>Switch1 cannot be shared with Limit Switch.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture17.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture18.png" xmlns="http://www.w3.org/1999/xhtml" /> </p>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture19.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode5 (Motion Path)</h2>
+            <ol>
+                <li value="1">
+                    <p>Accelerate to the speed of Initial Velocity.</p>
+                </li>
+                <li value="2">
+                    <p>Move at Initial Velocity until Switich1 turns ON.</p>
+                </li>
+                <li value="3">
+                    <p>It will decelerate to the value set in Stop Distance and stop.</p>
+                </li>
+            </ol>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture20.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode5 (Disable Instruction)</h2>
+            <ul>
+                <li>
+                    <p>Disabling during any segment will cause the Error Bit to turn ON, and the Error Code 101.</p>
+                </li>
+                <li>
+                    <p>The Axis will use the Deceleration Rate to bring the Axis to a Stop.</p>
+                </li>
+                <li>
+                    <p>Switch inputs are ignored after the instruction is disabled.</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture21.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2>Home Mode5 (Switch Events)</h2>
+            <ul>
+                <li>
+                    <p xmlns="http://www.w3.org/1999/xhtml">When Switch1 is turned ON during acceleration, the Error Bit is turned ON and Error Code 109 is set.</p>
+                </li>
+                <li>
+                    <p>Switch1 cannot be shared with Limit Switch.</p>
+                </li>
+                <li>
+                    <p>Sets an error code if the distance traveled from the Position where Switch1 is turned ON to the Stop Distance exceeds the Current Position range (-2147483648 to 2147483647).</p>
+                </li>
+            </ul>
+            <p xmlns="">
+                <img src="Resources/Images/cl294_Picture22.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics PTO and PWM Error Codes</h3>
+            <p style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><a href="295.htm" xmlns="http://www.w3.org/1999/xhtml">Velocity Move for PTO Axis</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="296.htm" xmlns="http://www.w3.org/1999/xhtml">Position Move for PTO Axis</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="292.htm" xmlns="http://www.w3.org/1999/xhtml">Pulse Train Output</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="293.htm" xmlns="http://www.w3.org/1999/xhtml">Pulse Width Modulation</a>
+            </p>
+        </div>
+    </body>
+</html>

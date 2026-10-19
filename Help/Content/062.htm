@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <meta name="template" content="ADCHelp.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="topic-status" content="Complete" />
+        <meta name="generator" content="Adobe RoboHelp 8" /><title>Password Setup - Serial Only CPUs</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Password Setup - Serial Only CPUs</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL062</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">For version 3.00 or later, this topic applies to all non Ethernet PLC's only.  For Ethernet capable PLC's see <a href="280.htm" xmlns="http://www.w3.org/1999/xhtml">Password Setup - Ethernet CPUs</a>. The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK PLC password</span> security feature is intended to help minimize the risk of unauthorized program and/or data changes. Once you enter a password you can <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Lock</span> the specified memory areas in the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">PLC</span> against unauthorized access.&#160;Once the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CPU</span> is locked you must enter the password before you can use the programming software to change specified parameters.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;text-align: center;">
+                        <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                    </td>
+                    <td colspan="2" class="td_p" style="background-color: #ffff80;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;">
+                        <p colspan="2" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><br xmlns="http://www.w3.org/1999/xhtml" />Note</b>: For Ethernet CPU's (C0-1x models), the Password setup in version 2.60 or earlier will be changed to the single <a href="279.htm" xmlns="http://www.w3.org/1999/xhtml">User Account Setup</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">Open the <span style="font-weight: bold;">Password Setup</span> dialog from the <span style="font-weight: bold;">Setup Menu</span>. This dialog is intended to 
+help
+ prevent accidental creation of a Password. <span style="font-weight: bold;">See the important </span><a href="#WARNING">Warning </a><span style="font-weight: bold;">below.</span></p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="password setup win.gif" style="border: none;" alt="" width="561" height="312" border="0" />
+            </p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="graphic warning.gif" style="border: none;" alt="" width="395" height="22" border="0" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt; color: #f20000; font-weight: bold;">A</span><span style="font-weight: bold;"> Use Password Protection:</span> Click the <span style="font-weight: bold;">Use Password Protection</span> checkbox if you want to create a <span style="font-weight: bold;">Password</span> to <span style="font-weight: bold;">restrict PLC access</span>. When this checkbox is selected, the grayed out checkboxes and Password field will be accessible.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;text-align: center;">
+                        <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                    </td>
+                    <td colspan="2" class="td_p" style="background-color: #ffff80;border-top-style: solid;border-top-width: 2px;border-top-color: #0059b7;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0059b7;">
+                        <p colspan="2" xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml"><br xmlns="http://www.w3.org/1999/xhtml" />Note</b>: To allow HMI or Modbus external access <b>Read Data from PLC</b> and <b>Write Data into PLC</b> must be disabled(unchecked).</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="password setup win2.gif" style="border: none;" alt="" width="571" height="312" border="0" />
+            </p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="graphic warning.gif" style="border: none;" alt="" width="395" height="22" border="0" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">Password Setup dialog</span> provides an opportunity to block access selectively to the different areas of <span style="font-weight: bold;">CPU memory</span>. Use the <span style="font-weight: bold;">check boxes</span> to select the memory areas you want to protect with a password, then select and <span style="font-weight: bold;">record your password</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">1 </span><span style="font-weight: bold;">Read Project from PLC:</span> Checking this box prevents reading the project from the <span style="font-weight: bold;">PLC</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">2</span><span style="font-weight: bold;"> Write Project into PLC:</span> Checking this box prevents writing a project to the <span style="font-weight: bold;">PLC</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">3</span><span style="font-weight: bold;"> Read Data Memory from PLC:</span> Checking this box prevents reading the Data Memory from the <span style="font-weight: bold;">PLC</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">4</span><span style="font-weight: bold;"> Write Data Memory into PLC:</span> Checking this box prevents writing <span style="font-weight: bold;">Data Memory</span> to the <span style="font-weight: bold;">PLC</span>. See <span style="color: #f20000; font-weight: bold; font-size: 14pt;">5</span> below for access to change date and time only.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">5</span><span style="font-weight: bold;"> Change date and time in PLC:</span> The option modifies option <span style="color: #f20000; font-weight: bold; font-size: 14pt;">4</span> above. Checking this option allows access to change the date and time without access to other data parameters.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">6 </span><span style="font-weight: bold;">Read System Configuration from PLC:</span> Checking this box prevents reading the system configuration from the <span style="font-weight: bold;">PLC</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="color: #f20000; font-weight: bold; font-size: 14pt;">7</span><span style="font-weight: bold;"> Read error message from PLC:</span> Checking this box prevents reading error messages from the <span style="font-weight: bold;">PLC</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt; color: #f20000; font-weight: bold;">8</span><span style="font-weight: bold;"> Enter Password:</span> Select an <span style="font-weight: bold;">8-digit alphanumeric password</span>. When the <span style="font-weight: bold;">CLICK PLCs</span> are shipped from the factory, the password is blank. If you have previously created a password, you can remove the password protection by opening this dialog and deleting the password. You must also click <span style="font-weight: bold;">OK</span> to save the change. The <span style="font-weight: bold;">CLICK PLC</span> does not read <span style="font-weight: bold;">00000000</span> (all zeros) as blank.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px; padding-left: 10px;" width="100">
+                        <h2 align="center"><a name="WARNING" xmlns="http://www.w3.org/1999/xhtml" style="font-size: 6pt;"></a>
+                            <img src="caution exclamation.gif" style="border: none;" alt="" width="35" height="35" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="width: 100%; padding-right: 10px; padding-left: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">WARNING:</span> Make sure you remember your <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Password</span>. &#160;If you forget your <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Password</span> you will not be able to access the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CPU</span>. You can use the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="099.htm" xmlns="http://www.w3.org/1999/xhtml">Reset to Factory Default</a></span> command to erase the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Password</span>. However, the command erases the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Entire Project</span> file. Therefore, you will have to download a project file again.</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="margin-left: 12px; text-indent: -12px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt; color: #f20000; font-weight: bold;">9</span><span style="font-weight: bold;"> Record if someone tries to enter the password:</span> Check this option to maintain a record of the most recent <span style="font-weight: bold;">16</span> attempts to access the <span style="font-weight: bold;">PLC</span> by entering a password.</p>
+            <p style="margin-left: 24px; text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt; color: #f20000; font-weight: bold;">10</span><span style="font-weight: bold;"><a name="PW_Entry_Record:" id="PW_Entry_Record:"> Check the Record:</a></span> Click the <span style="font-weight: bold;">Check the Record</span> button to see a list of the most recent <span style="font-weight: bold;">16</span> attempts to access the <span style="font-weight: bold;">PLC</span> by entering a password. When selected, the window shown below opens and the empty fields will display data giving the <span style="font-weight: bold;">Date</span>, <span style="font-weight: bold;">Time</span> and the <span style="font-weight: bold;">Password</span> entered/attempted.</p>
+            <p style="margin-left: 24px; text-indent: -24px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="password entry.gif" style="border: none;" alt="" width="419" height="290" border="0" />
+            </p>
+        </div>
+    </body>
+</html>

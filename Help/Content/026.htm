@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Drum Instruction: Event Base</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Drum Instruction: Event Base</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL026</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Definition</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">Drum</span> instruction simulates an electromechanical drum sequencer, using either a <span style="font-weight: bold;"><a href="171.htm">Time Base</a></span> or an <span style="font-weight: bold;">Event Base</span> sequencing strategy. Each <span style="font-weight: bold;">Drum</span> instruction is capable of sequencing through <span style="font-weight: bold;">1 to 16 steps</span> and turning <span style="font-weight: bold;">ON</span> as many as <span style="font-weight: bold;">16 outputs</span> in a user defined pattern. Outputs can be either physical outputs or internal control relays. A <span style="font-weight: bold;">Flag Bit</span> is turned <span style="font-weight: bold;">ON</span> to indicate the completion of the sequence.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Event Base Setup</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="drum event window 1.gif" style="border: none;" alt="" width="432" height="729" border="0" />
+            </p>
+            <p style="font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="checks ryg2.gif" style="border: none;" alt="" width="460" height="27" border="0" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">1 </span><span style="font-weight: bold;">Base:</span> The <span style="font-weight: bold;">Drum</span> instruction operates either on a <span style="font-weight: bold;">Time Base</span> or an <span style="font-weight: bold;">Event Base</span>. If <span style="font-weight: bold;">Event Base</span> is selected, the time increment drop down list is grayed out.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">2 </span><span style="font-weight: bold;">Current Step:</span> Identify the <span style="font-weight: bold;">Memory Address</span> where the <span style="font-weight: bold;">Current Step</span> number will be stored.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">3 </span><span style="font-weight: bold;">Elapsed time in step:</span> (This parameter is not used in the <span style="font-weight: bold;">Event Base</span> mode. Therefore, it has been grayed out since <span style="font-weight: bold;">CLICK Programming Software Version 1.11</span>.)</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">4</span><span style="font-weight: bold;"> Completion flag:</span> Assign a <span style="font-weight: bold;">Control Relay</span> (<span style="font-weight: bold;">C bit</span>) to be the <span style="font-weight: bold;">Completion Flag</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">5</span><span style="font-weight: bold;"> Enable Jog Input:</span> Selecting <span style="font-weight: bold;">Enable Jog Input</span> turns on an additional rung that allows the user to jump to the next <span style="font-weight: bold;">Step</span> each time the <span style="font-weight: bold;">Jog</span> rung transitions from <span style="font-weight: bold;">OFF-to-ON</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">6</span><span style="font-weight: bold;"> Load new step number:</span> Selecting <span style="font-weight: bold;">Load New Step</span> turns on an additional rung that allows the user to jump to a specified <span style="font-weight: bold;">Step</span> in the sequence. Assign a <span style="font-weight: bold;">Memory Address</span> to hold the desired <span style="font-weight: bold;">Step Number</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">7 </span><span style="font-weight: bold;">Number of Steps:</span> Select a number from 1 to 16. This will determine the number of steps in the sequence.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">8</span><span style="font-weight: bold;"> Number of Outputs:</span> Select a number from 1 to 16. This will determine the number of outputs available during the sequence.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">9</span><span style="font-weight: bold;"> Outputs:</span> Assign <span style="font-weight: bold;">Outputs</span>. &#160;<span style="font-weight: bold;">Outputs</span> can be physical <span style="font-weight: bold;">Outputs</span> and/or internal control relays. &#160;The number of <span style="font-weight: bold;">Outputs</span> should match the number chosen at item <span style="font-size: 14pt;color: #f20000;font-weight: bold;">8</span>, above.<br />You can use the <span style="font-weight: bold;">Output Address Fill Down</span> button <img src="output addr fill down button.gif" style="border: none;" alt="" width="130" height="18" border="0" /> to enter consecutive <span style="font-weight: bold;">Addresses</span> automatically. &#160;Enter the first <span style="font-weight: bold;">Memory Address</span> and keep clicking the <span style="font-weight: bold;">Output Address Fill Down</span> button.</p>
+            <p class="NumberedHang" style="margin-left: 24px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">10</span><span style="font-weight: bold;"> Event:</span> Assign the bit-level <span style="font-weight: bold;">Memory Address</span> that will initiate each <span style="font-weight: bold;">Step</span>. The number of <span style="font-weight: bold;">Steps</span> will match the number chosen at <span style="font-size: 14pt;color: #f20000;font-weight: bold;">7</span>, above.</p>
+            <blockquote xmlns="">
+                <p class="NumberedHang" style="text-indent: -36px;margin-left: 36px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">10a </span><span style="font-weight: bold;">Fill Down:</span> The <span style="font-weight: bold;">Fill Down</span> button <img src="fill down button.gif" style="border: none;" alt="" width="49" height="15" border="0" /> will enter consecutive <span style="font-weight: bold;">Addresses</span> automatically. Enter the first <span style="font-weight: bold;">Address</span> and keep clicking the <span style="font-weight: bold;">Fill Down</span> button.</p>
+            </blockquote>
+            <p class="NumberedHang" style="margin-left: 36px;text-indent: -36px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="fill down example 3.gif" style="border: none;" alt="" width="367" height="124" border="0" />
+            </p>
+            <p class="NumberedHang" style="margin-left: 30px;text-indent: -24px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">11</span><span style="font-weight: bold;"> Output Pattern:</span> Click in the grid to develop the sequence the <span style="font-weight: bold;">Drum</span> instruction will follow. &#160;Each cell corresponds to a combination of one <span style="font-weight: bold;">Step</span> number and one <span style="font-weight: bold;">Output</span> number.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Normal or Detail Display</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="norm or detail event.gif" style="border: none;" alt="" width="418" height="415" border="0" />
+            </p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <h2 align="center">
+                            <img src="notepad.gif" style="border: none;" alt="" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="padding-right: 10px;padding-left: 10px;vertical-align: center;">
+                        <p class="Notes"><span style="font-weight: bold;">Note:</span> Right click the rung symbol to open the pop-up menu and toggle between <span style="font-weight: bold;">Normal Display</span> and <span style="font-weight: bold;">Details Display</span>.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example Program</h2>
+            <p style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program: Event Base</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li style="font-weight: normal;">When <b xmlns="http://www.w3.org/1999/xhtml">X001</b> is <b xmlns="http://www.w3.org/1999/xhtml">ON</b>, the Drum instruction is enabled and <b xmlns="http://www.w3.org/1999/xhtml">Step 1</b> begins. The outputs corresponding to Step 1 will turn ON and remain ON until Step 1 ends. </li>
+                <li style="font-weight: normal;">When <b xmlns="http://www.w3.org/1999/xhtml">C11</b> turns <b xmlns="http://www.w3.org/1999/xhtml">ON</b>, Step 1 ends and Step 2 begins. C12, C13, and C14 end Steps 2, 3, and 4. </li>
+                <li style="font-weight: normal;"><b xmlns="http://www.w3.org/1999/xhtml">X001</b> must remain <b xmlns="http://www.w3.org/1999/xhtml">ON</b> to enable the sequence to continue. </li>
+                <li style="font-weight: normal;">At the end of <b xmlns="http://www.w3.org/1999/xhtml">Step 4</b>, the sequence is complete, and the C8 bit turns ON. </li>
+                <li style="font-weight: normal;">If <b xmlns="http://www.w3.org/1999/xhtml">X003</b> turns <b xmlns="http://www.w3.org/1999/xhtml">ON</b>, the Drum instruction jumps to the step number loaded in DS2. </li>
+                <li style="font-weight: normal;">If <b xmlns="http://www.w3.org/1999/xhtml">X004</b> turns <b xmlns="http://www.w3.org/1999/xhtml">ON</b>, the Drum instruction jumps to the next step in the sequence.</li>
+            </ul>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CL026 - Drum Instruction - Event.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="event drum.gif" style="border: none;" alt="" border="0" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/CL026 - Drum Instruction Timing Chart extra.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p style="margin-top: 3pt;" xmlns="http://www.w3.org/1999/xhtml"><a href="171.htm" xmlns="http://www.w3.org/1999/xhtml">Drum Instruction: Time Base</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="195.htm" xmlns="http://www.w3.org/1999/xhtml">Memory Addresses</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="196.htm" xmlns="http://www.w3.org/1999/xhtml">Data Types</a>
+            </p>
+        </div>
+    </body>
+</html>

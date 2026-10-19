@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|Com Port 1 (Ethernet) Setup|EtherNet/IP" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>CLICK EtherNet/IP Overview</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 758px;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><a name="kanchor198"></a>CLICK EtherNet/IP Overview</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL232</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Terminology Definitions</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">A lot of terminology associated with EtherNet/IP is not always clear. Some of these terms are listed below along with their respective definitions.</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li style="font-weight: normal;"><b>Scanner:</b> Used to describe the device that initiates the EtherNet/IP sessions. The Scanner is sometimes referred to as the Originator as well. In more standard Ethernet terms, the Scanner would often be called the Client.</li>
+                <li style="font-weight: normal;"><b>Adapter:</b> The device that responds to the EtherNet/IP communications that the Scanner initiates. The Adapter is also known as the Target. Typically, the Adapter is an Ethernet Server.</li>
+                <li style="font-weight: normal;"><b>Object:</b> In EtherNet/IP, an Object represents a defined set of Ethernet connections, behaviors, services and data attributes. There are standard objects and customer defined objects as well. See the Object Modeling example below.</li>
+                <li style="font-weight: normal;"><b>Object Class:</b> A set of Objects that are related in some fashion. See the Object Modeling example below.</li>
+                <li style="font-weight: normal;"><b>Object Instance:</b> An actual, usable manifestation of an Object. See the Object Modeling example below.</li>
+                <li style="font-weight: normal;"><b>Object Attributes:</b> Specific items within an Object Class. The category of Attributes should be the same for all instances of an Object, but the Attribute itself may vary. See the Object Modeling example below.</li>
+                <li style="font-weight: normal;"><b>Connection Point:</b> A Connection Point value is the Class Code reference for a data block. this value is required for access to input and output data in I/O Messaging. It is typically defined for each input and output data block by the Adapter device manufacturer. The Connection Point value is used only in combination with IO Messaging.</li>
+                <li style="font-weight: normal;"><b>IO&#160;Messaging:</b> Also called Implicit Messaging, this is a method of reading and writing blocks of data without defining the Connection Point and size for each block transfer. The Connection Point, size and transfer rate (RPI) are defined at the beginning and then the data blocks are transferred at the specified intervals.</li>
+                <li style="font-weight: normal;"><b xmlns="http://www.w3.org/1999/xhtml">RPI:</b> “Requested Packet Interval”, the CLICK CPU will accept a minimum value of 10ms on a CIP Forward Open request. However, the CPU will produce at the specified rate up to the scan time of the installed project. The CPU cannot produce any faster than the scan time of the running project.</li>
+                <li style="font-weight: normal;"><b>Explicit Messaging:</b> This method of reading or writing data requires that each message defines the type of data and size of data needed for each request.</li>
+            </ul>
+            <p class="List" style="margin-left: 25pt;" xmlns="http://www.w3.org/1999/xhtml">Object Modeling Example</p>
+            <p class="List" style="margin-left: 25pt;" xmlns="http://www.w3.org/1999/xhtml">Object Class - Definition of Automobile</p>
+            <p class="List" style="margin-left: 25pt;" xmlns="http://www.w3.org/1999/xhtml">Attributes - Make, Model, etc.</p>
+            <p class="List" style="margin-left: 25pt;" xmlns="http://www.w3.org/1999/xhtml">Object:&#160;A&#160;Ford Mustang</p>
+            <p class="List" style="margin-left: 25pt;" xmlns="http://www.w3.org/1999/xhtml">Instance - Sally's Ford Mustang</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Network Layer Chart</h2>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/Network Layer2.gif" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The diagram above illustrates the OSI&#160;seven layer model and how EtherNet/IP fits into this model. In general, there are three basic layers for sending and receiving data in the EtherNet/IP protocol:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li><span style="font-weight: normal;">EtherNet/IP layer (Register Session, etc)</span>
+                </li>
+                <li style="font-weight: normal;">CIP&#160;layer (CIP Forward Open, etc)</li>
+                <li style="font-weight: normal;">The uppermost layer, which contains several different types of messaging.</li>
+            </ul>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">The two types of messaging that CLICK supports on top of the CIP layer are: IO Messaging (also called Class 1 Implicit) and Explicit Messaging (through Class 3 or Unconnected).</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml"><b>Note:</b> CLICK does not support PCCC or Tag Based (Symbolic) messaging on EtherNet/IP.</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">Two types of data are transported through IO Messaging and Explicit Messaging:  Input Data and Output Data.  Input Data is defined as the data returned from CLICK back to the Scanner device.  Output Data is the data being written to CLICK from the Scanner device.  Input Data can be “Multicast” (multiple receivers) or “Unicast” (single target) from CLICK.  This is defined by the Scanner device in their connection setup.  Output Data can only be Unicast from the Scanner device to CLICK.  Input and Output Data do NOT refer to the CLICK Input (X) and Output (Y) data types.  Most of the CLICK data types may be mapped into the Input and Output tables configured in the CLICK EtherNet/IP Adapter Setup.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Connection Parameters</h2>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">For I/O (Implicit Messaging), the parameters are listed below:</p>
+            <table style="vertical-align: top;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');margin-left: auto;margin-right: auto;caption-side: top;width: 424px;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml" class="TableStyle-Basic">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="3" xmlns="" class="BodyD-Column1-Body1"><span style="color: #ffffff;">I/O&#160;Messaging (Implicit)</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #fafad2;" bgcolor="#19519E" xmlns="" colspan="3" class="BodyD-Column1-Body1"><span style="color: #000000;" xmlns="http://www.w3.org/1999/xhtml">Connection 1 Exclusive Owner</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;text-align: center;font-size: 10pt;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" xmlns="" class="BodyE-Column1-Body1">Data</td>
+                    <td style="font-size: 10pt;text-align: center;background-color: #ffffff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">Connection Point</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #ffffff;" class="BodyD-Column1-Body1">Size</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">101 (0x65)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic (Based on Config)</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">102 (0x66)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Config</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">1</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #fafad2;" class="BodyD-Column1-Body1" colspan="3">Connection 1 Input Only</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-size: 10pt;">Data</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-size: 10pt;">Connection Point</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-size: 10pt;">Size</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">101 (0x65)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">152 (0x98)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Config </p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">1</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #fafad2;" class="BodyD-Column1-Body1" colspan="3">Connection 2 Exclusive Owner</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;text-align: center;" class="BodyE-Column1-Body1">Data</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;font-size: 10pt;text-align: center;" class="BodyE-Column1-Body1">Connection Point</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;text-align: center;" class="BodyD-Column1-Body1">Size</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">103 (0x67)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic (Based on Config)</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">104 (0x68)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Config</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">1</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #fafad2;" class="BodyD-Column1-Body1" colspan="3">Connection 2 Input Only</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;text-align: center;" class="BodyE-Column1-Body1">Data</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;font-size: 10pt;text-align: center;" class="BodyE-Column1-Body1">Connection Point</td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;font-size: 10pt;text-align: center;" class="BodyD-Column1-Body1">Size</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">103 (0x67)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">152 (Ox98)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;padding-left: 10px;padding-right: 10px;border-left-style: Solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Config</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">1</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">0</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="">For explicit messaging, the parameters are listed below:</p>
+            <table style="vertical-align: top;border-collapse: separate;margin-left: auto;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml" class="TableStyle-Basic">
+                <col width="161px" class="Column-Column1" />
+                <col width="171px" class="Column-Column1" />
+                <col width="171px" class="Column-Column1" />
+                <col width="110" class="Column-Column1" />
+                <col width="110" class="Column-Column1" />
+                <col width="110" class="Column-Column1" />
+                <tr style="vertical-align: top;height: 20px;" class="Body-Body1">
+                    <td colspan="6" style="border: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" bgcolor="#19519E" class="BodyD-Column1-Body1">
+                        <h1 align="center"><span style="color: #ffffff;">Explicit&#160;Messaging</span>
+                        </h1>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;height: 20px;" class="Body-Body1">
+                    <td style="border: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #fafad2;" bgcolor="#19519E" class="BodyD-Column1-Body1" colspan="6">Connection 1</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td bgcolor="#FFFF80" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Data</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Service</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Class</p>
+                    </td>
+                    <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Instance</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 0px;text-align: center;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Attribute</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Size</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Get Single: 14 (0x0e)</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">4</p>
+                    </td>
+                    <td style="text-align: center;border-right-style: solid;border-right-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 0px;">101</p>
+                    </td>
+                    <td style="text-align: center;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">3</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;border-left-style: solid;border-left-width: 1px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;text-align: center;" bgcolor="#FFFF80" class="BodyD-Column1-Body1" rowspan="2">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic (Based on Config)</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Set Single: 16 (0x10)</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">4</p>
+                    </td>
+                    <td style="text-align: center;border-right-style: solid;border-right-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">102</p>
+                    </td>
+                    <td style="text-align: center;border-bottom-style: solid;border-bottom-width: 1px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">3</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #fafad2;" bgcolor="#FFFF80" class="BodyD-Column1-Body1" colspan="6">Connection 2</td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Data</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Service</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Class</p>
+                    </td>
+                    <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Instance</p>
+                    </td>
+                    <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Object Attribute</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyD-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;text-align: center;">Size</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Input (T-&gt;O)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Get Single: 14 (0x0e)</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">4</p>
+                    </td>
+                    <td style="text-align: center;border-right-width: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 0px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">103</p>
+                    </td>
+                    <td style="text-align: center;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 0px;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">3</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyD-Column1-Body1" rowspan="2">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Dynamic (Based on Config)</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Output (O-&gt;T)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;background-color: #ffffff;text-align: center;" bgcolor="#FFFF80" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">Set Single: 16 (0x10)</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p xmlns="http://www.w3.org/1999/xhtml">4</p>
+                    </td>
+                    <td style="border-bottom-width: 1px;text-align: center;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">104</p>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;text-align: center;" class="BodyE-Column1-Body1">
+                        <p xmlns="http://www.w3.org/1999/xhtml">3</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="">These connection parameters are also listed within the CLICK <a href="233.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP Adapter setup</a>, as shown below.</p>
+            <p xmlns="" style="text-align: center;">
+                <img src="Resources/Images/EtherNetIP Adapter Setup Connection Parameters.png" xmlns="http://www.w3.org/1999/xhtml" style="max-height: auto;" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Number of Connections</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">How many connections can a CLICK PLC support for EtherNet/IP as an Adapter device?
+There are three types of connections supported, but the maximum concurrent connections is 2 of any combination of types. </p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li xmlns="http://www.w3.org/1999/xhtml">2 - Class 1 I/O Message connections</li>
+                <li xmlns="http://www.w3.org/1999/xhtml">2 - Class 3 Explicit Message connections</li>
+                <li xmlns="http://www.w3.org/1999/xhtml">2 - Unconnected Explicit Message connections
+</li>
+            </ul>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">&#160;</h3>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="233.htm" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP Adapter Setup</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="234.htm" xmlns="http://www.w3.org/1999/xhtml">Communications Ethernet</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="235.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for AB&#160;CompactLogix</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="236.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for Productivity Series PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="237.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for the Do-more PLC</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="241.htm" xmlns="http://www.w3.org/1999/xhtml">General &amp;&#160;Extended Status EtherNet IP&#160;Error Codes</a>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

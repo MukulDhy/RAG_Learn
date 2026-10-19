@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Final Review - Delivered">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Modbus TCP Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Modbus TCP Setup</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL268</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">The <b xmlns="http://www.w3.org/1999/xhtml">Modbus TCP Setup</b> dialog displays current <b xmlns="http://www.w3.org/1999/xhtml">Modbus TCP</b> settings. The PLC can act as a <b xmlns="http://www.w3.org/1999/xhtml">Client (Master)</b> or <b xmlns="http://www.w3.org/1999/xhtml">Server (Slave)</b>, using <b xmlns="http://www.w3.org/1999/xhtml">MODBUS TCP Protocol</b> over any available Ethernet port (Port 1 or WLAN port).</p>
+            <p style="margin-bottom: 0;margin-top: 2px;" xmlns="http://www.w3.org/1999/xhtml">The PLC can establish connections with <b xmlns="http://www.w3.org/1999/xhtml">three Clients</b> (<b xmlns="http://www.w3.org/1999/xhtml">Masters</b>) and <b xmlns="http://www.w3.org/1999/xhtml">four Servers</b> (<b xmlns="http://www.w3.org/1999/xhtml">Slaves</b>) at the same time for each available Ethernet port (Port 1 and WLAN port).</p>
+            <h2 style="margin-top: 5px;text-align: left;" xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/scrModbusTCPSetup.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Port: </span>Select <b xmlns="http://www.w3.org/1999/xhtml">Port 1</b> or <b xmlns="http://www.w3.org/1999/xhtml">WLAN</b> from the drop down list to populate this dialog with the port's current Modbus TCP setup.</p>
+            <h3>Configuration as Client (Master)</h3>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Timeout (0-30000ms):</span> Time the PLC&#160;will wait before Retrying. The default value is <b xmlns="http://www.w3.org/1999/xhtml">1000ms</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Retries:</span> Set the number of times the <b xmlns="http://www.w3.org/1999/xhtml">Port</b> re-sends the message to the server after a response is <b xmlns="http://www.w3.org/1999/xhtml">NOT</b> received from the server after the above <b xmlns="http://www.w3.org/1999/xhtml">T</b><b xmlns="http://www.w3.org/1999/xhtml">imeout</b> setting. The default value is <b xmlns="http://www.w3.org/1999/xhtml">2</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Server Inactivity Timeout (0-3600sec):</span> Time the PLC will wait to hear from the server before dropping the Ethernet connection. If the connection is dropped, when the PLC&#160;receives another request it will establish a new connection.  The default value is <b xmlns="http://www.w3.org/1999/xhtml">60 sec</b>.</p>
+            <h3>Configuration as Server (Slave)</h3>
+            <p xmlns=""><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Enable Modbus TCP Server:</span> Check the box to enable the Modbus TCP Server on this port. For safety and security reason, if the server is not needed leave it disabled. </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">TCP&#160;Port Number (0-65535):</span> This <b xmlns="http://www.w3.org/1999/xhtml">Com Port</b> uses this <b xmlns="http://www.w3.org/1999/xhtml">Port Number</b> to communicate with the clients. The default <b xmlns="http://www.w3.org/1999/xhtml">Port Number</b> for Modbus is <b xmlns="http://www.w3.org/1999/xhtml">502</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Maximum Concurrent Sessions:</span> This is the <b xmlns="http://www.w3.org/1999/xhtml">Maximum</b> number of clients that this <b xmlns="http://www.w3.org/1999/xhtml">Port</b> can handle as server at the same time. This parameter is fixed to <b xmlns="http://www.w3.org/1999/xhtml">3</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Client Inactivity Timeout (0-3600sec):</span> The time that the PLC will wait to receive a message from the client before the server shuts down the connection with the client. The default value is <b xmlns="http://www.w3.org/1999/xhtml">60 sec</b></p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Com Port 2 Setup Details|144.htm||Com Port 3 Setup Details|116.htm||COM Port Setup|058.htm" xmlns=""><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+            </p>
+            <p style="text-align: center;margin-left: 62px;" xmlns="">&#160;</p>
+        </div>
+    </body>
+</html>

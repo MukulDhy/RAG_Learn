@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Monitor Menu|PID Monitor">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>PID Monitor Mode</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;" xmlns="">PID&#160;Monitor</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL244</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <p>The CLICK PID Monitor is a very useful tool which can be used to help test and tune your PID loops. The PID Monitor gives access to all the PID parameters necessary to tuning a PID Loop. There is a PID chart that displays the SP, PV's, CO and Bias. There is also an Autotune interface that allows you to set up and initiate Autotuning. Alarms can be enabled or disabled while tuning.</p>
+        <h2>Opening the PID Monitor</h2>
+        <p>The CLICK software must be connected to a CLICK PLC that contains the configured PID Loop.</p>
+        <p style="font-weight: normal;">To open the PID Monitor for a configured PID Loop, from the Menu select <b>Monitor&gt; PID Monitor </b>and select the PID Loop. Alternately, from the <b>Program</b> tab, double-click the PID Loop<b></b>under<b> PID&#160;Monitor</b>.</p>
+        <p style="font-weight: normal;">
+            <img src="Resources/Images/PID Monitor Open Menu.png" /> <img src="Resources/Images/PID Monitor Open Program Tab.png" /></p>
+        <h3>PID Monitor Errors</h3>
+        <p>The PID Monitor PID Loops may look different above. </p>
+        <blockquote>
+            <h4>PID Monitor not connected to a PLC</h4>
+            <p>If the PID Monitor Icon looks like this, then the CLICK Software is not connected to the PLC. Connect to a CLICK PLC and the Red X will disappear.</p>
+            <p>
+                <img src="Resources/Images/PID Monitor not Connected.png" />
+            </p>
+            <h4>PID Loop has a Error</h4>
+            <p>If the PID Monitor Icon has a Red Exclamation mark, then the PID Loop has a error. See <a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a">PID Error Codes</a> for more information. </p>
+            <p>
+                <img src="Resources/Images/PID Monitor Error.png" />
+            </p>
+            <p>This typically occurs if the PID Loop was configured in the PID Configuration, the program was downloaded to the PLC, but the PID Configuration data was not written to the PLC registers. Open the PID Loop Configuration and select <b>Write Register Values to PLC</b>.</p>
+        </blockquote>
+        <p>When the PID Monitor is opened, the PLC PID Loop values are read from the PLC and displayed in the <b>Current</b> value columns. The <b>New</b> value columns are filled in with the PC project values.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/PID Monitor Mode.png" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <h3>Read and Write buttons</h3>
+            <p>There are three buttons for writing to the PLC and the PC project or reading from the PC project.</p>
+            <blockquote>
+                <p style="font-weight: bold;"><b>Read Project Setting</b>:<b> </b><span style="font-weight: normal;">Reads the settings saved in the PC project and places them in the <b>New</b> value columns. These are the same values configured in the <a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">PID Configuration</a>.</span></p>
+                <p><b>Save Current values to Project</b>: Saves all values in the <b>Current</b> value columns (current PLC values) to the project on the PC.</p>
+                <p><b>Write all edits to the PLC</b>: Writes all values in the <b>New</b> value columns  to the corresponding PLC addresses. Fields with no values will not be written; the PLC values will remain unchanged.</p>
+                <p>Individual <b>Write</b> buttons <img src="Resources/Images/write button.png" style="padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;" /> will write only the one value next to it in the <b>New</b> value field to the corresponding PLC address.</p>
+            </blockquote>
+            <h3>Chart</h3>
+            <p>The chart can display the SP, PV's Output, Bias and PV Alarm Limits. The chart layout and pens are configured in the <b>Display Setup </b>tab.</p>
+            <h3>PID Control Tab</h3>
+            <p>The PID Control tab contains the Autotuning interface as well as areas for setting the PID parameters and for adjusting the Set Point and Output variables.</p>
+            <h3>Alarm Setup Tab</h3>
+            <p>The Alarm Setup tab is the same as the PID Configuration Alarm tab. This tab allows you to adjust the alarm settings during tuning as well as test your alarm values and change them if needed.</p>
+            <h3>Display Setup Tab</h3>
+            <p>The Display Setup tab is used to adjust the chart colors, pens, sample rate, X and Y axis labels and divisions. </p>
+            <h3>Error Indicator</h3>
+            <p>The Error Indicator located at the top of the window will indicate a PID Error and provide a list of the current errors.</p>
+            <p>The PID Loop goes to Manual mode when there is an error. The error indicator will clear when the error is fixed and the loop is placed back into Auto mode.</p>
+            <p>See <a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a">PID Error Codes</a> for more information.</p>
+            <h3>Create DataView</h3>
+            <p>Used to  create a DataView with all the PID Loop Parameter addresses.</p>
+        </blockquote>
+        <h2>PID Control Tab</h2>
+        <blockquote>
+            <h3>Operation Mode</h3>
+            <p><b>Current PID Mode</b>: This value can be Auto or Manual and indicates the present mode the PID loop. It is a representation of Cn+25 and Cn+26.</p>
+            <p><b>New PID Mode</b>: These radio buttons are used to select the mode of the PID Control, either Auto or Manual.  It is a representation of Cn+15 and Cn+16.</p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/PID Monitor - New Autotune_1.png" />
+            </p>
+            <blockquote>
+                <h3>Autotune</h3>
+                <p>The loop must be in Auto for the selections under Autotune to be available. See the <a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">Autotuning</a> Help topic for more details using the Autotune feature of the software.</p>
+                <p><b>Start Tuning (Cn+17)</b> - This button initiates the Autotune process.</p>
+                <p><b>Autotune Status (Cn+27)</b> - has two possible values</p>
+                <blockquote>
+                    <p>- Autotune in Progress</p>
+                    <p>- Autotune complete, check PID parameters</p>
+                </blockquote>
+                <p><b>Control (Cn+07)</b> - This is the Control Algorithm selection for the Autotune calculation. If PI is selected, then the Derivative Gain will automatically be set to 0. </p>
+                <p><b>Hysteresis (DFn+21)</b> - The Autotune Hysteresis is the percentage of the PV Span that the PV will go beyond the SP before the Control Output is changed for the next Autotune bump. If the PV is noisy, it could cross the SP momentarily causing a bad Autotune calculation. The Hysteresis can be 0.1% to 10%.</p>
+            </blockquote>
+            <h3>PID Parameters</h3>
+            <p>The PID Parameters listed can be directly adjusted here by entering them in the <b>New</b> value field and clicking the <b>Write all edits to the PLC</b> button or the individual write buttons<img src="Resources/Images/write button.png" style="padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;" />. See the <a href="246.htm" target="_blank">PID&#160;Control in CLICK</a>  Help topic for more details about these parameters.</p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/PID Monitor - PID Parameters.png" />
+            </p>
+            <h3>Variables</h3>
+            <p>The necessary parameters for bumping and monitoring the PID Loop are accessible here. The SP, Output and its limits can be directly adjusted here by entering them in the <b>New</b> value field and clicking the <b>Write all edits to the PLC</b> button or the individual write buttons<img src="Resources/Images/write button.png" style="padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;" /> . See the <a href="246.htm" target="_blank">PID&#160;Control in CLICK</a> Help topic for more details about these parameters.</p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/Variables1.png" />
+            </p>
+        </blockquote>
+        <h2>Alarm Setup Tab</h2>
+        <p>While in the Monitor mode, you can modify the Alarm configuration. This may be useful to determine new alarm limits, or to disable alarms during the tuning process. See the <b>Alarm</b> section of the <a href="243.htm" target="_blank">PID Configuration Mode</a> topic for details on these settings.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Alarm Setup - Monitor1.png" />
+        </p>
+        <h2>Chart and Display Setup Tab</h2>
+        <p>The Display Setup tab is used to configure the Chart view. </p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Diaply Setup tab.png" />
+        </p>
+        <blockquote>
+            <h3>Plot Interval </h3>
+            <p>The plot interval can range from 1 second to 60 minutes. When the plot interval is changed and the <b>Apply</b> button is pressed, the PID Monitor chart is cleared.  </p>
+            <h3>X-axis</h3>
+            <p><b>Divisions</b> - This is the number of sections the Chart will display. You can set the Divisions from 1 to 10 divisions viewable on the chart. At the default Zoom setting, each division contains 10 data points. If the Plot Interval is 1 second and Divisions is 5, then the Chart will display 50 seconds of data. </p>
+            <p>The Zoom buttons can be used to change the points per division from 1 point per division (Zoom in full) to 140 points per division (Zoom out full).</p>
+            <p>You can choose to display the X-axis grid, which corresponds with the divisions and different X-axis labels: Tick numbers for points, Date and Time.</p>
+            <h3>Y-axis</h3>
+            <p>Divisions are simply dividing the Y-axis into sections and determining where the grid lines will be displayed if enabled.</p>
+            <blockquote>
+                <h3>Scaling</h3>
+                <p><b>Auto Scale</b>: The minimum and maximum of the Y-axis will automatically be adjusted to the minimum and maximum values displayed on the chart.</p>
+                <p><b>Manual Scale</b>: You can choose to set hard min and max limits to display on the chart.</p>
+            </blockquote>
+            <h3>Display</h3>
+            <p>The Display sections lets you choose which available PID pens to show on the chart. You can also select the color for each pen.</p>
+            <p><b>Background</b> - choose the background color for the chart that will easily contrast with the pen colors.</p>
+            <p><b>Show Point</b> - Turn on and off the point symbols on the chart. The lines on the chart are interpolated between the actual points of data. Sometimes it is useful to see the actual data points</p>
+        </blockquote>
+        <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="246.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Control in CLICK</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Find Available&#160;Addresses</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Configuration Mode</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" xmlns="">PID&#160;View List</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="250.htm" xmlns="">Filter Examples</a>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml"><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Error&#160;Codes</a>
+        </p>
+    </body>
+</html>

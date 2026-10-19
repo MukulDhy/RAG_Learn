@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-file-tags="Topic Status.Completed">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Network Time Service</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Network Time Service</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor67"></a>Topic: CL272</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">The <b xmlns="http://www.w3.org/1999/xhtml">Network Time Service</b> (NTP or SNTP) synchronizes the date and time on the PLC with a network-based time service. This could be a public time server on the internet, or a time server on your local network.</p>
+            <table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <tbody>
+                    <tr style="vertical-align: top;height: 26px;" xmlns="http://www.w3.org/1999/xhtml">
+                        <td style="padding-right: 10px;padding-left: 10px;">
+                            <h2 style="margin-top: 5px;text-align: center;">
+                                <img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                            </h2>
+                        </td>
+                        <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                            <p class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> The Network Time Service function is only available when using a C2 series CLICK PLUS PLC.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 style="margin-top: 5px;text-align: left;" xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p xmlns="" style="text-align: center;">
+                <img src="Resources/Images/NTS tab1.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Enable Network Time Service:</span> The Network Time Service must be enabled by checking this box before it can be configured or used.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Port: </span>Select a port from the available Ethernet ports on your PLC. The Network Time Service can run on either wired or wireless Ethernet ports on the CPU as well as the Ethernet ports on the C2-OPCUA, and C2-NRED&#160;Intelligent modules.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Preferred:</span> Enter an <b xmlns="http://www.w3.org/1999/xhtml">IP Address</b> or <span style="font-weight: bold;font-style: normal;" xmlns="http://www.w3.org/1999/xhtml">Host Name</span> for the preferred Time Server. If a Host Name is entered, a <a href="211.htm#DNS" xmlns="http://www.w3.org/1999/xhtml">DNS Server</a> must be configured for the port.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Alternate:</span> To configure a backup Network Time Server, check this box, and enter an <b xmlns="http://www.w3.org/1999/xhtml">IP Address</b> or <span style="font-weight: bold;font-style: normal;" xmlns="http://www.w3.org/1999/xhtml">Host Name</span> for the alternate Time Server. If a Host Name is entered, a <a href="211.htm#DNS" xmlns="http://www.w3.org/1999/xhtml">DNS Server</a> must be configured for the port.</p>
+            <p xmlns=""><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Manual Time Synchronization:</span> The Network Time Service will synchronize the PLC's date and time when requested by setting flag <b xmlns="http://www.w3.org/1999/xhtml">SC120: Network_Time_Request</b>. </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Scheduled Time Synchronization:</span> To schedule updates at a fixed interval, enable this feature and select the desired interval. Synchronization can be scheduled:</p>
+            <ul>
+                <li xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Every Hour</b> at a selected minute</li>
+                <li xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Once per Day</b> at a selected hour and minute</li>
+                <li xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Once per Week</b> at a selected weekday, hour, and minute</li>
+                <li xmlns="http://www.w3.org/1999/xhtml"><b xmlns="http://www.w3.org/1999/xhtml">Each time the PLC is powered on and communication is enabled</b>
+                </li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/NTS tab2.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Time Zone Offset:</span> Network Time Servers return the time in Coordinated Universal Time (UTC). You must specify the offset to your desired time zone, in one of the following three ways. </p>
+            <ul>
+                <li><b xmlns="http://www.w3.org/1999/xhtml">Use Register:</b> Enter or select a DS or DD  register that contains the desired time offset in minutes.</li>
+                <li><b xmlns="http://www.w3.org/1999/xhtml">Use Constant:</b> Select a standard time zone from the dropdown list. The offset will not automatically account for Daylight Saving Time, as noted below.<img src="Resources/Images/notepad.gif" xmlns="http://www.w3.org/1999/xhtml" /><table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml"><col width="100" /><col /><tbody><tr style="vertical-align: top;height: 26px;" xmlns="http://www.w3.org/1999/xhtml"><td style="padding-right: 10px;padding-left: 10px;"><h2 style="margin-top: 5px;text-align: center;"><img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" /></h2></td><td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;"><p class="Notes"><b xmlns="http://www.w3.org/1999/xhtml">Note:</b> Since Daylight Saving Time changeover dates vary across regions and years, the <b xmlns="http://www.w3.org/1999/xhtml">Constant Time Zone</b> offset will not automatically account for Daylight Saving Time. The system will adjust the offset by one hour to account for Daylight Saving Time while the flag <b xmlns="http://www.w3.org/1999/xhtml">SC121: Network_Time_DST</b> is set.</p></td></tr></tbody></table><table style="vertical-align: top;" width="100%" xmlns="http://www.w3.org/1999/xhtml"><col width="100" /><col /><tbody><tr style="vertical-align: top;height: 26px;" xmlns="http://www.w3.org/1999/xhtml"><td style="padding-right: 10px;padding-left: 10px;"><h2 style="margin-top: 5px;text-align: center;"><img src="notepad.gif" xmlns="http://www.w3.org/1999/xhtml" /></h2></td><td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;"><p class="Notes"><span style="font-weight: bold;">Note:</span> Using <span style="font-weight: bold;">DST (Daylight Saving Time)</span> adjustments along with <span style="font-weight: bold;">Data Logging</span> may cause anomalies in the records.  When the system time is adjusted backwards records may be lost or appended to existing files.  When the system time is adjusted forward a time gap will appear in the records.</p></td></tr></tbody></table></li>
+            </ul>
+            <ul>
+                <li><b xmlns="http://www.w3.org/1999/xhtml">Use Other</b> Enter a fixed hour and minute offset to be applied.</li>
+            </ul>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Com Port 1 (Ethernet) Setup|211.htm" xmlns=""><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+            </p>
+            <p style="text-align: center;margin-left: 62px;" xmlns="">&#160;</p>
+        </div>
+    </body>
+</html>

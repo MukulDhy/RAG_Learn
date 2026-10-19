@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|PLC Menu" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Update Firmware</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Update Firmware</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL014</p>
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml"><a href="javascript:InsertContent('feedback')" onclick="javascript:RemoveContent('topic')"><img src="Feedback.jpg" style="border: none;" alt="" border="0" /></a>
+                        </p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p xmlns="http://www.w3.org/1999/xhtml">The Update Firmware tool is used to update the firmware in the CPU and in Intelligent Modules installed in Slot 0 or Slot 1.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Where to Begin</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">There are two paths to open the <span style="font-weight: bold;">CLICK Update Firmware</span> utility. One is on the <span style="font-weight: bold;">PLC tab on the software ribbon menu</span>. The other is on the <span style="font-weight: bold;">PLC Tab</span> of the <span style="font-weight: bold;"><a href="134.htm">Navigation Window</a></span>.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">&#160;</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <p style="text-align: center;" xmlns="">
+                    <img src="Resources/Images/PLC Ribbon Update Firmware_01.png" xmlns="http://www.w3.org/1999/xhtml" /> <img src="Resources/Images/PLC Tab Update Firmware_01.png" xmlns="http://www.w3.org/1999/xhtml" /></p>
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Must be Connected to PLC</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">In order to run the <span style="font-weight: bold;">Update Firmware Utility</span>, you will &#160;need to <a href="085.htm">Connect</a> to the <span style="font-weight: bold;">PLC</span>. If you are not currently connected to the <span style="font-weight: bold;">PLC</span>, the <span style="font-weight: bold;">Connect to PLC</span> dialog (
+<a href="pop_connect.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">show</a>) will open automatically.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">The Update Firmware Dialog</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Update Firmware</span> utility begins with the dialog shown below. Note that the utility has already detected the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CPU Type</span> and any installed Intelligent modules and their current <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Firmware Version</span>s.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">There is only one firmware file that contains firmware for all CPU's or Modules being updated. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">CLICK on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="popup_firmware_browse.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Browse Button</a></span> and select the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">File</span> path where the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Firmware</span> file is located.&#160;The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Default</span> location for firmware is <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">C:\Program Files\AutomationDirect\CLICK\Firmware</span>. The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Firmware</span> file extension is "<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">.clk"</span>.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CLICK PLUS FW Update w DCM01.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">When you select the firmware file, the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">New Firmware Version</span> for all modules will be displayed. If needed, click <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="#History">View Firmware History</a></span> to see the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Firmware Revision Change History</span>.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;"><span style="font-weight: normal;">If the CPU or any modules current firmware matches the firmware selected, you may choose to <b>Skip updating modules with the same version</b>.</span>
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">USB Low Power Mode</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The CLICK PLUS CPU's may be powered solely by the USB programming connection. Firmware in the CPU may be updated with only USB power. Intelligent modules cannot be updated in USB Low Power Mode. The CPU must be powered by 24 VDC. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If an Intelligent module is installed in either slot, and a Firmware Update is attempted in USB Low Power mode, the following dialog will be displayed.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/Firmware Update USB Low Power_01.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">To proceed, click the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Update </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Button</span>. Since any project in the memory of the CPU will be erased, the option is given to make a backup of the project file if one is detected. </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/Firmware Update Make Backup of Project.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Note that the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CPU's Run/Stop Switch</span> must be in the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Stop Position</span>.   You will receive a <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Reminder</span> like the one below:</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Firmware Update Stop Switch.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: left;">At this point the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Update Firmware</span> utility will not proceed unless the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CPU</span> is switched to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Stop Position</span>. Depending on the model CPU and the installed modules, the update process will go through several phases. If connected over USB, you may hear the USB connection drop to your PC and reconnect several times.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/Firmware Update Progress.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">When the <span style="font-weight: bold;"><a name="kanchor55"></a>Firmware Update</span> is <span style="font-weight: bold;">Complete</span>, you should see a message similar to this one:</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Firmware Update Complete.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml"><a name="History" id="History" xmlns="http://www.w3.org/1999/xhtml"></a>View Firmware History</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">View Firmware History Window</span> contains a complete <span style="font-weight: bold;">History</span> of <span style="font-weight: bold;">Firmware Revisions</span>.&#160;Access to the <span style="font-weight: bold;">History</span> dialog is from the 
+Update Firmware Dialog, which is only visible if you are <a href="085.htm">Connected</a> to the <span style="font-weight: bold;">PLC</span>.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Firmware History.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+        </div>
+    </body>
+</html>

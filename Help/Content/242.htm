@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Using CLICK as Remote I/O</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><a name="kanchor200"></a>Using CLICK as <a name="kanchor201"></a>Remote I/O</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL242</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p xmlns="http://www.w3.org/1999/xhtml">When using the CLICK PLC as Remote I/O to a Modbus Master or an EtherNet/IP Scanner, the state of the Outputs during error conditions must be considered.  By default, the Outputs will remain in their last commanded state.  Your process may require a fault state for these Outputs.</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Modbus RTU and Modbus TCP</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml">For using with Modbus Masters, each Slave port has a system timer, see System Data Registers, which represents the elapsed time since the last good Modbus transaction.  A simple Compare instruction can be used to detect this fault condition and update the Outputs to known states with a Reset instruction.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Use these System Data Registers to monitor elapsed time:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li style="font-weight: normal;">SD41 _Port1_No_Comm_Time</li>
+                <li style="font-weight: normal;">SD51 _Port2_No_Comm_Time</li>
+                <li style="font-weight: normal;">SD61 _Port3_No_Comm_Time</li>
+                <li style="font-weight: normal;">SD214 _WLAN_No_Comm_Time</li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">Example using the Port 1 Comm Timer to reset CLICK Outputs</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Modbus Reset Outputs.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Implicit Messaging</h2>
+            <h3 style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">EtherNet/IP</h3>
+            <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">For using with EtherNet/IP Implicit Class 1 (I/O) Scanners, there are System Control Relays which indicate a healthy connection and the state of the Scanner.  A simple Normally Closed Contact can be used to detect this fault condition and update the Outputs to known states with a Reset instruction. (Note: Not all Scanners will include the Run/Stop status header.)</p>
+            <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">Also, in the EtherNet/IP Adapter setup there is an option to Clear or Hold the last data state on a Network Error.  This feature is specific to Implicit Class 1 connections only.</p>
+            <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">Use these System Control Relays, or select the Clear option for a Network Error option:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li style="text-align: left;font-weight: normal;">SC111 _EIP_Con1_ConOnline</li>
+                <li style="text-align: left;font-weight: normal;">SC113 _EIP_Con1_Originator_Run</li>
+                <li style="text-align: left;font-weight: normal;">SC114 _EIP_Con2_ConOnline</li>
+                <li style="text-align: left;font-weight: normal;">SC116 _EIP_Con2_Originator_Run</li>
+            </ul>
+            <p style="text-align: left;" xmlns="http://www.w3.org/1999/xhtml">Example using an EtherNet/IP System Control Relay to reset CLICK Outputs</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EIP Implicit Reset Outputs.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EIP Setup Data State Originator.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p>Explicit Messaging</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">For using with EtherNet/IP Explicit Class 3 Clients, each connection has a system timer, see System Data Registers, which represents the elapsed time since the last good Explicit Message transaction.  A simple Compare instruction can be used to detect this fault condition and update the Outputs to known states with a Reset. Instruction.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">Use these System Data Registers:</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>SD108 _EIP_Con1_No_Comm_Time</li>
+                <li>SD114 _EIP_Con2_No_Comm_Time</li>
+            </ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">Example using the EIP Connection 1 Comm Timer to reset CLICK Outputs</p>
+            <p style="text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/EIP Explicit Reset Outputs.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns=""><a href="211.htm" xmlns="http://www.w3.org/1999/xhtml">Modbus TCP&#160;Setup</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="233.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK EtherNet/IP Adapter Setup</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="235.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK Example for AB&#160;CompactLogix</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="236.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for Productivity Series PLC</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="237.htm" xmlns="http://www.w3.org/1999/xhtml">CLICK&#160;Example for Do-more&#160;PLC</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a href="109.htm" xmlns="http://www.w3.org/1999/xhtml">System Control Relays</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="110.htm" xmlns="http://www.w3.org/1999/xhtml">System&#160;Data Registers</a>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

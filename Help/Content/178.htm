@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Program Control" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Next Instruction</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Next Instruction</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL178</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Definition</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">Next</span> instruction indicates the end of a <span style="font-weight: bold;">For Next</span> loop. The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Next</span> instruction must be the only instruction on its rung. No enabling contacts are allowed on the same rung with the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Next</span> instruction.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">When the user selects the <span style="font-weight: bold;">Next</span> instruction from the <span style="font-weight: bold;">Instruction List</span> and drops it into the <span style="font-weight: bold;">Ladder Editor</span> at the specified position, the symbol below appears in the <span style="font-weight: bold;">Ladder Editor</span> at the specified position.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="next.gif" style="border: none;" alt="" width="128" height="69" border="0" />
+            </p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example Program</h2>
+            <p style="font-weight: bold;margin-top: 0;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program: For-Next Loop</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example, when <span style="font-weight: bold;">X001</span> is <span style="font-weight: bold;">ON</span>, the <span style="font-weight: bold;">Ladder Program</span> is executed <span style="font-weight: bold;">100</span> times.</p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="for next ex.gif" style="border: none;" alt="" width="376" height="230" border="0" />
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The <span style="font-weight: bold;">Next</span> instruction does not require a dialog for setup. The placement of the <span style="font-weight: bold;">Next</span> instruction in the appropriate <span style="font-weight: bold;">Coil Area</span> location is achieved by one of several simple methods:</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml">
+                <li xmlns="http://www.w3.org/1999/xhtml" class="BulletListRed" value="1"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">D</span>rag and Drop<span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml"> the instruction from the</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Instruction List</span></li>
+                <li class="BulletListRed" value="2"><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">Placing the</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Box Cursor</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">in the rung position where you want the</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Next</span> instruction <span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">to appear and:</span><ol><li xmlns="http://www.w3.org/1999/xhtml" class="BulletListGreen" value="1"><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">Type the letter</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">"n"</span><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">or </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">"N"</span></li><li xmlns="http://www.w3.org/1999/xhtml" class="BulletListGreen" value="2"><span style="font-weight: normal;" xmlns="http://www.w3.org/1999/xhtml">Select</span><![CDATA[ 
+]]><a href="popup_instr_prog_end.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Instruction &gt; Program Control &gt; Next</a></li></ol></li>
+            </ol>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="177.htm">For Instruction</a>
+            </p>
+        </div>
+    </body>
+</html>

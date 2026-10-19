@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Counter</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Counter</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL166</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Definition</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">When enabled, a <span style="font-weight: bold;"><a name="kanchor52"></a>Counter</span> instruction counts up or down (depending on user settings) until it reaches the <span style="font-weight: bold;">Set Point</span>. The <span style="font-weight: bold;">Counter</span> counts in response to the transition from <span style="font-weight: bold;">OFF</span> to <span style="font-weight: bold;">ON</span> of the enabling rung. If the user selects <span style="font-weight: bold;">Count Up</span> &amp; <span style="font-weight: bold;">Down</span>, the <span style="font-weight: bold;">Counter</span> will have two enabling rungs, one for up counts and one for down counts.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The current count is held in the register shown in the <span style="font-weight: bold;">Current Value</span> field. When the <span style="font-weight: bold;">Current Value</span> reaches the <span style="font-weight: bold;">Set Point</span>, the <span style="font-weight: bold;">Completion Bit</span> is turned <span style="font-weight: bold;">ON</span>. The <span style="font-weight: bold;">Completion Bit</span> is turned <span style="font-weight: bold;">OFF</span> when the <span style="font-weight: bold;">Reset</span> rung is enabled.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="counter win.gif" style="border: none;" alt="" width="395" height="246" border="0" />
+            </p>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="checks rg.gif" style="border: none;" alt="" width="354" height="27" border="0" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">1</span><span style="font-weight: bold;"> Counter Number:</span> Assign a <span style="font-weight: bold;">Counter Number</span>. This number can only be the <span style="font-weight: bold;">CT Memory</span> type. Either type the <span style="font-weight: bold;">CT</span> number directly into the <span style="font-weight: bold;">Counter Number</span> field or click the <span style="font-weight: bold;">Browse Button</span> to open the <span style="font-weight: bold;">Address Picker</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">2</span><span style="font-weight: bold;"> Set Point:</span> Enter a <span style="font-weight: bold;">Constant</span> (Integer only).&#160;Or, assign a <span style="font-weight: bold;">Data Memory Address</span> to hold the <span style="font-weight: bold;">Set Point</span> value. <span style="font-weight: bold;">DS</span> and <span style="font-weight: bold;">DD</span> are the eligible <a href="195.htm">Data Memory Address</a> range.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">3</span><span style="font-weight: bold;"> Count Type:</span> Use the radio buttons to select <b>Count Up</b>, <b>Count Down</b>, or <b>Count Up &amp; Down</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">4</span><span style="font-weight: bold;"> Current Value:</span> When the <span style="font-weight: bold;">Counter Number</span> is assigned (see <span style="font-weight: bold;color: #f20000;font-size: 14pt;">1</span> above), the <span style="font-weight: bold;">Current Value</span> is automatically assigned to the corresponding <span style="font-weight: bold;">Counter Data</span> register. <span style="font-weight: bold;">CT1</span> corresponds to <span style="font-weight: bold;">CTD1</span>, <span style="font-weight: bold;">CT2</span> corresponds to <span style="font-weight: bold;">CTD2</span>, etc.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #f20000;font-weight: bold;">5</span><span style="font-weight: bold;"> Completion Bit:</span> The <span style="font-weight: bold;">Completion Bit</span> is the same as the <span style="font-weight: bold;">Counter Number</span>.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Example Program</h2>
+            <p style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program 1: Up Counter</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example, after <span style="font-weight: bold;">C1</span> makes <span style="font-weight: bold;">OFF-to-ON</span> transition <span style="font-weight: bold;">3</span> times, the counter <span style="font-weight: bold;">CT1</span> counts up and the counter status bit <span style="font-weight: bold;">CT1</span> is turned <span style="font-weight: bold;">ON</span>. When <span style="font-weight: bold;">C2</span> is <span style="font-weight: bold;">ON</span>, the counter is <span style="font-weight: bold;">Reset</span> and does not accept the count up signal.</p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="counter ex 1a.gif" style="border: none;" alt="" width="563" height="173" border="0" />
+            </p>
+            <p style="margin-left: 48px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">Timing Diagram</p>
+            <p style="margin-left: 48px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="count-1.gif" style="border: none;" alt="" width="508" height="184" border="0" />
+            </p>
+            <p style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program 2: Down Counter</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example, the current counter value <span style="font-weight: bold;">CTD1</span> is set to <span style="font-weight: bold;">5</span> in the beginning. After <span style="font-weight: bold;">C1</span> makes <span style="font-weight: bold;">OFF-to-ON</span> transition 2 times, the current counter value <span style="font-weight: bold;">CTD1</span> reaches the <span style="font-weight: bold;">Set Point</span> (3 in this example) and the counter status bit <span style="font-weight: bold;">CT1</span> is turned <span style="font-weight: bold;">ON</span>. When <span style="font-weight: bold;">C2</span> is <span style="font-weight: bold;">ON</span>, the counter is <span style="font-weight: bold;">reset</span>. (<b>CT1</b> is <b>OFF</b> and <b>CTD1</b> is set to <b>0</b>.) However, <span style="font-weight: bold;">CT1</span> is turned on immediately after <span style="font-weight: bold;">C1</span> is turned off because the current counter value <span style="font-weight: bold;">CTD1</span> is lower than the <span style="font-weight: bold;">Set Point</span>.</p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="counter down ex2.gif" style="border: none;" alt="" width="564" height="179" border="0" />
+            </p>
+            <p style="margin-left: 48px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">Timing Diagram</p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="count-2.gif" style="border: none;" alt="" width="503" height="184" border="0" />
+            </p>
+            <p style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;">Example Program 3: Up/Down Counter</span>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">In the following example, when <span style="font-weight: bold;">C1</span> makes an <span style="font-weight: bold;">OFF-to-ON</span> transition, the current counter value <span style="font-weight: bold;">CTD1</span> increases by <span style="font-weight: bold;">one</span>. When <span style="font-weight: bold;">C2</span> makes an <span style="font-weight: bold;">OFF-to-ON</span> transition, the current counter value <span style="font-weight: bold;">CTD1</span> decreases by <span style="font-weight: bold;">one</span>. When the current counter value <span style="font-weight: bold;">CTD1</span> is the same or more than the <span style="font-weight: bold;">Set Point</span> (3 in this example), the counter status bit <span style="font-weight: bold;">CT1</span> is <span style="font-weight: bold;">ON</span>. When <span style="font-weight: bold;">C3</span> is <span style="font-weight: bold;">ON</span>, the counter is reset. (<span style="font-weight: bold;">CT1</span> is <span style="font-weight: bold;">OFF</span> and <span style="font-weight: bold;">CTD1</span> is set to <span style="font-weight: bold;">0</span>.)</p>
+            <p style="margin-left: 48px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="count up down res2.gif" style="border: none;" alt="" width="564" height="193" border="0" />
+            </p>
+            <p style="margin-left: 48px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">Timing Diagram</p>
+            <p style="margin-left: 48px;font-weight: bold;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="count-3.gif" style="border: none;" alt="" width="503" height="217" border="0" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="195.htm">Memory Addresses</a>
+            </p>
+        </div>
+    </body>
+</html>

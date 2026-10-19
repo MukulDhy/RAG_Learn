@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Communication" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Receive Instruction: MODBUS RTU</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Receive Instruction: MODBUS RTU</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL180</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor89"></a>Receive</span> instruction 
+			 allows you to use <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port 
+			 2 or 3</span> (if available) on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK 
+			 CPU</span> modules, or <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port 1 or 2</span> of a <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">C2-DCM module</span>, as a network master and read data from 
+			 external devices.&#160;The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK 
+			 CPU</span> modules support the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor90"></a>MODBUS 
+			 (RTU)</span> and <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 protocols. This help topic covers the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span> 
+			 protocol. Please refer to the help topic <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="182.htm">Receive Instruction: ASCII</a></span> for the 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> protocol.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">If you use a <span style="font-weight: bold;">Com Port</span> 
+			 on the <span style="font-weight: bold;">CLICK CPU</span> modules 
+			 as a <span style="font-weight: bold;">MODBUS</span> slave, 
+			 you don’t need to use this instruction.&#160;Setup the <span style="font-weight: bold;">Com Port</span> to match the configuration 
+			 of the <span style="font-weight: bold;">MODBUS</span> network 
+			 and assign a unique node address.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="80px" xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <col xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;">
+                        <p style="border-top: Solid 2px #19519e;border-bottom: Solid 2px #19519e;background-color: #ffff80;"><span style="font-weight: bold;">Note:</span> For the <span style="font-weight: bold;">Com 
+			 Port</span> wiring info, please refer to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c0userm/c0userm.html" target="_blank" title="Open CLICK Hardware Manual" alt="Open CLICK Hardware Manual">CLICK PLC Hardware Manual</a></span><span xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"> or </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c2userm/c2userm.html" target="_blank" title="Open CLICK PLUS Hardware Manual" alt="Open CLICK PLUS Hardware Manual">CLICK PLUS PLC Hardware Manual</a></span>.</p>
+                        <p style="border-top: Solid 2px #19519e;border-bottom: Solid 2px #19519e;background-color: #ffff80;"><span style="font-weight: bold;">Note:</span> 
+			 If you need more detailed information about the <span style="font-weight: bold;">MODBUS</span> 
+			 protocol, we recommend to visit the following web site: &#160;<a href="http://www.modbus.org">www.MODBUS.org</a></p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/Modbus_Receive.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">1</span><span style="font-weight: bold;"> Com Port:</span> Click the 
+			 down arrow to select a <span style="font-weight: bold;">Port</span> 
+			 from the available list. <span style="font-weight: bold;">Port2</span> 
+			 is default.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">2</span><span style="font-weight: bold;"> Protocol:</span> This field 
+			 displays the <span style="font-weight: bold;">Protocol Type</span> 
+			 that is currently selected. The two choices are <span style="font-weight: bold;">MODBUS</span> and <span style="font-weight: bold;">ASCII</span>. 
+			 &#160;To change from <span style="font-weight: bold;">MODBUS</span> 
+			 to <span style="font-weight: bold;">ASCII</span>, see <span style="font-weight: bold;">Item </span><b style="color: #ff0000;">3</b>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">3</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> COM Port Setup:</span> Click 
+			 on this button to open the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com 
+			 Port Setup</span> window shown below.&#160;From this window 
+			 click on the down arrow for the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Protocol</span> 
+			 field and select <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 or <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span></p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">.<img src="Resources/Images/com port 2 setup.png" xmlns="http://www.w3.org/1999/xhtml" /></p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="80px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p style="border-top: Solid 2px #19519e;border-bottom: Solid 2px #19519e;background-color: #ffff80;margin-bottom: 0;"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note:</span> 
+			 If the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Protocol</span> parameter 
+			 is grayed out, it means there is at least one <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Receive</span> 
+			 or <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Send</span> instruction 
+			 assigned to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port</span> 
+			 already.&#160;If you still want to change the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Protocol</span>, 
+			 please delete all <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Receive/Send</span> 
+			 instructions first.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">4</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> Slave ID (1-247):</span> 
+			 Select the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Node ID</span> 
+			 of the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span> slave 
+			 that you want to read data from. You can click the address picker [...] or enter a DS register to make this value a variable to enable communications with up to 247 different Modbus devices. If the value in the DS register is outside the range of 1-247, SC43 "Out of Range" will be set to TRUE.</p>
+            <p class="NumberedHang" style="margin-top: 5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">5</span><span style="font-weight: bold;"> MODBUS 
+			 Function Code:</span> Select one of the following <span style="font-weight: bold;">MODBUS</span> 
+			 function codes:<br /><img src="smallred.jpg" alt="" style="border: none;" width="10" height="10" border="0" /><span style="font-weight: bold;">01 
+			 – Read Coil Status<br /><img src="smallred.jpg" alt="" style="border: none;" width="10" height="10" border="0" /> 02 – Read Input Status<br /><img src="smallred.jpg" alt="" style="border: none;" width="10" height="10" border="0" /> 03 – Read Holding Registers<br /><img src="smallred.jpg" alt="" style="border: none;" width="10" height="10" border="0" /> 04 – Read Input Registers</span></p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">6</span><span style="font-weight: bold;"> Addressing Type:</span> Select 
+			 one of the following <span style="font-weight: bold;">MODBUS 
+			 Addressing Types</span>:</p>
+            <table cellspacing="0" style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: auto;margin-right: auto;caption-side: top;width: 65%;">
+                <col />
+                <col />
+                <tr>
+                    <td bgcolor="#004080" style="color: #fffff0;background-color: #0066cc;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center"><span style="color: #ffffff; font-weight: bold;">Addressing 
+			 Type</span>
+                        </p>
+                    </td>
+                    <td bgcolor="#004080" style="color: #fffff0;background-color: #0066cc;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p align="center"><span style="color: #ffffff; font-weight: bold;">Description</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#19519E" style="background-color: #0066cc;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="color: #ffffff;font-weight: bold;">MODBUS 
+			 984</p>
+                        <p style="color: #ffffff;font-weight: bold;">Addressing</p>
+                    </td>
+                    <td style="vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p>This 
+			 Addressing is patterned 
+			 after the Modicon PLC addressing, 
+			 which many devices support.</p>
+                        <p>0***** are Coils 
+			 (Read/Write).</p>
+                        <p>1***** are Input 
+			 Bits (Read only).</p>
+                        <p>3***** are Input 
+			 Registers (Read Only)</p>
+                        <p>4***** are Holding 
+			 Registers (Read/Write)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#19519E" style="background-color: #0066cc;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="color: #ffffff;font-weight: bold;">MODBUS 
+			 Hex</p>
+                        <p style="color: #ffffff;font-weight: bold;">Addressing</p>
+                    </td>
+                    <td style="vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p>This 
+			 Addressing is patterned 
+			 after what the MODBUS 
+			 protocol actually requests, which is simply a Function 
+			 Code  + an Offset.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#19519E" style="background-color: #0066cc;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p><span style="color: #ffffff; font-weight: bold;">CLICK 
+			 Addressing</span>
+                        </p>
+                    </td>
+                    <td style="vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p>If 
+			 the MODBUS slave is 
+			 the CLICK PLC, we 
+			 recommend to use this CLICK 
+			 Addressing because you can use the Address 
+			 Picker to select the Starting 
+			 Slave Address.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">7</span><span style="font-weight: bold;"> Starting Slave Address:</span> 
+			 Enter the <span style="font-weight: bold;">Slave Address</span> 
+			 to start reading data from.&#160;The table below shows the 
+			 valid <span style="font-weight: bold;">Slave Addresses</span>. 
+			 &#160;If <span style="font-weight: bold;">CLICK Addressing</span><span>is selected</span>, you can use the <span style="font-weight: bold;">Address 
+			 Picker</span> by clicking the <img src="browse button.gif" alt="" style="border: none;" width="17" height="14" border="0" /> icon.</p>
+            <table style="vertical-align: top;margin-left: 48px;margin-left: auto;margin-right: auto;" cellspacing="0" width="550">
+                <col width="80" />
+                <col width="172px" />
+                <col width="100" />
+                <col width="100" />
+                <col width="100" />
+                <tr style="vertical-align: top;">
+                    <td rowspan="2" style="border: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#004080">
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;">MODBUS</p>
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;">Addressing</p>
+                    </td>
+                    <td colspan="4" style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#004080">
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;" align="center">Function 
+			 Code</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">01</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">02</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">03</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">04</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#004080">
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;">MODBUS 984</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">1 
+			 to 65535</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">100001 
+			 to 165535</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">400001 
+			 to 465535</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">300001 
+			 to 365535</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#004080">
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;">MODBUS Hex</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">0h 
+			 to FFFEh</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">0h 
+			 to FFFEh</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">0h 
+			 to FFFEh</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">0h 
+			 to FFFEh</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#004080">
+                        <p style="font-weight: bold;color: #ffffff;font-size: 9pt;">CLICK</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">X, 
+			 Y, C, T, CT and SC</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+                        <p style="font-size: 9pt;" align="center">X, 
+			 Y, C, T, CT and SC</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">CTD, DS, 
+			 DD, DH, DF, SD, TD, YD and TXT</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="100">
+                        <p style="font-size: 9pt;" align="center">CTD, DS, 
+			 DD, DH, DF, SD, TD, YD and TXT</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">8</span><span style="font-weight: bold;"> Starting Master Address:</span> 
+			 &#160;Enter the <span style="font-weight: bold;">Starting 
+			 Memory Address</span> of the <span style="font-weight: bold;">Master 
+			 CLICK CPU</span> module to save the read data from the <span style="font-weight: bold;">MODBUS</span> slave.&#160;You 
+			 can use the <span style="font-weight: bold;">Address Picker</span> 
+			 by clicking the <img src="browse button.gif" alt="" style="border: none;" width="17" height="14" border="0" /> 
+			 icon.</p>
+            <table style="vertical-align: top;margin-left: auto;margin-right: auto;" cellspacing="0" width="400">
+                <col width="80" />
+                <col width="80" />
+                <col width="110" />
+                <col width="110" />
+                <tr style="vertical-align: top;height: 20px;">
+                    <td colspan="4" style="border: Solid 1px #000000;background-color: #0066cc;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="380" bgcolor="#19519E">
+                        <p style="font-weight: bold;color: #ffffff;" align="center">Function Code</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">01</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">02</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="110" bgcolor="#FFFF80">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">03</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;background-color: #fafad2;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" bgcolor="#FFFF80" width="110">
+                        <p style="font-weight: bold;font-size: 9pt;" align="center">04</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80">
+                        <p style="font-size: 9pt;" align="center">Y and C</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="80">
+                        <p style="font-size: 9pt;" align="center">Y 
+			 and C</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="110">
+                        <p style="font-size: 9pt;" align="center">CTD, DS, 
+			 DD, DH, DF, SD, TD, YD and TXT</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" width="110">
+                        <p style="font-size: 9pt;" align="center">CTD, DS, 
+			 DD, DH, DF, SD, TD, YD and TXT</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">9</span><span style="font-weight: bold;"> Number of Bits:</span> Enter 
+			 the size of the data to read from the <span style="font-weight: bold;">MODBUS</span> 
+			 slave.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">10</span><span style="font-weight: bold;"> Word Swap:</span> This option 
+			 is only available when the <span style="font-weight: bold;">Starting 
+			 Master Address</span> is a <span style="font-weight: bold;">DD</span> 
+			 or <span style="font-weight: bold;">DF</span><span style="font-weight: bold;">Memory 
+			 Address</span>.&#160;These <span style="font-weight: bold;">Memory 
+			 Addresses</span> have <span style="font-weight: bold;">32 
+			 bit</span> data length, so they can store the data read from 
+			 two registers in the <span style="font-weight: bold;">MODBUS</span> 
+			 slave.&#160;You can swap the order of the data to be stored 
+			 in the <span style="font-weight: bold;">DD</span> or <span style="font-weight: bold;">DF Memory Address</span>.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">11</span><span style="font-weight: bold;"> Character Order:</span> This 
+			 option is not available with the current <span style="font-weight: bold;">Firmware 
+			 Version</span>.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">12</span><span style="font-weight: bold;"> Receiving:</span> Assign 
+			 a <span style="font-weight: bold;">C bit</span> as the <span style="font-weight: bold;">Receiving</span> flag.&#160;This 
+			 <span style="font-weight: bold;">C bit</span> turns <span style="font-weight: bold;">ON</span> when the <span style="font-weight: bold;">Com 
+			 Port</span> is sending a read request to a <span style="font-weight: bold;">MODBUS</span> 
+			 slave with this instruction.&#160;Please refer to the <span style="font-weight: bold;">Timing Chart</span><span> shown 
+			 below</span>.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col style="width: 90%;" />
+                <tr style="vertical-align: top;">
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p style="border-top: Solid 2px #19519e;border-bottom: Solid 2px #19519e;background-color: #ffff80;margin-top: 0;margin-bottom: 0;"><span style="font-weight: bold;">Note:</span> 
+			 This <span style="font-weight: bold;">Receiving</span> flag 
+			 is <span style="font-weight: bold;">OFF</span> when another 
+			 <span style="font-weight: bold;">Receive</span> instruction 
+			 is requesting data from the <span style="font-weight: bold;">MODBUS</span> 
+			 slave.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;margin-top: 0;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">13</span><span style="font-weight: bold;"> Success:</span> 
+			 Assign a <span style="font-weight: bold;">C bit</span> as 
+			 the <span style="font-weight: bold;">Success</span> flag. 
+			 &#160;This <span style="font-weight: bold;">C bit</span> turns 
+			 <span style="font-weight: bold;">ON</span> after the <span style="font-weight: bold;">Com Port</span> received data from 
+			 the <span style="font-weight: bold;">MODBUS</span> slave successfully. 
+			 &#160;It stays <span style="font-weight: bold;">ON</span> 
+			 until the instruction is re-enabled. Please refer to 
+			 the <span style="font-weight: bold;">Timing Chart</span> shown 
+			 below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">14</span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"> E  rror:</span> Assign a <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">C bit</span> as the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Error</span> 
+			 flag.&#160;This <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">C bit</span> 
+			 turns <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> after the 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port</span> could not 
+			 receive data from the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span> 
+			 slave successfully.&#160;It stays <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ON</span> 
+			 until the instruction is re-enabled.&#160;Please refer to 
+			 the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Timing Chart</span> shown 
+			 below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">15</span><span style="font-weight: bold;"> Exception Response (Error 
+			 Code):</span> Assign a <span style="font-weight: bold;">DS</span> 
+			 or <span style="font-weight: bold;">DD</span><span style="font-weight: bold;"> Memory 
+			 Address</span> to store the <span style="font-weight: bold;">Exception 
+			 Response</span> from the <span style="font-weight: bold;">MODBUS</span> 
+			 slave.</p>
+            <p class="NumberedHang" style="margin-left: 25px; text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">16</span> <b>About Error Flag</b> If you have defined the SlaveID using a DS address, and that value is outside the range of 1-247, System Bit SC43 will be set TRUE.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col style="width: 90%;" />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <h2 style="font-size: 3pt;" align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <p class="Notes"><b>Note:</b> Each <b>MODBUS</b> slave connected to the 
+			 <b>CLICK PLC</b> would support a different set of the <b>Exception Response</b>. 
+			 &#160;Please refer to the <b>User Manual/Specifications</b> of each 
+			 <b>MODBUS Slave</b>.&#160;If you are using a <b>CLICK PLC</b> as a <b>MODBUS 
+			 Slave</b>, please refer to this topic for the <a href="142.htm">Exception 
+			 Response</a> that the <b>CLICK PLC</b> supports.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Timing 
+			 Charts</h2>
+            <h3 style="margin-left: 72px;margin-top: 5px;" align="center" xmlns="http://www.w3.org/1999/xhtml">Read Data from 
+			 a MODBUS Slave Once</h3>
+            <p style="margin-left: 72px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/CL180_Read_Once.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <h3 style="margin-left: 72px;" align="center" xmlns="http://www.w3.org/1999/xhtml">Read Data from 
+			 a MODBUS Slave Continuously</h3>
+            <p style="margin-left: 72px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="receive modbus timing chart 2.gif" alt="" style="border: none;" width="548" height="344" border="0" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:</h3>
+            <p style="font-size: 5pt;" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;<a href="182.htm" xmlns="http://www.w3.org/1999/xhtml">Receive Instruction: ASCII</a></p>
+        </div>
+        <script Language="JScript">/* <![CDATA[ */
+			function parser(fn) {
+			var X, Y, sl, a, ra, link;
+			ra = /:/;
+			a = location.href.search(ra);
+			if (a == 2)
+			X = 14;
+			else
+			X = 7;
+			sl = "\\";
+			Y = location.href.lastIndexOf(sl) + 1;
+			link = 'file:///' + location.href.substring(X, Y) + fn;
+			location.href = link;
+			}
+		/* ]]> */</script>
+    </body>
+</html>

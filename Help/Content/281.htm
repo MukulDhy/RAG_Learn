@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Final Review - Delivered,Topic Status.Topic Redo - Waiting for Source">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title> Failed Password Attempt Record</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+        <table style="width: 100%;border-spacing: 0px 0px;border-collapse: collapse;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml"> Failed Password Attempt Record</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL281</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 style="margin-top: 5px;" xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p>A failed login attempt is defined as an unsuccessful login attempt made with the CLICK Programming Software when trying to connect to the PLC on a new session. While in the same active session with the programming software, the failed attempts are not logged. This record can be used as an indicator that an unwanted actor is trying to guess or hack the password used in the PLC. Most often it may only be users who have mistyped or forgotten their password.</p>
+            <p>When enabled on the <a href="279.htm" xmlns="http://www.w3.org/1999/xhtml">User Account Setup</a> screen, the Failed Password Attempt Record will record the last 16 failed login attempts made by users logging into the PLC with the CLICK Programming Software. This record will reside in the PLC and can be viewed with two methods:</p>
+            <h2>CPU Configuration&gt;User Account Setup&gt;Check the Record.</h2>
+            <p>When connected to the PLC with the programming software select the CPU Configuration&gt;User Account Setup&gt;Check the Record button.  </p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/Check_PW.jpg" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">The Failed Password Attempt Record window will open. The log can be erased using the <b xmlns="http://www.w3.org/1999/xhtml">Clear</b> button.</p>
+            <p style="text-align: center;">
+                <img src="Resources/Images/Failed_Password_Attempt_Record_430x368.jpg" xmlns="http://www.w3.org/1999/xhtml" style="width: 430;height: 368;" />
+            </p>
+            <h2>PLC&gt; SD Control Center ( PLC with SD card required)</h2>
+            <p>When you are connected with the programming software select the PLC&gt;SD Control Center. Select the Copy button in the Copy System LOG Data to SD Card section. </p>
+            <p style="text-align: center;" xmlns="">
+                <img src="Resources/Images/Audit_Record_SD_Control_Center.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p>This will create a folder named PW_ENTRY on the SD card where a PW_ENTRY.csv file will also be created that contains the recorded failed password attempts.</p>
+            <p>
+                <img src="Resources/Images/CLICK_PLUS_sd_directories.png" xmlns="http://www.w3.org/1999/xhtml" />
+                <img src="Resources/Images/PW_ENTRY_CSV_473x263.jpg" xmlns="http://www.w3.org/1999/xhtml" style="padding-left: 5px;width: 473;height: 263;" />
+            </p>
+            <p style="margin-bottom: 0;" xmlns="http://www.w3.org/1999/xhtml">The date and time are recorded, as well as the entered password. </p>
+            <p xmlns="" style="text-align: center;">&#160;</p>
+            <div id="topic" style="float: none;" xmlns="http://www.w3.org/1999/xhtml">
+                <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="279.htm" xmlns="http://www.w3.org/1999/xhtml">User Account Setup</a>
+                    <br xmlns="http://www.w3.org/1999/xhtml" /><a href="280.htm" xmlns="http://www.w3.org/1999/xhtml">Password Setup</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

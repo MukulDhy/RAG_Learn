@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Communication|[%=System.LinkedTitle%]" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Receive Instruction: ASCII</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;"><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Receive Instruction: ASCII</span>
+                    </td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL182</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Description</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">The 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor205"></a>Receive</span> instruction 
+			 allows you to use <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port 
+			 2 or 3</span> (if available) on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK 
+			 CPU</span> modules, or <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com Port 1 or 2</span> of a <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">C2-DCM module</span>, to receive <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 text messages from external devices.&#160;The <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK 
+			 CPU</span> modules support the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a name="kanchor206"></a>MODBUS 
+			 (RTU)</span> and <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 protocols. This help topic covers the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 protocol. Please refer to the help topic <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml"><a href="180.htm">Receive Instruction: MODBUS</a></span> for the 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span> protocol.</p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <h2 align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note:</span> <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Port 1</span> on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK Basic</span> and <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Analog</span> CPUs supports only 
+			 the programming software and operator interfaces/<span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">HMI's</span>. 
+			 &#160;It does not support the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Receive</span> 
+			 and <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Send</span> instructions 
+			 in a running program. <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Port 1</span> on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK Ethernet</span> and <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">CLICK PLUS</span> CPUs is an Ethernet port.</p>
+                        <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
+                        <p class="Notes"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note:</span> For the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Com 
+			 Port</span> wiring info, please refer to the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c0userm/c0userm.html" target="_blank" title="Open CLICK Hardware Manual" alt="Open CLICK Hardware Manual">CLICK PLC Hardware Manual</a></span><span xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"> or </span><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml" data-mc-conditions="Primary.WebHelp"><a href="http://www.automationdirect.com/static/manuals/c2userm/c2userm.html" target="_blank" title="Open CLICK PLUS Hardware Manual" alt="Open CLICK PLUS Hardware Manual">CLICK PLUS PLC Hardware Manual</a></span>.</p>
+                    </td>
+                </tr>
+            </table>
+            <p xmlns="http://www.w3.org/1999/xhtml">The serial ports default to <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">MODBUS</span> 
+			 protocol, but can be quickly changed to <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> 
+			 protocol. Click the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">COM 
+			 Port Setup</span> button to open the <a href="144.htm" xmlns="http://www.w3.org/1999/xhtml">COM 
+			 Port Setup dialog</a>.&#160;When the dialog opens, select the desired <b>COM Port</b> and select 
+			 <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">ASCII</span> in the protocol 
+			 box.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Setup</h2>
+            <p style="font-size: 5pt;text-align: center;" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/ASCII_Receive_Setup_422x595.png" xmlns="http://www.w3.org/1999/xhtml" style="width: 422;height: 595;" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">1</span><span style="font-weight: bold;"> Port ID:</span> Click the 
+			 down arrow to select a <span style="font-weight: bold;">Port</span> 
+			 from the available list.<span style="font-weight: bold;">&#160;Port 2</span> 
+			 is default.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">2</span><span style="font-weight: bold;"> Protocol Type:</span> This 
+			 field displays the <span style="font-weight: bold;">Protocol 
+			 Type</span> that is currently selected.&#160;The two choices 
+			 are <span style="font-weight: bold;">MODBUS</span> and <span style="font-weight: bold;">ASCII</span>. To change from 
+			 <span style="font-weight: bold;">MODBUS</span> to <span style="font-weight: bold;">ASCII</span>, 
+			 see <span style="font-weight: bold;">Item</span><span style="font-weight: bold;font-size: 12pt;color: #ff0000;"> 3</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">3 </span><span style="font-weight: bold;">COM Port Setup:</span> Click 
+			 on this button to open the <span style="font-weight: bold;">Com 
+			 Port Setup</span> window shown below.&#160;From this window 
+			 click on the down arrow for the <span style="font-weight: bold;">Protocol</span> 
+			 field and select <span style="font-weight: bold;">ASCII</span> 
+			 or <span style="font-weight: bold;">MODBUS</span>.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="com port setup details protocol.gif" alt="" style="border: none;" width="330" height="217" border="0" />
+            </p>
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100px" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p align="center">
+                            <img src="notepad.gif" alt="" style="border: none;" width="26" height="36" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2" style="vertical-align: middle;padding-left: 10px;padding-right: 10px;">
+                        <p class="Notes" style="border-top-style: Solid;border-top-width: 2px;border-top-color: #1a2c8e;border-bottom-style: Solid;border-bottom-width: 2px;border-bottom-color: #1a2c8e;"><span style="font-weight: bold;">Note:</span> 
+			 If the <span style="font-weight: bold;">Protocol</span> parameter 
+			 is grayed out, it means that there is at least one <span style="font-weight: bold;">Receive</span> 
+			 or <span style="font-weight: bold;">Send</span> instruction 
+			 assigned to the <span style="font-weight: bold;">Com Port</span> 
+			 already.&#160;If you still want to change the <span style="font-weight: bold;">Protocol</span>, 
+			 please delete those <span style="font-weight: bold;">Receive/Send</span> 
+			 instructions first.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">4</span><span style="font-weight: bold;"> Data Length Type:</span> 
+			 Select <span style="font-weight: bold;">Fixed</span> or <span style="font-weight: bold;">Variable Data Length Types</span>.
+			 <span style="font-weight: bold;">&#160;Fixed</span> will have 
+			 equal <span style="font-weight: bold;">Data Length Types</span> 
+			 while <span style="font-weight: bold;">Variable</span> will 
+			 have a <span style="font-weight: bold;">Variable</span> number 
+			 of characters.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="data length type.gif" alt="" style="border: none;" width="289" height="229" border="0" />
+            </p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">5 </span><span style="font-weight: bold;">Data Length:</span> Enter 
+			 or select using the <span style="font-weight: bold;">Browse 
+			 Icon</span><img src="browse button.gif" alt="" style="border: none;" width="17" height="14" border="0" />, 
+			 the <span style="font-weight: bold;">Bit</span> to send the 
+			 <span style="font-weight: bold;">Data Length</span>.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">6 </span><span style="font-weight: bold;">Data Destination:</span> 
+			 Enter or select using the <span style="font-weight: bold;">Browse 
+			 Icon</span><img src="browse button.gif" alt="" style="border: none;" width="17" height="14" border="0" />, 
+			 the <span style="font-weight: bold;">Bit</span> the <span style="font-weight: bold;">Data</span> will be stored.</p>
+            <p class="NumberedHang" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">7</span><span style="font-weight: bold;"> Byte Swap:</span> Select 
+			 the checkbox if <span style="font-weight: bold;">Byte Swap</span> 
+			 will be used. If selected, the <span style="font-weight: bold;">ALL</span> 
+			 and <span style="font-weight: bold;">All But Null</span> selections 
+			 will become active.&#160;Click one of these methods to select 
+			 it.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="byte swap.gif" alt="" style="border: none;" width="380" height="174" border="0" />
+            </p>
+            <p class="NumberedHang" style="margin-bottom: 4.5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">8</span><span style="font-weight: bold;"> First Character:</span> Click 
+			 on the down arrow and select a <span style="font-weight: bold;">Time-out</span> 
+			 value from the drop down list for the <span style="font-weight: bold;">First 
+			 Character</span>.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="timeout.gif" alt="" style="border: none;" width="340" height="145" border="0" /> 
+			 &#160;</p>
+            <p class="NumberedHang" style="margin-bottom: 4.5pt;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">9 </span><span style="font-weight: bold;">Character Interval:</span> 
+			 Click on the down arrow and select a <span style="font-weight: bold;">Time-out</span> 
+			 value from the drop down list for the <span style="font-weight: bold;">Character 
+			 Interval</span>.</p>
+            <p class="NumberedHang" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="character interval.gif" alt="" style="border: none;" width="216" height="57" border="0" />
+            </p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">10</span><span style="font-weight: bold;"> Receiving:</span> Assign 
+			 a <span style="font-weight: bold;">C</span><span style="font-weight: bold;">Bit</span> 
+			 as the<span style="font-weight: bold;"> Receiving</span> flag. 
+			 This flag turns<span style="font-weight: bold;"> ON</span> 
+			 when the com port is <span style="font-weight: bold;">Receiving</span> 
+			 an <span style="font-weight: bold;">ASCII</span> message from 
+			 the external device. Please refer to the <span style="font-weight: bold;">Timing 
+			 Chart</span> shown below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">11</span><span style="font-weight: bold;">Success:</span> Assign a 
+			 <span style="font-weight: bold;">C </span><span style="font-weight: bold;">Bit</span> 
+			 as the<span style="font-weight: bold;"> Success</span> flag. 
+			 This flag turns<span style="font-weight: bold;"> ON</span> 
+			 when the com port <span style="font-weight: bold;">Received</span> 
+			 an <span style="font-weight: bold;">ASCII</span> message from 
+			 the external device successfully. This flag turns<span style="font-weight: bold;"> 
+			 OFF</span> when the <span style="font-weight: bold;">Enable</span> 
+			 input for this instruction is disabled. Please refer to the 
+			 <span style="font-weight: bold;">Timing Chart</span> shown 
+			 below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">12</span><span style="font-weight: bold;"> First Character Time-out 
+			 (First Err):</span> Assign a <span style="font-weight: bold;">C</span><span style="font-weight: bold;">Bit</span> as the<span style="font-weight: bold;"> 
+			 First Character Time-out </span>flag. This flag turns<span style="font-weight: bold;"> ON</span> if the com port could 
+			 not <span style="font-weight: bold;">Receive</span> the <span style="font-weight: bold;">First Character</span> within the 
+			 time period defined as the <span style="font-weight: bold;">First 
+			 Character Interval Timeout</span> (see parameter #8). This 
+			 flag turns<span style="font-weight: bold;"> OFF</span> when 
+			 the <span style="font-weight: bold;">Enable</span> input for 
+			 this instruction is disabled. Please refer to the <span style="font-weight: bold;">Timing 
+			 Chart</span> shown below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">13</span><span style="font-weight: bold;"> Character Interval Time-out 
+			 (Inter Err):</span> Assign a <span style="font-weight: bold;">C</span><span style="font-weight: bold;">Bit</span> as the<span style="font-weight: bold;"> 
+			 Character Interval Time-out </span>flag. This flag turns<span style="font-weight: bold;"> ON</span> if the com port could 
+			 not <span style="font-weight: bold;">Receive</span> the next<span style="font-weight: bold;"> Character</span> within the time 
+			 period defined as the <span style="font-weight: bold;">Character 
+			 Interval Timeout</span> (see parameter #9). This flag turns<span style="font-weight: bold;"> OFF</span> when the <span style="font-weight: bold;">Enable</span> 
+			 input for this instruction is disabled. Please refer to the 
+			 <span style="font-weight: bold;">Timing Chart</span> shown 
+			 below.</p>
+            <p class="NumberedHang" style="margin-left: 25px;text-indent: -25px;" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size: 14pt;color: #ff0000;font-weight: bold;">14</span><span style="font-weight: bold;"> Overflow: </span>Assign a 
+			 <span style="font-weight: bold;">C </span><span style="font-weight: bold;">Bit</span> 
+			 as the<span style="font-weight: bold;"> Overflow </span>flag. 
+			 This flag turns<span style="font-weight: bold;"> ON</span> 
+			 if the com port <span style="font-weight: bold;">Received</span> 
+			 more than 128 characters. This flag works only when the <b>Data 
+			 Length Type</b> is variable (see parameter #4). This flag turns<span style="font-weight: bold;"> OFF</span> when the <span style="font-weight: bold;">Enable</span> 
+			 input for this instruction is disabled. Please refer to the 
+			 <span style="font-weight: bold;">Timing Chart</span> shown 
+			 below.</p>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Timing 
+			 Chart</h2>
+            <p align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="receive ascii timing chart.gif" alt="" style="border: none;" width="548" height="342" border="0" />
+            </p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related 
+			 Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="344.htm">Send and Receive ASCII Instructions</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="180.htm">Receive Instruction: MODBUS</a>
+            </p>
+        </div>
+        <script Language="JScript">/* <![CDATA[ */
+			function parser(fn) {
+			var X, Y, sl, a, ra, link;
+			ra = /:/;
+			a = location.href.search(ra);
+			if (a == 2)
+			X = 14;
+			else
+			X = 7;
+			sl = "\\";
+			Y = location.href.lastIndexOf(sl) + 1;
+			link = 'file:///' + location.href.substring(X, Y) + fn;
+			location.href = link;
+			}
+		/* ]]> */</script>
+    </body>
+</html>

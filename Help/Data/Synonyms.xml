@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="en-us">
+    <Groups>
+        <SynonymGroup>
+            <Word>homing</Word>
+            <Word>home</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="homing" To="home" FromStem="home" />
+    </Directional>
+</MadCapSynonyms>

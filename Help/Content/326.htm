@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|C2-NRED Module Configuration" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title xmlns="http://www.w3.org/1999/xhtml">C2-NRED Port Management Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div id="topic2" class="scrollfixed NoPrint" xmlns="http://www.w3.org/1999/xhtml">
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 528px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 548px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL326</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1><a name="kanchor157"></a><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">C2-NRED Port Management Setup</span>
+                        </h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" style="float: none;">
+            <p xmlns="">Port Management allows you to open additional ports on the Node-RED web server. This is necessary if you are connecting to servers that don’t use port 80/443, like MQTT or Modbus.</p>
+            <p>&#160;</p>
+            <p style="margin-left: 60px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/C2-NRED Port Management Setup.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Add/Edit</b>: Up to 8 ports (1-65535) may be configured to connect to Node-RED through TCP or UDP nodes, in addition to the required ports shown in the table below.</p>
+            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Always Allowed Ports</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <table style="vertical-align: top;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+                        <col width="78px" xmlns="http://www.w3.org/1999/xhtml" />
+                        <col xmlns="http://www.w3.org/1999/xhtml" />
+                        <col xmlns="http://www.w3.org/1999/xhtml" />
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border: Solid 1px #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-top-style: Solid;border-top-width: 1px;border-top-color: #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;background-color: #1a2c8e;" bgcolor="#19519E" colspan="3" xmlns=""><span style="color: #ffffff;" xmlns="http://www.w3.org/1999/xhtml">Always Allowed Ports</span>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;text-align: center;font-size: 10pt;background-color: #fafad2;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" xmlns=""><span style="font-size: 9pt;" xmlns="http://www.w3.org/1999/xhtml">Port</span>
+                            </td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;">Protocol</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;font-size: 10pt;background-color: #fafad2;">Description</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2">53</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">UDP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Domain Name Server (DNS)</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">68</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">UDP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">BootP (For DHCP)</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">123</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">UDP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p" xmlns="">Network Time Protocol (NTP)</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">25425</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">UDP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">KOP/KOPS (CLICK Access)
+</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">1880</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">TCP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">Node-Red Editor</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">80</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">TCP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">HTTP
+</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">443</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p" xmlns="">TCP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">HTTPS
+</td>
+                        </tr>
+                        <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 10px;padding-right: 10px;" bgcolor="#E2E2E2" class="td_h2" xmlns="">ICMP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">ICMP</td>
+                            <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: middle;background-color: #ffffff;padding-left: 10px;padding-right: 10px;border-right-style: Solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: Solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="td_p">PING
+</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p xmlns="">&#160;</p>
+            <p xmlns="">For each port, select TCP or UDP protocol, enter a port number between 1 and 65535 and a comment (up to 24 characters).</p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Delete</b>: Select an existing entry and press Delete to remove it.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a xmlns="http://www.w3.org/1999/xhtml" href="325.htm">C2-NRED Module Configuration</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" /><a xmlns="http://www.w3.org/1999/xhtml" href="329.htm">Node-RED Resources</a>
+                <br xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Setup|Remote PLC Setup" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title xmlns="http://www.w3.org/1999/xhtml">Remote PLC Setup</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div id="topic2" class="scrollfixed NoPrint" xmlns="http://www.w3.org/1999/xhtml">
+            <table style="vertical-align: top;" cellspacing="0" width="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 528px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <col style="width: 548px;" xmlns="http://www.w3.org/1999/xhtml" />
+                <tr style="vertical-align: top;height: 5px;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p xmlns="">&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;">
+                        <p style="margin-right: -3px;font-size: 8pt;" align="right">Topic: 
+						CL319</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                    <td colspan="2" style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;vertical-align: middle;">
+                        <h1><a name="kanchor156"></a><span class="mc-variable System.Title variable" xmlns="http://www.w3.org/1999/xhtml">Remote PLC Setup</span>
+                        </h1>
+                    </td>
+                    <td style="border-bottom: Solid 2px #008000;padding-right: 10px;padding-left: 10px;">
+                        <p style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="topic" style="float: none;">
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Introduction</h2>
+            <p>The "CLICK Remote PLC" capability is new in Version 3.60 of the CLICK software and firmware. It enables a user to access data registers and PLC status information using a mobile phone or tablet running either iOS or Android.  This enables the user to perform Machine troubleshooting and setup operations when access to the programming PC can be awkward or inconvenient.</p>
+            <p>CLICK Remote PLC app is not intended to replace an operator interface for standard machine operations; instead it provides an additional tool to simplify troubleshooting and configuration of your system.</p>
+            <table cellspacing="0" width="100%" style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <h2 align="center" xmlns="http://www.w3.org/1999/xhtml">
+                            <img src="caution exclamation.gif" style="border: none;" alt="" width="35" height="35" border="0" />
+                        </h2>
+                    </td>
+                    <td colspan="2">
+                        <p class="Notes" xmlns="http://www.w3.org/1999/xhtml"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Caution:</span>Safety should always be a paramount consideration when using a Mobile App. Wireless communications like Wi-Fi and Bluetooth can be unreliable in industrial settings and should NEVER be used in lieu of a hardwired e-stop or safety system. As a general rule, wireless connections are not reliable enough for ongoing machine operation and should be used only when a hardwired connection is not possible.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Remote PLC Setup</h2>
+            <p>&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">There are 4 steps required to configure the Remote PLC app within the CLICK Programming software. </p>
+            <p style="margin-left: 60px;" align="center" xmlns="http://www.w3.org/1999/xhtml">
+                <img src="Resources/Images/RemotePLCSetup.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Enable Remote PLC</b>: This step tells the processor to open the internal communications channels to share data. It must be enabled to access the Remote PLC User Setup dialog and the Remote PLC Monitor Setup dialog.</p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Remote PLC Monitor Setup</b>: Click <a href="321.htm" xmlns="http://www.w3.org/1999/xhtml">Setup</a> under the "Remote&#160;PLC&#160;Monitor Setup" section to open the Remote PLC Monitor Setup dialog and configure "Monitors" for the Remote PLC app. A Monitor behaves much like a typical Data View except a Monitor is limited to 10 addresses and can be configured as editable or read-only. The Monitor needs to include the addresses you wish to access in the Mobile App. You can create up to 32 Monitors.</p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Remote PLC User Setup</b>: Up to 5 user accounts can be set up to access the Remote PLC. Click <a href="320.htm" xmlns="http://www.w3.org/1999/xhtml">Setup</a> to open the Remote PLC User Setup dialog and configure users. This is where you will grant access to each of the Monitor Views you have created.</p>
+            <p xmlns=""><b xmlns="http://www.w3.org/1999/xhtml">Communication Setup</b>: The Remote PLC App can connect to the CLICK PLC using any of 3 communication ports.</p>
+            <p>1) Port 1 – Ethernet. If your PLC is connected to a LAN that has Wi-Fi access (for example, via a router with Wi-Fi or a Wireless Access Point), then the PLC can communicate with the Remote PLC App over the Wi-Fi Ethernet connection. If Wi-Fi is not available or reliable, you can buy a Lightning/USB to Ethernet adapter to connect your mobile device to your network using a wired connection. A wired connection will provide the fastest and most stable method to connect the Remote PLC App to a CLICK&#160;PLC. Click <a href="211.htm" xmlns="http://www.w3.org/1999/xhtml">Setup</a> to configure the Ethernet port. Ensure your network settings are configured appropriately to allow the PLC to connect to your network and the phone or tablet is connected to the same network subnet.</p>
+            <p>2)	WLAN.  If you have a CLICK PLUS with Wi-Fi capabilities, you can configure the CPU to directly connect to your Wi-Fi network. If a Wi-Fi connection to your local network is active, then the PLC&#160;can communicate with the Remote PLC App across the network just as it would over a wired Ethernet connection.  Click <a href="271.htm" xmlns="http://www.w3.org/1999/xhtml">Setup</a> to configure the Wi-Fi port. Ensure your network settings are configured appropriately to allow the PLC to connect to your network and the phone or tablet is connected to the same network subnet.</p>
+            <table cellspacing="0" width="100%" style="vertical-align: top;" xmlns="http://www.w3.org/1999/xhtml">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p align="center">
+                            <img src="notepad_24x34.gif" alt="" style="border: none;width: 24;height: 34;" border="0" />
+                        </p>
+                    </td>
+                    <td colspan="2">
+                        <p class="Notes" style="font-weight: normal;"><span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">Note:</span> The Remote PLC App does not connect directly to the PLC via Wi-Fi. The Remote PLC App uses a Wi-Fi connection from your mobile device to your local network, and the CLICK PLC is connected to the same local network over either wired Ethernet or Wi-Fi.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>3)	Bluetooth. If you have a CLICK PLUS PLC with Bluetooth capabilities, you can enable the Bluetooth port and configure Bluetooth to act as the Remote PLC communications port.  Click <a href="283.htm" xmlns="http://www.w3.org/1999/xhtml">Setup</a> to configure the Bluetooth port. Ensure you have Bluetooth enabled on your phone and on the PLC and the PLC will appear when you browse for active devices using Bluetooth.</p>
+            <p>CLICK Remote PLC&#160;can support up to 3 mobile devices via Wi-Fi, or 2 Wi-Fi and a single BLE&#160;connection simultaneously.</p>
+            <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" style="vertical-align: top;" width="100%">
+                <col width="100" />
+                <col />
+                <col />
+                <tr style="vertical-align: top;">
+                    <td style="padding-right: 10px;padding-left: 10px;" width="100">
+                        <p align="center">
+                            <img alt="" border="0" src="notepad_24x34.gif" style="border: none;width: 24;height: 34;" />
+                        </p>
+                    </td>
+                    <td colspan="2">
+                        <p class="Notes" style="font-weight: normal;"><span xmlns="http://www.w3.org/1999/xhtml" style="font-weight: bold;">Note:</span>Anytime there are changes to the Comms settings on the CLICK, either cycle power, or toggle the Run/Stop switch to apply those changes. This is done to prevent unintentional loss of communications when changes are downloaded with a project.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 xmlns="http://www.w3.org/1999/xhtml">Remote PLC App</h2>
+            <p xmlns="http://www.w3.org/1999/xhtml">After the Remote PLC feature is configured on the PLC, see <a href="324.htm" xmlns="http://www.w3.org/1999/xhtml">Remote PLC App</a> for information on installing and using the app.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="320.htm" xmlns="http://www.w3.org/1999/xhtml">Remote PLC User Setup</a>
+                <br /><a href="321.htm" xmlns="http://www.w3.org/1999/xhtml">Remote PLC Monitor Setup</a>
+                <br /><a href="211.htm" xmlns="http://www.w3.org/1999/xhtml">Com Port 1 (Ethernet) Setup</a>
+                <br /><a href="271.htm" xmlns="http://www.w3.org/1999/xhtml">Wireless LAN Port Setup</a>
+                <br /><a href="283.htm" xmlns="http://www.w3.org/1999/xhtml">Bluetooth Port Setup</a>
+                <br /><a href="324.htm" xmlns="http://www.w3.org/1999/xhtml">Remote PLC App</a>
+            </p>
+        </div>
+    </body>
+</html>

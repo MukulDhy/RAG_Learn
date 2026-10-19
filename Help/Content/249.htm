@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu|PID Setup" data-mc-searchable="False" data-mc-file-tags="Topic Status.Completed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Find Available Addresses</title>
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 144px;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">Find Available Addresses<a name="kanchor121"></a></td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL249</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo1.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="topic" style="float: none;">
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">The Find Available Addresses dialog gives the user an easy method of assigning address blocks when creating a new PID loop. This dialog searches the current project for unused Addresses of the required block sizes. Any addresses assigned in&#160;Ladder, High-Speed I/O, Built-In I/O, and EtherNet/IP are considered unavailable by this dialog.</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml">&#160;</p>
+            <p colspan="2" xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+                <img src="Resources/Images/CL249_Find Available Addresses.png" xmlns="http://www.w3.org/1999/xhtml" />
+            </p>
+            <p xmlns="">&#160;</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="color: #ff0000;" xmlns="http://www.w3.org/1999/xhtml">1</span><b xmlns="http://www.w3.org/1999/xhtml"> C Addresses:</b>&#160;A continuous block of 40 bits is required.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="color: #ff0000;" xmlns="http://www.w3.org/1999/xhtml">2</span><b xmlns="http://www.w3.org/1999/xhtml"> DS Addresses:</b>&#160;A continuous block of 15 DS Addresses is required.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="color: #ff0000;" xmlns="http://www.w3.org/1999/xhtml">3</span><b xmlns="http://www.w3.org/1999/xhtml"> DF Addresses:</b>&#160;A continuous block of 25 DF Addresses is required.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><span style="color: #ff0000;">4</span><b> Start Address:</b> The lowest available starting blocks are selected by default. The user may choose any Start Address from the list for each Address type.</p>
+            <p><b>DF Addresses</b>
+            </p>
+            <p xmlns="">Analog CPUs by default use a starting address of DF1 and consume these addresses. Analog Input and Output modules are also assigned to DF Addresses.</p>
+            <p><b>Auto Transfer</b>
+            </p>
+            <p xmlns="">Auto Transfer from Analog Inputs and Auto Transfer to Analog Outputs can be configured. First, configure the PID normally. Then open the System Configuration for the Analog Modules, or the CPU Built-in I/O Setup for Analog CPUs. De-select the Continuous Address mode. For the Analog Input, select the PID_PV_ProcessRaw Address. For the Analog Output, select the PID_OUT_Control Address.</p>
+            <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="246.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Control in CLICK</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="243.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Configuration Mode</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Monitor Mode</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;List View</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="250.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Filter Examples</a>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml"><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Error&#160;Codes</a>
+            </p>
+        </div>
+    </body>
+</html>

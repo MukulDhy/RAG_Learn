@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Click_Help.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Setup Menu|PID Setup">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>PID Configuration Mode</title>
+        <link href="Resources/TableStyles/ADCwithgridlines.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="ADCHelp.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <table class="PageBreakBefore" style="width: 100%;border-spacing: 0px 0px;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 70%;" />
+            <col style="width: 30%;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;" xmlns="">PID&#160;Configuration Mode</td>
+                    <td style="vertical-align: middle;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #00008b;">
+                        <p align="right" class="NoSpace" xmlns="http://www.w3.org/1999/xhtml">Topic: CL243</p>
+                        <p class="NoSpace" style="text-align: right;" xmlns="">
+                            <img src="click logo.gif" xmlns="http://www.w3.org/1999/xhtml" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <p>The CLICK Ethernet PLC is capable of supporting up to 8 PID Control Loops. For more information on how PID is implemented in the CLICK&#160;PLC, see Help topic <a href="246.htm" target="_blank">PID&#160;Control in CLICK</a>. </p>
+        <p>A PID control loop is a continuous feedback loop that uses the error between a Setpoint (SP) and a Process Variable (PV) to determine the value of a Control Output (CO). The SP is usually an operator-entered value and is the desired value of the PV. The PV is usually an Analog Input to the PLC and is a measured value in the Process being controlled. The PV may be a flow rate, pressure, temperature or process variable that can be measured by process instrumentation. The CO may be a control valve position, a damper actuator position, a variable speed drive speed setting, etc.</p>
+        <p>When the SP is changed or a disturbance in the process causes the PV to change, an error occurs between the SP and PV. The PID Control uses Proportional, Integral and Derivative terms with the error to determine the CO that will  return  the PV  equal to the SP. </p>
+        <p>Each PID Loop requires consecutive C, DS and DF memory areas. All  PID Loop Configuration parameters are stored in these memory locations.</p>
+        <p>Tools in the Configuration dialog will assist in selecting available consecutive addresses for each.</p>
+        <h2>Purpose</h2>
+        <p>The PID Configuration Mode dialog is used to configure each PID Loop. In this dialog you can find available addresses for the PID Loop parameters. You can also Read and Write PID Loop configuration values to an existing PID Loop configuration in a connected CLICK PLC.</p>
+        <h2>Adding a PID Control Loop</h2>
+        <p>To set up a PID Control Loop, from the Menu select <b>Setup&gt; PID Setup</b>. Alternately, from the <b>Program</b> tab, double-click <b>PID&#160;Setup</b>.</p>
+        <p>
+            <img src="Resources/Images/Setup Menu.png" />
+            <img src="Resources/Images/Program Tab.png" />
+        </p>
+        <h2>General Tab</h2>
+        <p>The <b>General</b> tab opens. By default, the first PID Loop Name to be created is <b>PID001</b>. This can be changed at any time.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/PID Configuration Mode - General 1.png" />
+        </p>
+        <p><b>PID Loop Name</b>: The <b>PID Loop Name</b> can be a maximum of 6 characters.</p>
+        <p><b>Assign Nicknames Automatically:</b> The PID Loop Name will be appended to the beginning of all of the Nicknames for the Memory addresses associated with this PID Loop. For example, PID001_SP_Setpoint. These may be edited later.</p>
+        <p><b>Read Register Values From PLC</b>: Click this button to read all the registers associated with the current PID Loop into the PID Configuration dialog. </p>
+        <p><b>Write Register Values to PLC</b>: Click this button to write all of the PID Configuration Registers in the PID Configure dialog into the PLC memory locations configured in the PID Loop Parameter address.</p>
+        <table style="width: 100%;">
+            <col style="width: 75px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="notepad1.gif" />
+                    </td>
+                    <td>
+                        <p class="Notes"><b>Note:</b> Best practice is to first Read the Register Values from the PLC before selecting to Write Register Values to the PLC. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>PID Loop Parameter Area</h3>
+        <blockquote>
+            <p>Each PID Loop requires consecutive C, DS and DF memory areas. All the PID Loop Configuration parameters are stored in these memory locations.</p>
+            <blockquote>
+                <p>C Memory Area - 40 Consecutive Bits</p>
+                <p>DS Memory Area - 15 Consecutive Integers</p>
+                <p>DF Memory Area - 25 Consecutive Floats</p>
+            </blockquote>
+            <p>In the other tabs in the Configuration dialog box, the address assigned will be shown next to each parameter. Throughout this Help file, the beginning address for each address range is symbolized as Cn, DSn and DFn.</p>
+            <p>Select the Memory Areas in one of two ways:</p>
+            <ol>
+                <li value="1">The best option is to let the software select the address for you from the available unused addresses by clicking the <b>Find Available Address...</b> button. The Find Available Addresses dialog allows you to select which range of addresses you want to use for each memory type with the present PID Loop configuration from the "available" addresses.</li>
+                <li value="2">In the <b>General</b> tab you can select the beginning address for each Memory Area and the software will automatically allocate the number of addresses for the PID Loop. Care must be taken not to select a range of addresses already used in the PLC program for another purpose.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="Resources/Images/Find Available Addresses.png" />
+            </p>
+            <p>See the Help topic <b><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto"><b>PID Address Descriptions</b></a></b> for a full list of the addresses and nicknames assigned for each PID Loop configuration parameter.</p>
+        </blockquote>
+        <h2>Setpoint Tab</h2>
+        <p>The Setpoint (SP) (DFn+00) is the value to which the PID Control Loop is trying to drive the Process Variable (PV). </p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Setpoint Tab.png" />
+        </p>
+        <p><b>Setpoint Upper and Lower Limits</b>: You may select to limit the allowed upper and lower settings for the Setpoint. This is useful in preventing someone from accidentally entering a value that is outside the process limits.</p>
+        <p>When enabled, if a Setpoint value is entered outside of the limits, the PLC will automatically change the Setpoint to the limit that is closest to the value entered.</p>
+        <blockquote>
+            <p>The limits are enabled individually:</p>
+            <blockquote>
+                <p><b>Upper Limit enable</b> (Cn+01)</p>
+                <p><b>Lower Limit enable</b> (Cn+00)</p>
+            </blockquote>
+            <p>The limit values must be set if the limit is enabled:</p>
+            <blockquote>
+                <p><b>Upper Limit value</b> (DFn+02)</p>
+                <p><b>Lower Limit value</b> (DFn+01)</p>
+            </blockquote>
+        </blockquote>
+        <h2>Error Term Tab</h2>
+        <p>The Error is the difference between the Setpoint (SP) and the Process Variable (PV). Error = SP - PV.</p>
+        <p>The Error Term tab is used to select from  a couple of ways the Error can be manipulated to better control certain processes. To use the Error as is, leave both options off.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Error Term Tab.png" />
+        </p>
+        <h3>Error Squared Option</h3>
+        <blockquote>
+            <p>When the Error Squared (Cn+02) option is selected, the error term is squared (preserving the original sign), before it is used in the PID calculation. This lessens the response to smaller error values, but increases the response to larger errors. </p>
+        </blockquote>
+        <h3>Error Deadband Option</h3>
+        <blockquote>
+            <p>When the <b>Error with Deadband</b> (Cn+03) option is selected, no control action is taken if the Process Variable (PV) is within the specified <b>Error Deadband (</b>DFn+03) around the Setpoint (SP). The error deadband is the same above and below the SP and is in the same units as the PV and SP.</p>
+            <p>Once the PV is outside of the error deadband around the SP, the entire error is used in the loop calculation.</p>
+            <p>If Error Squared is enabled, the error will be squared before it is applied to the deadband calculation.</p>
+        </blockquote>
+        <h2>Loop Algorithm Tab</h2>
+        <p>The Loop Algorithm tab is the heart of the PID Loop setup. </p>
+        <p>
+            <img src="Loop Algorithm Tab Rev 1.png" />
+        </p>
+        <h3>PID Tuning Parameters</h3>
+        <blockquote>
+            <p>The PID calculation utilizes the following parameters and equation. The P, I and D are often referred to as "Tuning Parameters" because their values affect the responsiveness and stability of the control loop. Incorrect tuning parameters can lead to an unresponsive, oscillatory or unstable (out of control) process loop. There are many resources available about tuning PID control loops.</p>
+            <blockquote>
+                <p>P: Proportional Gain (DFn+05) ( 0.01 - 10000)</p>
+                <p>I: Reset time (DFn+06) (0.01 - 6000 seconds)</p>
+                <p>D: Derivative Gain (DFn+07) ( 0 - 6000 seconds)</p>
+            </blockquote>
+            <p>The P, I and D parameters as well as the Sample Rate can be set automatically by using the Autotune features of the CLICK PID. See the <b><a href="247.htm" target="_blank">PID Autotuning</a></b> Help topic for more information.</p>
+        </blockquote>
+        <h3>Sample Rate(DSn+05) </h3>
+        <p>Range: 100 - 30000 ms</p>
+        <blockquote>
+            <p>The PID control is performed as part of the Main Program, but the new CO is calculated when the sampling rate time has elapsed. </p>
+        </blockquote>
+        <h3>Freeze Bias (Anti-Windup) (Cn+05)</h3>
+        <blockquote>
+            <p>Freeze Bias, also known as Anti-Windup, is a feature of the CLICK PID that can make your process more stable and recover more quickly from process disturbances.  See the Help topic <a href="246.htm" target="_blank">PID Control in CLICK</a> for more information about this feature.</p>
+        </blockquote>
+        <h3>Derivative Gain Limit</h3>
+        <p>Range: 1 - 100</p>
+        <blockquote>
+            <p>The Derivative Gain Limit (Cn+04) is a high frequency filter for the Derivative Gain. With it you can limit the effect  that high frequency noise has on  the Derivative portion of the calculation.  </p>
+            <p>The Gain Limit Factor (DSn+06) can be 1 to 100, although a value from 8 to 20 is more typical. A value of 100 will  essentially apply no filter to the Derivative. As the Limit is reduced, the effect of PV noise on the Control Output is reduced. A value of 0 is the same as setting the Derivative Gain to 0.</p>
+        </blockquote>
+        <h3>Action</h3>
+        <blockquote>
+            <p>The Action (Cn+09) of a control loop is either Direct  acting or Reverse acting. It is important to know in which direction the control output will respond to the error. </p>
+            <p>A <b>Direct</b> acting control loop means that whenever the control output increases, the PV will also increase. For example, if the Control Output drives open a gas valve to a flame control, the Temperature will increase as the Control Output increases.</p>
+            <p>A <b>Reverse</b> acting control loop is one where an increase in the control output results in a decrease in the PV. A common example of this would be a refrigeration system, where an increase in the cooling input causes a decrease in the PV (temperature).</p>
+        </blockquote>
+        <h3>Bumpless Transfer</h3>
+        <blockquote>
+            <p>A Bumpless Transfer (Cn+08) refers to the method of switching from Manual Mode to Auto Mode without causing a "bump" in the process by sudden movement of the Control Output.</p>
+            <p>Mode 1(ON):  Accomplishes no bump because the SP and PV are made equal, requiring no immediate change in the Control Output.</p>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The Bias Term is made equal to the Control Output. </li>
+            </ul>
+            <ul>
+                <li>The SP is made equal to the PV.</li>
+            </ul>
+            <p>Mode 2(OFF): Since the SP is not made equal to the PV, a bump in the Control Output can occur when the control is switched from Manual to Auto. It is up to the Operator to make changes to the process settings to prevent a bump in the process.</p>
+            <ul>
+                <li>The Bias Term is made equal to the Control Output. </li>
+            </ul>
+        </blockquote>
+        <h2>Output Tab</h2>
+        <p>The Control Output (CO) (DFn+08) is the result of the PID calculation. It is usually tied to a physical output on the PLC, which is wired to a control device such as a valve actuator.</p>
+        <p>The Control Output is Read Only when the loop is in Auto. To change the Control Outout, the loop must be in Manual Mode.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Output Tab.png" />
+        </p>
+        <p>The Control Output range is 0 to 100% by default. But it can be changed by setting the Upper Limit (DFn+10) and Lower Limit (DFn+09). </p>
+        <p>If the Upper Limit is set to zero, the CO will never get above zero and the control loop will not function properly.</p>
+        <h3>PWM Control</h3>
+        <blockquote>
+            <p>PWM (Pulse Width Modulated) control turns the Control Output signal into a series of pulses. The width of the pulse (or duty cycle) is the ratio of ON time to OFF time determined by the Control Output percentage of the <b>Time Period</b>. </p>
+            <p>Since <b>PWM Control</b> is determined by the type of output, it is enabled in the PID configuration; but unlike most other parameters, it is not modifiable by the Ladder Logic. No Address is assigned to the PWM Enable setting.</p>
+            <p><b>Bit Address</b>:  The address of the discrete output that is tied to the control element in the process.  The programmer assigns this.</p>
+            <p><b>Time Period (DSn+07)</b>: The total of the ON and OFF time. This value can be 1 to 600 seconds.</p>
+        </blockquote>
+        <h2>Process Variable Tab</h2>
+        <p>The <b>Raw Process Variable</b> (DFn+11) is the measured value that the PID loop controls. It is directly affected by the process being controlled. The <b>Process Variable</b> (DFn+12) is the filtered <b>Raw Process Variable</b>  used by the PID calculation. If the PV filter is not enabled, then the PV is equal to the Raw PV.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Process Variable Tab1.png" />
+        </p>
+        <h3>PV Upper and Lower Limits</h3>
+        <blockquote>
+            <p>The PV Upper (DFn+23) and Lower (DFn+22) Limits are the expected process range values for the full range of the Control Output. They are used to calculate the Process gain which in turn is used by Autotune to calculate the Proportional Gain tuning constant.</p>
+            <p> This is not the range of the process measurement device or the PLC input configuration. For example the Input may be a RTD input with a range of -328 to 1562 Deg F. But the Process range for a CO of 0 to 100 may only be 40 to 140 Deg F. The <b style="font-weight: bold;">PV Upper and Lower Limits </b>would be 140 and 40 respectively.</p>
+        </blockquote>
+        <h3>PV Filter</h3>
+        <p>Range: 1 - 100% </p>
+        <blockquote>
+            <p>A noisy Raw PV can cause a PID loop to become unstable as well as make the loop difficult to tune. The CLICK PLC provides a <b><b style="font-weight: normal;">PV Filter </b></b>to reduce the high frequency noise in the Raw PV value to provide a clean PV to the PID Controller.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>PV Filter</b>(Cn+11): turns on the PV filter.</p>
+            <p><b>Filter Constant</b> (DSn+8): the Filter Constant is the percentage of the Raw PV that is passed each PID sample time. The smaller the filter value, the more filtering that will occur. A value of 100 will result in no filtering and 100% of the Raw PV is passed The default value is 100.</p>
+            <p>&#160;</p>
+        </blockquote>
+        <table style="width: 100%;">
+            <col style="width: 75px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="notepad1.gif" />
+                    </td>
+                    <td>
+                        <p class="Notes">Enabling the PV Filter and entering a small filter value can cause some lag in the PV. This should be taken into account while tuning.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Alarm Tab</h2>
+        <p>The CLICK PLC allows the user to specify alarm conditions that can be monitored for each loop. These alarms and alarm levels can be enabled and configured in the Alarm tab or though the PLC addresses. For more information on Alarms, see the Help topic <a href="246.htm" target="_blank">PID Control in CLICK</a>.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/Alarm Tab.png" />
+        </p>
+        <blockquote>
+            <p><b>Use PV Alarm</b> (Cn+12) - these are limit alarms. If the PV passes the limit, the corresponding C-bit is turned on.</p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col style="width: 221px;" class="Column-Column1" />
+                    <col style="width: 137px;" class="Column-Column1" />
+                    <col style="width: 231px;" class="Column-Column1" />
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2 style="text-align: center;">Alarm Type</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1">
+                                <h2 style="text-align: center;">Alarm Limit </h2>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <h2 style="text-align: center;">Alarm Status Bit</h2>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2>High-High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+16</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+34</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2>High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+15</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+33</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2>Low Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+14</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+32</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <h2>Low-Low Alarm</h2>
+                            </td>
+                            <td class="BodyB-Column1-Body1" style="text-align: center;">
+                                <p>DFn+13</p>
+                            </td>
+                            <td class="BodyA-Column1-Body1" style="text-align: center;">
+                                <p>Cn+31</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+            <p style="font-weight: bold;">Use PV Deviation Alarm <span style="font-weight: normal;">(Cn+13):  Sometimes the PV value is not a concern, but the difference between the PV and SP is a concern. You can specify a High Deviation Alarm or High High Deviation Alarm from the Setpoint. When the PV is further from the Setpoint than the programmed  Deviation Limit, the corresponding C-bit is turned on. The deviation is the amount <b>above or below</b> the Setpoint. </span></p>
+            <blockquote>
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/ADCwithgridlines.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col style="width: 201px;" class="Column-Column1" />
+                    <col style="width: 162px;" class="Column-Column1" />
+                    <col style="width: 216px;" class="Column-Column1" />
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Type</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Limit </h2>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <h2>Alarm Status Bit</h2>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <h2>High-High Alarm</h2>
+                            </td>
+                            <td class="BodyE-Column1-Body1" style="text-align: center;">
+                                <p>DFn+18</p>
+                            </td>
+                            <td class="BodyD-Column1-Body1" style="text-align: center;">
+                                <p>Cn+36</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <h2>High Alarm</h2>
+                            </td>
+                            <td class="BodyB-Column1-Body1" style="text-align: center;">
+                                <p>DFn+17</p>
+                            </td>
+                            <td class="BodyA-Column1-Body1" style="text-align: center;">
+                                <p>Cn+35</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </blockquote>
+            <div>
+                <p><b>PV Alarm Hysteresis</b> (DFn+20): The <b>PV Limit Alarms</b> and <b>PV Deviation Alarms</b> are programmed using limit values. When the PV value or deviation exceeds the configured limit, the alarm status bit becomes true. Real-world PV signals  fluctuate. As the PV value crosses an alarm limit, its fluctuations will cause the alarm to be intermittent and trigger repeatedly.</p>
+                <p>The hysteresis is applied when the PV value passes a limit and descends back through it.</p>
+            </div>
+            <p>The alarm activates immediately when the Alarm limit is crossed. But the alarm delays turning off until the PV value has dropped below the limit by the hysteresis amount.</p>
+        </blockquote>
+        <blockquote>
+            <p style="font-weight: normal;"><b>Use PV Rate of Change </b><span style="font-weight: normal;">(Cn+14)</span>:<span style="font-weight: normal;"> When the PV changes faster than a specified rate-of-change limit (DFn+19). The Rate of Change C-bit (Cn+37) is set.</span> The rate-of-change units are PV. Units change per sample time.</p>
+        </blockquote>
+        <blockquote>
+            <p>As an example, suppose the PV is the temperature for your process, and you want an alarm whenever the temperature changes faster than 15 degrees/minute. Suppose the sample rate is 2 seconds.</p>
+            <blockquote>
+                <p>&#160;</p>
+                <p style="font-size: 14pt;">
+                    <img src="GeneratedImages/Equations/Equation12.svg" alt="" class="_MCEquation_0 mcReset" />
+                </p>
+                <h3 xmlns="http://www.w3.org/1999/xhtml">Related Topics:</h3>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="246.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Control in CLICK</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="244.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Monitor</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="249.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Find Available&#160;Addresses</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="254.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Address Descriptions</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="247.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Autotuning</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="245.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;View List</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="250.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">Filter Examples</a>
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml"><a href="248.htm" class="MCTopicPopup MCTopicPopupHotSpot a" xmlns="">PID&#160;Error&#160;Codes</a>
+                </p>
+            </blockquote>
+        </blockquote>
+    </body>
+</html>
