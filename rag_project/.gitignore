@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.pytest_cache/
+.venv/
+
+# Local configuration
+.env
+
+# Generated data: rebuildable from the knowledge base
+data/processed/
+data/index/
+data/reports/
+
+# Streamlit
+.streamlit/
