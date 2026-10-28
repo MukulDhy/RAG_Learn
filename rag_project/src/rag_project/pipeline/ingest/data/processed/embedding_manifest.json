@@ -1,0 +1,16 @@
+{
+  "model_name": "BAAI/bge-small-en-v1.5",
+  "device": "cpu",
+  "dimensions": 384,
+  "dtype": "float32",
+  "normalized": true,
+  "similarity_metric": "cosine",
+  "batch_size": 16,
+  "chunk_count": 2683,
+  "embedding_matrix_shape": [
+    2683,
+    384
+  ],
+  "source_file": "rag_project\\src\\rag_project\\pipeline\\ingest\\data\\processed\\chunks.jsonl",
+  "source_sha256": "09151b7e09e0db00932cad95fb943d6132b604d7dfe57c014bd7dae109819555"
+}

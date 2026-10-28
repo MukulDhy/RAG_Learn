@@ -11,7 +11,7 @@ import tiktoken
 INPUT_FILE = Path(r"rag_project\src\rag_project\pipeline\ingest\data\pages_cleaned.jsonl")
 OUTPUT_FILE = Path(r"rag_project\src\rag_project\pipeline\ingest\data/processed/chunks.jsonl")
 
-CHUNK_SIZE = 500
+CHUNK_SIZE = 340
 CHUNK_OVERLAP = 75
 
 # A practical baseline tokenizer. Validate against your final
