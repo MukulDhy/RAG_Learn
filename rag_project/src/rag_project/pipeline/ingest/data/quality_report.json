@@ -1,0 +1,60 @@
+{
+  "input_file": "rag_project\\src\\rag_project\\pipeline\\ingest\\data\\pages.jsonl",
+  "output_file": "rag_project\\src\\rag_project\\pipeline\\ingest\\data\\pages_cleaned.jsonl",
+  "total_pages": 878,
+  "low_text_pages": 8,
+  "suspicious_pages": 0,
+  "pages_in_duplicate_groups": 0,
+  "duplicate_groups": [],
+  "repeated_boundary_lines_removed": 30,
+  "issues": [
+    {
+      "document_name": "ML-advice.pdf",
+      "page_number": 3,
+      "issue": "low_text",
+      "character_count": 41
+    },
+    {
+      "document_name": "ML-advice.pdf",
+      "page_number": 20,
+      "issue": "low_text",
+      "character_count": 27
+    },
+    {
+      "document_name": "ML-advice.pdf",
+      "page_number": 25,
+      "issue": "low_text",
+      "character_count": 49
+    },
+    {
+      "document_name": "ML-advice.pdf",
+      "page_number": 29,
+      "issue": "low_text",
+      "character_count": 21
+    },
+    {
+      "document_name": "MachineLearning-Lecture01.pdf",
+      "page_number": 22,
+      "issue": "low_text",
+      "character_count": 36
+    },
+    {
+      "document_name": "MachineLearning-Lecture04.pdf",
+      "page_number": 20,
+      "issue": "low_text",
+      "character_count": 36
+    },
+    {
+      "document_name": "MachineLearning-Lecture07.pdf",
+      "page_number": 19,
+      "issue": "low_text",
+      "character_count": 20
+    },
+    {
+      "document_name": "MachineLearning-Lecture14.pdf",
+      "page_number": 15,
+      "issue": "low_text",
+      "character_count": 20
+    }
+  ]
+}
